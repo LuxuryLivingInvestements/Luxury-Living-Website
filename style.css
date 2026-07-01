@@ -1,1 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #222;
+}
 
+div {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #444;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 25px;
+}

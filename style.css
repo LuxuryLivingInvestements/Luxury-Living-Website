@@ -1,11 +1,14 @@
 body {
+  body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #e0f2f1, #f5f7fa);
   color: #222;
-}
 
+  background: url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
 .hero {
   text-align: center;
   padding: 120px 20px;

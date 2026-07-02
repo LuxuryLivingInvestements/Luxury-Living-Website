@@ -67,5 +67,40 @@ header p {
 
 .products .container {
     display: grid;
-    grid-template-colu
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #1f3c5b;
+    margin-bottom: 15px;
+}
+
+#contact {
+    background: white;
+    padding: 70px 0;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #1f3c5b;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #1f3c5b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 

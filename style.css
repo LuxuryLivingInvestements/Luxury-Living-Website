@@ -37,6 +37,12 @@ header p {
     letter-spacing: 1px;
 }
 
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
 .hero {
     background: linear-gradient(to right, #1f3c5b, #4f7c8a);
     color: white;
@@ -123,3 +129,13 @@ footer {
     font-weight: bold;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;

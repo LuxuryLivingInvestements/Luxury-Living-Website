@@ -37,10 +37,10 @@ header p {
 }
 
 .hero {
-    background: linear-gradient(135deg, #1f3c5b, #5d8aa8);
+    background: linear-gradient(to right, #1f3c5b, #4f7c8a);
     color: white;
+    padding: 120px 20px;
     text-align: center;
-    padding: 100px 20px;
 }
 
 .hero h2 {

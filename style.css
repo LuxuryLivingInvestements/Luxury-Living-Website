@@ -313,3 +313,101 @@ footer {
     font-size: 14px;
     color: #888;
 }
+
+@media (max-width: 768px) {
+
+    /* NAV */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .nav .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* HERO */
+    .hero h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 60px 15px;
+    }
+
+    /* GRID */
+    .grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* BUTTON */
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+💡 WHAT THIS FIXES
+
+Before:
+
+Navigation may look cramped
+Cards sit too small or side-by-side
+Hero text too big on phones
+
+After:
+
+Clean stacked layout
+Easy WhatsApp browsing
+Better readability
+More professional mobile feel
+⚠️ IMPORTANT CHECK
+
+After saving:
+
+Test on phone OR:
+Chrome → right click → Inspect → mobile view toggle
+
+You should see:
+
+Everything stacked vertically
+No horizontal scrolling
+Big readable text
+Clean spacing
+🚀 NEXT STEP (VERY IMPORTANT)
+
+Now your website is:
+✔ structured
+✔ styled
+✔ mobile-friendly
+
+Next we upgrade what actually brings customers:
+
+👉 📞 CONTACT SECTION UPGRADE (HIGH IMPACT)
+
+We will turn this:
+
+plain text contact info
+
+into:
+
+clickable phone button 📞
+WhatsApp button 💬
+email button ✉️
+instant enquiry style layout
+Reply with:
+
+“contact”
+
+and I’ll upgrade your contact section into a proper lead-generating system (this is where sales start happening).

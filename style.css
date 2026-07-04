@@ -330,7 +330,7 @@ footer {
 }
 
 /* =========================
-   MOBILE (ONLY ONCE!)
+   MOBILE (FIXED + CLEAN)
 ========================= */
 @media (max-width: 768px) {
 
@@ -359,3 +359,13 @@ footer {
     .btn {
         padding: 12px 24px;
         font-size: 14px;
+    }
+
+    .section {
+        padding: 80px 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

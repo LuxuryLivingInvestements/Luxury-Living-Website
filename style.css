@@ -58,7 +58,7 @@ body {
 .hero {
     height: 100vh;
     background: url("https://your-image-link.jpg") center/cover no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;

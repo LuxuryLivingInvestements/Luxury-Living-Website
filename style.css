@@ -359,7 +359,7 @@ footer {
     .why-grid {
         grid-template-columns: 1fr;
     }
-
+}
     /* BUTTON */
     .btn {
         padding: 12px 24px;

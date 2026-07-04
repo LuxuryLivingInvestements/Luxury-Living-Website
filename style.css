@@ -430,3 +430,22 @@ footer {
 .quote-form button:hover {
     transform: scale(1.05);
 }
+/* FLOATING QUOTE BUTTON */
+.float-quote {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: #d4af37;
+    color: black;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.float-quote:hover {
+    transform: scale(1.1);
+}

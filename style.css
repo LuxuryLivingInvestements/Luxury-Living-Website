@@ -196,16 +196,6 @@ footer {
 }
 
 /* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: green;
-    color: white;
-    padding: 12px 18px;
-    border-radius: 50px;
-    text-decoration: none;
-}
 
 @keyframes fadeInUp {
     from {

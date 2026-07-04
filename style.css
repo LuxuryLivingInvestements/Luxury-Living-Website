@@ -136,7 +136,7 @@ nav {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     text-align: center;
     padding-bottom: 15px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;

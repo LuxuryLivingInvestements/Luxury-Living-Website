@@ -63,41 +63,73 @@ nav a:hover {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1500&q=80') center/cover;
+    background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     position: relative;
+    padding: 20px;
 }
 
 .hero::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.45);
+    inset: 0;
+    background: rgba(0,0,0,0.55);
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
-    padding: 20px;
+    max-width: 900px;
 }
 
 .hero h1 {
-    font-size: 52px;
-    line-height: 1.1;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    opacity: 0.9;
+    font-size: 20px;
     font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
 }
+✨ What this improves
+Stronger dark overlay (more premium readability)
+Better spacing between text elements
+More elegant typography
+Cleaner centered layout
+More “luxury brand” feel
+🚀 STEP 2 (next after this)
+
+Once you’ve pasted that and confirmed it works, we will move to:
+
+👉 “Why Choose Luxury Living?” section (VERY important for sales)
+
+It will include:
+
+3–5 strong value points
+Icons
+Clean modern layout
+More trust building
+
+Then after that we’ll do:
+
+Testimonials ⭐
+Contact upgrade (click-to-call + WhatsApp + email buttons)
+Mobile menu fix
+Final polish
+Before you continue
+
+Reply with:
+“done” or “updated”
+
+Then I’ll give you the next section (the one that actually helps you get more customers, not just design).
 /* BUTTON */
 .btn {
     display: inline-block;

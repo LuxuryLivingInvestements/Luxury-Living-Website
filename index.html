@@ -9,7 +9,6 @@
 
 <body>
 
-
 <!-- NAV -->
 <nav class="nav">
     <div class="logo">Luxury Living</div>
@@ -17,12 +16,15 @@
         <a href="#home">Home</a>
         <a href="#products">Products</a>
         <a href="#about">About</a>
+        <a href="#why">Why Us</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <!-- HERO -->
-<header id="home" class="hero">
+<header id="home" class="hero"
+    style="background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') center/cover no-repeat;">
+    
     <div class="hero-content">
         <h1>Elegant Blinds & Curtains for Coastal Homes</h1>
         <p>Transform your home with premium blinds, curtains & shutters — custom made for Swakopmund living.</p>
@@ -31,13 +33,12 @@
 </header>
 
 <!-- PRODUCTS -->
-<section id="products" class="section light">
+<section id="products" class="section light fade-in">
     <h2>Our Products</h2>
 
     <div class="grid">
 
-        <a class="card-link"
-           href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote%20for%20Modern%20Blinds"
+        <a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote%20for%20Modern%20Blinds"
            target="_blank">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
@@ -45,8 +46,7 @@
             </div>
         </a>
 
-        <a class="card-link"
-           href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote%20for%20Luxury%20Curtains"
+        <a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote%20for%20Luxury%20Curtains"
            target="_blank">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c">
@@ -54,8 +54,7 @@
             </div>
         </a>
 
-        <a class="card-link"
-           href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote%20for%20Elegant%20Interiors"
+        <a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote%20for%20Elegant%20Interiors"
            target="_blank">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea">
@@ -67,7 +66,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section light">
+<section id="about" class="section light fade-in">
     <h2>About Us</h2>
     <p>
         Luxury Living Swakopmund is a supplier and installer of premium blinds,
@@ -75,8 +74,8 @@
     </p>
 </section>
 
-<!-- WHY CHOOSE US -->
-<section id="why" class="section light">
+<!-- WHY US -->
+<section id="why" class="section light fade-in">
     <h2>Why Choose Luxury Living?</h2>
 
     <div class="why-grid">
@@ -105,7 +104,7 @@
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials" class="section light">
+<section id="testimonials" class="section light fade-in">
     <h2>What Our Clients Say</h2>
 
     <div class="why-grid">
@@ -129,7 +128,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section fade-in">
     <h2>Contact Us</h2>
 
     <div class="contact-box">
@@ -140,7 +139,7 @@
         <a class="contact-btn" href="tel:0816225122">📞 Call Now</a>
 
         <a class="contact-btn whatsapp"
-           href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote%20from%20Luxury%20Living"
+           href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote"
            target="_blank">
            💬 WhatsApp Us
         </a>
@@ -152,23 +151,45 @@
     </div>
 </section>
 
-<!-- QUOTE FORM (FIXED - WORKING WHATSAPP FORM) -->
-<section class="section light">
+<!-- QUOTE FORM -->
+<section class="section light fade-in">
     <h2>Request a Free Quote</h2>
 
     <form id="quoteForm" class="quote-form">
 
         <input type="text" id="name" placeholder="Your Name" required>
-
-        <input type="text" id="service" placeholder="What do you need? (Blinds / Curtains / Shutters)" required>
-
-        <input type="text" id="location" placeholder="Location (e.g Swakopmund)" required>
+        <input type="text" id="service" placeholder="Blinds / Curtains / Shutters" required>
+        <input type="text" id="location" placeholder="Your Location" required>
 
         <button type="submit">Send Request on WhatsApp</button>
 
     </form>
 </section>
 
+<!-- FOOTER -->
+<footer class="fade-in">
+    <div class="footer-content">
+        <h3>Luxury Living Swakopmund</h3>
+        <p>Where ocean and desert meets... Luxury Living awaits.</p>
+
+        <p>📞 081 622 5122</p>
+        <p>📧 luxsales3@iway.na</p>
+        <p>📍 Swakopmund, Namibia</p>
+
+        <p class="copyright">
+            © 2026 Luxury Living Swakopmund. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote"
+   class="whatsapp-float"
+   target="_blank">
+   💬 WhatsApp Us
+</a>
+
+<!-- SCRIPT -->
 <script>
 document.getElementById("quoteForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -186,26 +207,9 @@ document.getElementById("quoteForm").addEventListener("submit", function(e) {
 
     window.open(url, "_blank");
 });
-</script>
-<!-- FOOTER -->
-<footer>
-    <div class="footer-content">
-        <h3>Luxury Living Swakopmund</h3>
-        <p>Where ocean and desert meets... Luxury Living awaits.</p>
 
-        <p>📞 Igmanuel Bence: 081 622 5122</p>
-        <p>📧 luxsales3@iway.na</p>
-        <p>📍 Swakopmund, Namibia</p>
-
-        <p class="copyright">
-            © 2026 Luxury Living Swakopmund. All rights reserved.
-        </p>
-    </div>
-</footer>
-
-<!-- SCRIPT -->
-<script>
-const elements = document.querySelectorAll('.card, .section');
+// fade-in animation
+const elements = document.querySelectorAll('.fade-in');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -215,18 +219,20 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-elements.forEach(el => {
-    el.classList.add('fade-in');
-    observer.observe(el);
-});
+elements.forEach(el => observer.observe(el));
 </script>
-
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote"
-   class="whatsapp-float"
-   target="_blank">
-   💬 WhatsApp Us
-</a>
 
 </body>
 </html>
+
+If you want next step, I can upgrade this into a luxury premium website (real estate style) with:
+
+glass effects
+animated hero text
+better spacing system
+logo + brand identity
+SEO for Google ranking in Namibia
+
+Just say 👍
+
+

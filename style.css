@@ -349,3 +349,38 @@ footer {
         font-size: 14px;
     }
 }
+
+/* CONTACT BUTTONS */
+.contact-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-btn {
+    display: block;
+    margin: 12px auto;
+    padding: 14px 20px;
+    width: 240px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #333;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+}
+
+/* WhatsApp button */
+.contact-btn.whatsapp {
+    background: #25D366;
+}
+
+/* Email button */
+.contact-btn.email {
+    background: #d4af37;
+    color: black;
+}

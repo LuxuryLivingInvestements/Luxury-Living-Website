@@ -67,7 +67,7 @@ body {
     color: white;
     position: relative;
     padding: 20px;
-    padding-top: 90px;
+   
 }
 .hero::before {
     content: "";

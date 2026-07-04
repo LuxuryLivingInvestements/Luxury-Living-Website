@@ -50,16 +50,7 @@ nav {
     color: #c9a24b;
 }
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
-}
 
-nav a:hover {
-    color: #d4af37;
-}
 /* HERO */
 .hero {
     height: 100vh;

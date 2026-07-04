@@ -82,9 +82,7 @@ body {
     max-width: 900px;
 }
 
-.hero {
-    flex-direction: column;
-}
+
 
 .hero h1 {
     font-size: 64px;

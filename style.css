@@ -355,16 +355,16 @@ footer {
 }
 
     /* GRID */
-    .grid,
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
+   .grid,
+.why-grid {
+    grid-template-columns: 1fr;
 }
-    /* BUTTON */
-    .btn {
-        padding: 12px 24px;
-        font-size: 14px;
-    }
+
+/* BUTTON */
+.btn {
+    padding: 12px 24px;
+    font-size: 14px;
+}
 }
 
 /* CONTACT BUTTONS */

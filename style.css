@@ -26,6 +26,7 @@ nav {
     align-items: center;
     padding: 15px 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
 }
 
 .nav .logo {

@@ -266,10 +266,6 @@ footer {
     font-size: 16px;
 }
 
-.grid,
-.why-grid {
-    grid-template-columns: 1fr;
-}
 
 .btn {
     padding: 12px 24px;

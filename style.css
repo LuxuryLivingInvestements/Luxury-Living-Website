@@ -60,7 +60,6 @@ body {
     height: 100vh;
     background: url(...) center/cover no-repeat;
     display: flex;
-    flex-direction: column; /* KEEP HERE */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -332,7 +331,6 @@ footer {
     color: #888;
 }
 
-@media (max-width: 768px) {
 
     /* NAV */
     .nav {

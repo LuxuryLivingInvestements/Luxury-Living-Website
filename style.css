@@ -258,17 +258,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 34px;
-    }
+   .hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+}
 
-    .hero p {
-        font-size: 16px;
-    }
+.hero p {
+    font-size: 16px;
+}
 
-    .section {
-        padding: 60px 15px;
-    }
+.grid,
+.why-grid {
+    grid-template-columns: 1fr;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 14px;
+}
 
     
 

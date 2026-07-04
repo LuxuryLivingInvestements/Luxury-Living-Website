@@ -155,18 +155,37 @@
 <section class="section light">
     <h2>Request a Free Quote</h2>
 
-    <form action="https://wa.me/264816225122" method="get" target="_blank">
+    <form id="quoteForm">
 
-    <input type="text" name="text" placeholder="Your Name" required>
+        <input type="text" id="name" placeholder="Your Name" required>
 
-    <input type="text" name="text" placeholder="What do you need? (Blinds / Curtains / Shutters)" required>
+        <input type="text" id="service" placeholder="What do you need? (Blinds / Curtains / Shutters)" required>
 
-    <input type="text" name="text" placeholder="Location (e.g Swakopmund)" required>
+        <input type="text" id="location" placeholder="Location (e.g Swakopmund)" required>
 
-    <button type="submit">Send Request on WhatsApp</button>
+        <button type="submit">Send Request on WhatsApp</button>
 
-</form>
+    </form>
 </section>
+
+<script>
+document.getElementById("quoteForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let service = document.getElementById("service").value;
+    let location = document.getElementById("location").value;
+
+    let message =
+        "Hello, my name is " + name +
+        ". I need " + service +
+        ". Location: " + location;
+
+    let url = "https://wa.me/264816225122?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+});
+</script>
 
 <!-- FOOTER -->
 <footer>

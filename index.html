@@ -22,9 +22,7 @@
 </nav>
 
 <!-- HERO -->
-<header id="home" class="hero"
-    style="background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') center/cover no-repeat;">
-    
+<header id="home" class="hero">
     <div class="hero-content">
         <h1>Elegant Blinds & Curtains for Coastal Homes</h1>
         <p>Transform your home with premium blinds, curtains & shutters — custom made for Swakopmund living.</p>
@@ -33,29 +31,26 @@
 </header>
 
 <!-- PRODUCTS -->
-<section id="products" class="section light fade-in">
+<section id="products" class="section light">
     <h2>Our Products</h2>
 
     <div class="grid">
 
-        <a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote%20for%20Modern%20Blinds"
-           target="_blank">
+        <a href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20Modern%20Blinds" target="_blank">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
                 <h3>Modern Blinds</h3>
             </div>
         </a>
 
-        <a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote%20for%20Luxury%20Curtains"
-           target="_blank">
+        <a href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20Luxury%20Curtains" target="_blank">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c">
                 <h3>Luxury Curtains</h3>
             </div>
         </a>
 
-        <a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote%20for%20Elegant%20Interiors"
-           target="_blank">
+        <a href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20Elegant%20Interiors" target="_blank">
             <div class="card">
                 <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea">
                 <h3>Elegant Interiors</h3>
@@ -66,7 +61,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section light fade-in">
+<section id="about" class="section light">
     <h2>About Us</h2>
     <p>
         Luxury Living Swakopmund is a supplier and installer of premium blinds,
@@ -74,8 +69,8 @@
     </p>
 </section>
 
-<!-- WHY US -->
-<section id="why" class="section light fade-in">
+<!-- WHY CHOOSE US -->
+<section id="why" class="section light">
     <h2>Why Choose Luxury Living?</h2>
 
     <div class="why-grid">
@@ -104,7 +99,7 @@
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials" class="section light fade-in">
+<section id="testimonials" class="section light">
     <h2>What Our Clients Say</h2>
 
     <div class="why-grid">
@@ -128,7 +123,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section fade-in">
+<section id="contact" class="section">
     <h2>Contact Us</h2>
 
     <div class="contact-box">
@@ -139,7 +134,7 @@
         <a class="contact-btn" href="tel:0816225122">📞 Call Now</a>
 
         <a class="contact-btn whatsapp"
-           href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote"
+           href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote"
            target="_blank">
            💬 WhatsApp Us
         </a>
@@ -152,22 +147,39 @@
 </section>
 
 <!-- QUOTE FORM -->
-<section class="section light fade-in">
+<section class="section light">
     <h2>Request a Free Quote</h2>
 
     <form id="quoteForm" class="quote-form">
 
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="text" id="service" placeholder="Blinds / Curtains / Shutters" required>
-        <input type="text" id="location" placeholder="Your Location" required>
+        <input type="text" id="location" placeholder="Location" required>
 
-        <button type="submit">Send Request on WhatsApp</button>
+        <button type="submit">Send on WhatsApp</button>
 
     </form>
 </section>
 
+<!-- SCRIPT: WHATSAPP FORM -->
+<script>
+document.getElementById("quoteForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const location = document.getElementById("location").value;
+
+    const message = `Hello, my name is ${name}. I need ${service}. Location: ${location}`;
+
+    const url = "https://wa.me/264816225122?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+});
+</script>
+
 <!-- FOOTER -->
-<footer class="fade-in">
+<footer>
     <div class="footer-content">
         <h3>Luxury Living Swakopmund</h3>
         <p>Where ocean and desert meets... Luxury Living awaits.</p>
@@ -182,57 +194,12 @@
     </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/264816225122?text=Hi%20Luxury%20Living%2C%20I%20would%20like%20a%20quote"
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/264816225122?text=Hi%20I%20would%20like%20a%20quote"
    class="whatsapp-float"
    target="_blank">
    💬 WhatsApp Us
 </a>
 
-<!-- SCRIPT -->
-<script>
-document.getElementById("quoteForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let name = document.getElementById("name").value;
-    let service = document.getElementById("service").value;
-    let location = document.getElementById("location").value;
-
-    let message =
-        "Hello, my name is " + name +
-        ". I need " + service +
-        ". Location: " + location;
-
-    let url = "https://wa.me/264816225122?text=" + encodeURIComponent(message);
-
-    window.open(url, "_blank");
-});
-
-// fade-in animation
-const elements = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-});
-
-elements.forEach(el => observer.observe(el));
-</script>
-
 </body>
 </html>
-
-If you want next step, I can upgrade this into a luxury premium website (real estate style) with:
-
-glass effects
-animated hero text
-better spacing system
-logo + brand identity
-SEO for Google ranking in Namibia
-
-Just say 👍
-
-

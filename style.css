@@ -289,3 +289,27 @@ footer {
     font-size: 40px;
     margin-bottom: 10px;
 }
+
+#testimonials {
+    text-align: center;
+}
+
+#testimonials .why-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#testimonials p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+#testimonials h4 {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #888;
+}

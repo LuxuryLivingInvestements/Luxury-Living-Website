@@ -92,6 +92,10 @@ nav {
     opacity: 0.9;
 }
 
+.hero-content {
+    padding: 20px;
+}
+
 /* BUTTON */
 .btn {
     display: inline-block;

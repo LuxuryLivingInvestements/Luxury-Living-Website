@@ -14,7 +14,6 @@ body {
 .nav {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     height: 65px;
     background: white;
@@ -26,24 +25,23 @@ body {
     z-index: 1000;
 }
 
-/* HERO (FORCED SIMPLE + SAFE) */
+/* HERO */
 .hero {
     margin-top: 65px;
     height: 90vh;
 
-    /* SAFE RELATIVE PATH */
-    background: url("./hero.jpg") center center / cover no-repeat;
+    background: url("hero.jpg") center/cover no-repeat;
 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
 
+    color: white;
     position: relative;
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
 .hero::before {
     content: "";
     position: absolute;
@@ -63,7 +61,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* SECTIONS */
+.hero p {
+    font-size: 18px;
+}
+
+/* CONTENT */
 section {
     padding: 70px 20px;
     max-width: 1000px;
@@ -83,4 +85,5 @@ footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 30px;}
+    padding: 30px;
+}

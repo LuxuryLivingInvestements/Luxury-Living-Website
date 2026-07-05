@@ -1,137 +1,231 @@
-body {
+/* ===========================
+   LUXURY LIVING SWAKOPMUND
+   STYLE.CSS
+=========================== */
+
+/* RESET */
+* {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #f5f5f5;
-    color: #222;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* NAV */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
 .nav {
     position: sticky;
     top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    background: rgba(255,255,255,0.75);
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255,255,255,.92);
     backdrop-filter: blur(10px);
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+    color: #222;
 }
 
-/* HERO */
-.hero {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') center/cover no-repeat;
-    position: relative;
+.links {
     display: flex;
-    align-items: center;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.links a:hover {
+    color: #c8a64d;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85") center center/cover no-repeat;
+    display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.hero-overlay {
+.hero::before {
+    content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,.55);
 }
 
 .hero-content {
     position: relative;
+    z-index: 2;
     color: white;
+    width: 90%;
+    max-width: 800px;
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 44px;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 18px;
-    opacity: 0.9;
-}
-
-/* BUTTON */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: gold;
-    color: black;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* SECTIONS */
-.section {
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: auto;
-    text-align: center;
-}
-
-h2 {
-    font-size: 32px;
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-/* GRID */
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn,
+.contact-btn,
+.quote-form button {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn {
+    background: #d4af37;
+    color: #000;
+}
+
+.btn:hover {
+    background: #c29d2b;
+    transform: translateY(-3px);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.light {
+    background: white;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* ===========================
+   PRODUCT GRID
+=========================== */
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+
+.grid a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .card {
     background: white;
-    border-radius: 15px;
+    border-radius: 18px;
     overflow: hidden;
-    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .35s;
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
 }
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
-/* WHY */
+.card h3 {
+    padding: 20px;
+}
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
 .why-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
 }
 
 .why-card {
     background: white;
-    padding: 20px;
     border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
-/* CONTACT */
+.why-card h3 {
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
 .contact-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .contact-btn {
-    width: 220px;
-    padding: 14px;
-    border-radius: 30px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
+    width: 250px;
     background: #25D366;
-    font-weight: bold;
+    color: white;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
 }
 
 .email {
@@ -139,23 +233,90 @@ h2 {
     color: black;
 }
 
-/* FLOAT */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 14px;
-    border-radius: 50px;
-    text-decoration: none;
+/* ===========================
+   QUOTE FORM
+=========================== */
+
+.quote-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-/* ANIMATION */
+.quote-form input {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.quote-form button {
+    background: #25D366;
+    color: white;
+}
+
+.quote-form button:hover {
+    background: #1ea952;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    margin: 8px 0;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: .9rem;
+    color: #bbb;
+}
+
+/* ===========================
+   WHATSAPP FLOAT
+=========================== */
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(0,0,0,.3);
+    transition: .3s;
+    z-index: 999;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: 0.8s;
+    transition: all .8s ease;
 }
 
 .fade-in.show {
@@ -163,19 +324,40 @@ h2 {
     transform: translateY(0);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
-    }
+/* ===========================
+   MOBILE
+=========================== */
 
-    .hero p {
-        font-size: 16px;
-    }
+@media (max-width:768px) {
 
     .nav {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        font-size: 14px;
     }
 }

@@ -48,7 +48,14 @@
         /* HERO IMAGE */
         .hero {
             height: 80vh;
-            background: url("hero.jpg") center/cover no-repeat;
+
+            /* ✅ FIXED IMAGE PATH */
+            background-image: url("./hero.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -177,3 +184,31 @@
 
 </body>
 </html>
+🚨 IF THIS STILL SHOWS NO IMAGE
+
+Then the problem is ONLY ONE of these:
+
+1. File name is wrong
+must be exactly: hero.jpg
+2. File is not in same folder
+
+Your structure must be:
+
+index.html
+hero.jpg
+3. It is actually .png
+
+Then change:
+
+hero.jpg → hero.png
+👍 Next step (if you want)
+
+I can upgrade your site to:
+
+luxury sliding hero images (like high-end curtain companies)
+animated text
+premium showroom feel
+
+Just say 👍
+
+

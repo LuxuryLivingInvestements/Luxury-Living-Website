@@ -1,75 +1,69 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Living Swakopmund</title>
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #222;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* NAV */
-.nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 65px;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-}
+<body>
 
-/* HERO */
-.hero {
-    margin-top: 65px;
-    height: 90vh;
+<!-- NAV -->
+<nav class="nav">
+    <div class="logo">Luxury Living</div>
+    <div>Blinds • Curtains • Curtain Rails • Shutters</div>
+</nav>
 
-    background: url("hero.jpg") center/cover no-repeat;
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+        <!-- GOLD CROWN IMAGE -->
+        <img src="crown.png" class="crown-img" alt="Luxury Crown">
 
-    color: white;
-    position: relative;
-}
+        <h1 class="brand-title">Luxury Living</h1>
 
-/* DARK OVERLAY */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
+        <p class="tagline">
+            Blinds • Curtains • Curtain Rails • Shutters
+        </p>
 
-/* HERO CONTENT */
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-}
+    </div>
+</header>
 
-/* GOLD SHINY CROWN */
-.crown {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 4px;
+<!-- CONTENT -->
+<section>
 
-    background: linear-gradient(45deg, #f6e27a, #d4af37, #fff3a0, #b8860b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    <div class="card">
+        <h2>About Us</h2>
+        <p>
+            We design premium blinds, curtains, and shutters for coastal homes in Swakopmund,
+            creating elegant and comfortable interior spaces.
+        </p>
+    </div>
 
-    text-shadow: 0 0 10px rgba(212,175,55,0.4);
+    <div class="card">
+        <h2>Products</h2>
+        <p>
+            Roller Blinds • Venetian Blinds • Curtain Rails • Custom Shutters
+        </p>
+    </div>
 
-    margin-bottom: 10px;
-    display: inline-block;
+    <div class="card">
+        <h2>Contact</h2>
+        <p>
+            Igmanuel Bence – 081 622 5122<br>
+            luxsales3@iway.na
+        </p>
+    </div>
 
-    position: relative;
-}
+</section>
+
+<!-- FOOTER -->
+<footer>
+    Luxury Living Swakopmund © 2026
+</footer>
+
+</body>
+</html>

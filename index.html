@@ -45,13 +45,12 @@
             font-size: 20px;
         }
 
-        /* HERO IMAGE (FIXED) */
+        /* HERO IMAGE (FIXED LOCAL FILE) */
         .hero {
             height: 80vh;
 
-            /* ✅ WORKING IMAGE (NO FILE NEEDED) */
-            background: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80")
-                        center/cover no-repeat;
+            /* ✅ NOW USING YOUR FILE */
+            background: url("hero.jpg") center/cover no-repeat;
 
             display: flex;
             align-items: center;
@@ -61,7 +60,7 @@
             position: relative;
         }
 
-        /* dark overlay for readability */
+        /* dark overlay */
         .hero::before {
             content: "";
             position: absolute;
@@ -132,7 +131,7 @@
     <div>Blinds • Curtains • Shutters</div>
 </nav>
 
-<!-- HERO IMAGE -->
+<!-- HERO -->
 <header class="hero">
     <div class="hero-content">
         <h1>TRANSFORM YOUR WINDOWS WITH STYLE</h1>

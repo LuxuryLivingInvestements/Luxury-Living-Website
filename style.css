@@ -1,268 +1,115 @@
-/* ===========================
-   LUXURY LIVING SWAKOPMUND
-   STYLE.CSS (CLEAN FIXED VERSION)
-=========================== */
-
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background: #f5f5f5;
     color: #222;
-    line-height: 1.6;
-
-    /* FIX: prevents fixed nav overlap */
-    padding-top: 70px;
 }
 
-/* ===========================
-   NAVIGATION
-=========================== */
-
+/* ================= NAV ================= */
 .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
-
-    z-index: 1000;
-
+    height: 65px;
+    background: rgba(255,255,255,0.95);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 25px;
-
-    background: rgba(255,255,255,.92);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 24px;
     font-weight: bold;
-    color: #222;
+    font-size: 16px;
 }
 
-/* ===========================
-   HERO (LOCAL IMAGE FIXED)
-=========================== */
-
+/* ================= HERO ================= */
 .hero {
-    height: calc(100vh - 70px);
-
-    /* YOUR LOCAL IMAGE */
+    margin-top: 65px;
+    height: 90vh;
     background: url("hero.jpg") center/cover no-repeat;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
     color: white;
     position: relative;
+    padding: 20px;
 }
 
-/* dark overlay */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.55);
+    background: rgba(0,0,0,0.55);
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;
-    width: 90%;
     max-width: 800px;
 }
 
-.hero h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
+.hero-content h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.hero-content p {
+    font-size: 18px;
 }
 
-/* ===========================
-   BUTTONS
-=========================== */
-
-.btn,
-.contact-btn,
-.quote-form button {
+/* BUTTON */
+.btn {
     display: inline-block;
-    padding: 14px 30px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #d4af37;
+    color: black;
     text-decoration: none;
     font-weight: bold;
-    transition: .3s;
+    border-radius: 30px;
 }
 
-.btn {
-    background: #d4af37;
-    color: #000;
-}
-
-.btn:hover {
-    background: #c29d2b;
-    transform: translateY(-3px);
-}
-
-/* ===========================
-   SECTIONS
-=========================== */
-
-.section {
-    max-width: 1200px;
+/* ================= SECTIONS ================= */
+section {
+    padding: 70px 20px;
+    max-width: 1000px;
     margin: auto;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.light {
-    background: white;
-}
-
-.section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: #222;
-}
-
-/* ===========================
-   PRODUCT GRID
-=========================== */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 30px;
 }
 
 .card {
     background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
-    transition: .35s;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,.15);
-}
-
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.card h3 {
-    padding: 20px;
-}
-
-/* ===========================
-   WHY CHOOSE US
-=========================== */
-
-.why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 25px;
-}
-
-.why-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
-}
-
-/* ===========================
-   CONTACT
-=========================== */
-
-.contact-btn {
-    width: 250px;
-    background: #25D366;
-    color: white;
-}
-
-.email {
-    background: #d4af37;
-    color: black;
-}
-
-/* ===========================
-   FOOTER
-=========================== */
-
+/* ================= FOOTER ================= */
 footer {
-    background: #222;
+    background: #111;
     color: white;
-    padding: 50px 20px;
     text-align: center;
+    padding: 30px;
 }
 
-/* ===========================
-   WHATSAPP FLOAT
-=========================== */
-
-.whatsapp-float {
+/* ================= WHATSAPP ================= */
+.whatsapp {
     position: fixed;
-    right: 20px;
     bottom: 20px;
+    right: 20px;
     background: #25D366;
     color: white;
-    padding: 16px 20px;
+    padding: 15px 18px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 6px 20px rgba(0,0,0,.3);
-    transition: .3s;
-    z-index: 999;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.08);
-}
-
-/* ===========================
-   MOBILE
-=========================== */
-
-@media (max-width:768px) {
-
-    .nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
 }

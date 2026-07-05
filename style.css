@@ -56,10 +56,12 @@ body {
     max-width: 900px;
 }
 
-/* CROWN */
-.crown {
-    font-size: 42px;
+/* CROWN IMAGE */
+.crown-img {
+    width: 70px;
+    height: auto;
     margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(212,175,55,0.7));
 }
 
 /* BRAND TITLE */

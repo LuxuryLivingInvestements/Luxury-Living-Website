@@ -22,29 +22,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
 }
 
-/* HERO - FORCE VISIBILITY */
+/* HERO (FORCED SIMPLE + SAFE) */
 .hero {
     margin-top: 65px;
-    width: 100%;
     height: 90vh;
 
-    /* THIS IS THE IMPORTANT PART */
-    background: url("hero.jpg") center center / cover no-repeat;
+    /* SAFE RELATIVE PATH */
+    background: url("./hero.jpg") center center / cover no-repeat;
 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 
     position: relative;
-    color: white;
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .hero::before {
     content: "";
     position: absolute;
@@ -52,6 +51,7 @@ body {
     background: rgba(0,0,0,0.55);
 }
 
+/* TEXT */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -61,10 +61,6 @@ body {
 .hero h1 {
     font-size: 42px;
     margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
 }
 
 /* SECTIONS */
@@ -87,5 +83,4 @@ footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 30px;
-}
+    padding: 30px;}

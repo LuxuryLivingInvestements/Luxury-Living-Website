@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Living Swakopmund</title>
 
-    <link rel="stylesheet" href="style.css">
-
     <style>
-        body {
+        /* RESET */
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
         }
 
         /* NAV */
@@ -29,24 +35,49 @@
             z-index: 1000;
         }
 
-        /* HERO - FORCED VISIBILITY */
+        .logo {
+            font-weight: bold;
+        }
+
+        /* HERO */
         .hero {
-            height: 100vh;
-            background: lightblue; /* TEMP SAFE BACKUP */
+            margin-top: 60px;
+            height: 90vh;
+
+            background: url("hero.jpg") center/cover no-repeat;
+
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin-top: 60px;
+            position: relative;
+            color: white;
+        }
+
+        /* DARK OVERLAY */
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
         }
 
         .hero-content {
-            background: rgba(0,0,0,0.4);
-            color: white;
+            position: relative;
+            z-index: 2;
             padding: 20px;
-            border-radius: 10px;
         }
 
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* SECTIONS */
         section {
             padding: 60px 20px;
             max-width: 1000px;
@@ -57,8 +88,8 @@
             background: white;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
 
         footer {
@@ -66,6 +97,7 @@
             color: white;
             text-align: center;
             padding: 30px;
+            margin-top: 40px;
         }
 
         .whatsapp {
@@ -77,6 +109,8 @@
             padding: 15px 18px;
             border-radius: 50px;
             text-decoration: none;
+            font-weight: bold;
+            z-index: 999;
         }
     </style>
 </head>
@@ -85,15 +119,15 @@
 
 <!-- NAV -->
 <div class="nav">
-    <div><b>Luxury Living</b></div>
+    <div class="logo">Luxury Living</div>
     <div>Blinds • Curtains • Shutters</div>
 </div>
 
 <!-- HERO -->
 <header class="hero">
     <div class="hero-content">
-        <h1>TEST PAGE IS WORKING</h1>
-        <p>If you see this, everything is now fixed</p>
+        <h1>TRANSFORM YOUR WINDOWS WITH STYLE</h1>
+        <p>Blinds & Shutters – Tailored for Coastal Homes</p>
     </div>
 </header>
 
@@ -101,17 +135,24 @@
 <section>
     <div class="card">
         <h2>About Us</h2>
-        <p>We provide blinds, curtains, and shutters for coastal homes.</p>
+        <p>
+            We create elegant coastal interiors with premium blinds, curtains, and shutters.
+        </p>
     </div>
 
     <div class="card">
         <h2>Products</h2>
-        <p>Roller Blinds • Curtains • Shutters</p>
+        <p>
+            Roller Blinds • Venetian Blinds • Curtain Rails • Custom Shutters
+        </p>
     </div>
 
     <div class="card">
         <h2>Contact</h2>
-        <p>Igmanuel Bence – 081 622 5122</p>
+        <p>
+            Igmanuel Bence – 081 622 5122<br>
+            luxsales3@iway.na
+        </p>
     </div>
 </section>
 

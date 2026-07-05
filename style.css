@@ -49,7 +49,7 @@ body {
     background: rgba(0,0,0,0.55);
 }
 
-/* HERO CONTENT STACK */
+/* CENTER STACK */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -58,17 +58,15 @@ body {
     align-items: center;
 }
 
-/* REAL IMAGE CROWN */
+/* ONLY IMAGE CROWN */
 .crown-img {
     width: 90px;
     height: auto;
     margin-bottom: 12px;
-
-    /* makes it look premium */
-    filter: drop-shadow(0 0 10px rgba(255,215,0,0.8));
+    filter: drop-shadow(0 0 12px rgba(255,215,0,0.9));
 }
 
-/* BRAND NAME */
+/* NAME */
 .brand-title {
     font-size: 52px;
     font-weight: bold;

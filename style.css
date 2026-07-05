@@ -61,15 +61,14 @@ body {
 }
 
 /* ===========================
-   HERO (FIXED - ALWAYS WORKS)
+   HERO (FIXED LOCAL IMAGE)
 =========================== */
 
 .hero {
     height: 80vh;
 
-    /* ✅ WORKING ONLINE IMAGE */
-    background: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80")
-                center/cover no-repeat;
+    /* YOUR LOCAL IMAGE */
+    background: url("hero.jpg") center/cover no-repeat;
 
     display: flex;
     align-items: center;

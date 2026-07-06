@@ -21,7 +21,7 @@ body {
     top: 0;
     width: 100%;
     height: 72px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.92);
     backdrop-filter: blur(12px);
     display: flex;
     justify-content: center;
@@ -40,65 +40,27 @@ body {
     color: #b38b59;
 }
 
-/* HERO */
-.hero {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-bg {
-    position: absolute;
-    inset: 0;
-    background: url("coastal-room.jpg") center/cover no-repeat;
-    filter: brightness(0.55);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.crown-img {
-    width: 90px;
-    margin-bottom: 15px;
-}
-
-h1 {
-    font-size: 56px;
-}
-
-.tagline {
-    margin-top: 10px;
-    font-size: 16px;
-    opacity: 0.9;
-}
-
-/* SECTIONS */
+/* PAGE */
 .page {
     padding: 120px 20px;
     background: #f6f6f6;
     text-align: center;
 }
 
-/* CARDS */
+/* CARD */
 .card {
     background: white;
     padding: 25px;
     margin: 20px auto;
-    max-width: 850px;
+    max-width: 900px;
     border-radius: 14px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 12px;
     padding: 12px 20px;
     background: #b38b59;
     color: white;
@@ -110,18 +72,23 @@ h1 {
     background: #9a764a;
 }
 
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 14px 16px;
-    border-radius: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 2000;
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
 }
 
 /* FOOTER */

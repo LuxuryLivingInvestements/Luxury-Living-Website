@@ -231,5 +231,128 @@ footer {
     cursor: pointer;
 }
 
+/* =========================
+   BETTER GLOBAL SPACING
+========================= */
+
+body {
+    line-height: 1.6;
+}
+
+/* =========================
+   HERO TEXT POLISH
+========================= */
+
+.hero h1 {
+    letter-spacing: 2px;
+    text-shadow: 0 5px 25px rgba(0,0,0,0.4);
+}
+
+.hero p {
+    opacity: 0.95;
+}
+
+/* =========================
+   BUTTON POLISH
+========================= */
+
+.btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   SECTION TITLE IMPROVEMENT
+========================= */
+
+.section h2 {
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+}
+
+/* =========================
+   PRODUCT BLOCK POLISH
+========================= */
+
+.product-block {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* =========================
+   IMAGE CARD IMPROVEMENT
+========================= */
+
+.product-card img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+/* =========================
+   CONTACT POLISH
+========================= */
+
+.contact-box p {
+    margin: 6px 0;
+}
+
+/* =========================
+   LIGHTBOX IMPROVEMENT
+========================= */
+
+.lightbox {
+    animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* =========================
+   MOBILE FIX (IMPORTANT)
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .nav {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .product-block {
+        padding: 25px;
+    }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+}
+
 .prev { left: 20px; }
 .next { right: 20px; }

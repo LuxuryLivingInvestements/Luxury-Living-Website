@@ -346,3 +346,56 @@ footer {
 .product-block {
     margin: 60px auto;
 }
+
+/* =========================
+   HERO BRAND HIERARCHY FIX
+========================= */
+
+.hero h1 {
+    font-size: 78px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* PROJECTS refined luxury spacing */
+.hero-subtitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* tagline spacing improvement */
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    opacity: 0.95;
+}
+
+/* =========================
+   SUBTLE BRAND LIFT EFFECT
+========================= */
+
+.hero-content {
+    animation: heroLift 1.2s ease-out;
+}
+
+@keyframes heroLift {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   BUTTON PREMIUM TOUCH
+========================= */
+
+.btn {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

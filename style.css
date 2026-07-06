@@ -13,7 +13,7 @@ body {
 }
 
 /* =========================
-   NAV
+   NAV (GLASS LUXURY STYLE)
 ========================= */
 
 .nav {
@@ -38,6 +38,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: white;
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -51,6 +52,7 @@ body {
     color: white;
     font-size: 18px;
     font-weight: 600;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -112,18 +114,6 @@ body {
 }
 
 /* =========================
-   ABOUT
-========================= */
-
-.about {
-    padding: 60px 20px;
-    text-align: center;
-    background: white;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* =========================
    SECTIONS
 ========================= */
 
@@ -132,13 +122,8 @@ body {
     text-align: center;
 }
 
-.section.dark {
-    background: #111;
-    color: white;
-}
-
 /* =========================
-   PRODUCTS
+   PRODUCT GRID
 ========================= */
 
 .product-grid {
@@ -148,40 +133,56 @@ body {
     margin-top: 40px;
 }
 
+/* PRODUCT CARDS */
 .product-card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+
     transition: 0.3s ease;
 }
 
 .product-card:hover {
-    transform: scale(1.04);
+    transform: translateY(-6px);
 }
 
-.product-card h3 {
-    margin: 15px 0 5px;
+/* WIDE PRODUCT BLOCKS (BLINDS / CURTAINS / SHUTTERS) */
+.product-card.wide {
+    grid-column: span 2;
+    text-align: left;
+    padding: 30px;
 }
 
-.product-card p {
-    font-size: 14px;
-    padding: 0 15px 20px;
+/* HEADINGS INSIDE WIDE BLOCKS */
+.product-card.wide h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #111;
 }
 
-/* IMAGE PLACEHOLDERS */
-.img {
-    height: 180px;
+.product-card.wide h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #222;
 }
 
-.roller { background: linear-gradient(135deg,#999,#ddd); }
-.venetian { background: linear-gradient(135deg,#b08d57,#e6c98d); }
-.vertical { background: linear-gradient(135deg,#555,#999); }
-.shutters { background: linear-gradient(135deg,#333,#777); }
+.product-card.wide p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
 
 /* =========================
-   PROJECTS
+   PROJECTS SECTION
 ========================= */
+
+.section.dark {
+    background: #111;
+    color: white;
+}
 
 .project-grid {
     display: grid;
@@ -223,26 +224,4 @@ footer {
     padding: 20px;
     background: #000;
     color: white;
-}
-
-/* =========================
-   LIGHTBOX
-========================= */
-
-.lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.85);
-
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    z-index: 9999;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
 }

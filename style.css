@@ -85,10 +85,6 @@ h1 {
     text-align: center;
 }
 
-.page h1 {
-    margin-bottom: 25px;
-}
-
 /* CARDS */
 .card {
     background: white;
@@ -99,20 +95,7 @@ h1 {
     box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
-/* PRODUCT LINKS */
-.card a {
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
-    display: block;
-    padding: 5px;
-}
-
-.card a:hover {
-    color: #b38b59;
-}
-
-/* BUTTON */
+/* BUTTONS */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -121,6 +104,24 @@ h1 {
     color: white;
     text-decoration: none;
     border-radius: 8px;
+}
+
+.btn:hover {
+    background: #9a764a;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2000;
 }
 
 /* FOOTER */

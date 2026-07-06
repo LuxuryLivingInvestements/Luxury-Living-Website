@@ -245,3 +245,157 @@ footer {
 
 .prev { left: 20px; }
 .next { right: 20px; }
+
+/* =========================
+   CINEMATIC HERO UPGRADE
+========================= */
+
+.hero {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Stronger luxury overlay */
+.hero::before {
+    background: linear-gradient(
+        rgba(0,0,0,0.70),
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.65)
+    );
+}
+
+/* HERO TEXT REFINEMENT */
+.hero h1 {
+    font-size: 72px;
+    letter-spacing: 3px;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 22px;
+    opacity: 0.95;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* PROJECTS (MORE PREMIUM GLOW) */
+.hero-subtitle {
+    font-size: 28px;
+    letter-spacing: 8px;
+    color: #ffd700;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px rgba(255,215,0,0.4);
+    }
+    to {
+        text-shadow: 0 0 25px rgba(255,215,0,0.95);
+    }
+}
+
+/* HERO BUTTON IMPROVEMENT */
+.btn {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   PREMIUM CATALOGUE GRID FEEL
+========================= */
+
+/* improve overall rhythm */
+.product-grid {
+    gap: 32px;
+}
+
+/* consistent luxury card sizing */
+.product-card {
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+/* image refinement (more clean showroom look) */
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* smoother zoom feel */
+.product-card:hover img {
+    transform: scale(1.08);
+}
+
+/* better text spacing inside cards */
+.product-card h3 {
+    padding: 14px 16px 6px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.product-card p {
+    padding: 0 16px 18px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* make product blocks feel evenly spaced */
+.product-block {
+    margin: 60px auto;
+}
+
+/* =========================
+   HERO BRAND HIERARCHY FIX
+========================= */
+
+.hero h1 {
+    font-size: 78px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+/* PROJECTS refined luxury spacing */
+.hero-subtitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* tagline spacing improvement */
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    opacity: 0.95;
+}
+
+/* =========================
+   SUBTLE BRAND LIFT EFFECT
+========================= */
+
+.hero-content {
+    animation: heroLift 1.2s ease-out;
+}
+
+@keyframes heroLift {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   BUTTON PREMIUM TOUCH
+========================= */
+
+.btn {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

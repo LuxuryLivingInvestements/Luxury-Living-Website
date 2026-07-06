@@ -1,5 +1,5 @@
 /* =========================
-   FULL RESET (FORCE CLEAN PAGE)
+   HARD RESET (NO BROWSER DEFAULTS)
 ========================= */
 * {
     margin: 0;
@@ -11,7 +11,7 @@ html, body {
     width: 100%;
     height: 100%;
     background: #000;
-    overflow-x: hidden;
+    overflow: hidden; /* IMPORTANT: removes ghost gaps */
 }
 
 /* =========================
@@ -29,26 +29,22 @@ html, body {
     align-items: center;
     padding: 0 25px;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* =========================
-   HERO (LOCKED FULL SCREEN)
+   HERO (FORCED FULL SCREEN STACK)
 ========================= */
 .hero {
-    position: relative;
+    position: absolute;  /* KEY FIX */
+    top: 65px;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
+    height: calc(100vh - 65px); /* KEY FIX */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    padding-top: 65px;
+    overflow: hidden;
 }
 
 /* BACKGROUND */

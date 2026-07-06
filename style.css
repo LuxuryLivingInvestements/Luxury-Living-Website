@@ -13,7 +13,7 @@ body {
 }
 
 /* =========================
-   NAV (GLASS LUXURY)
+   NAV (GLASS LUXURY STYLE)
 ========================= */
 
 .nav {
@@ -52,7 +52,7 @@ body {
     color: white;
     font-size: 18px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -60,7 +60,7 @@ body {
 }
 
 /* =========================
-   HERO (LUXURY FOCUS)
+   HERO
 ========================= */
 
 .hero {
@@ -110,7 +110,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
@@ -119,7 +119,7 @@ body {
 }
 
 /* =========================
-   SECTION TITLE STYLE
+   SECTIONS
 ========================= */
 
 .section {
@@ -135,49 +135,77 @@ body {
 }
 
 /* =========================
-   PRODUCT BLOCKS (PREMIUM STYLE)
+   PRODUCT BLOCK (CATEGORY WRAPPER)
 ========================= */
 
 .product-block {
     background: white;
     padding: 45px;
-    margin: 35px auto;
+    margin: 40px auto;
     border-radius: 16px;
 
-    max-width: 1000px;
-
-    text-align: left;
+    max-width: 1100px;
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    text-align: left;
 
     transition: 0.3s ease;
 }
 
 .product-block:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
-/* PRODUCT HEADINGS */
-.product-block h2 {
-    font-size: 28px;
-    margin-bottom: 18px;
-    color: #111;
-    letter-spacing: 2px;
+/* =========================
+   PRODUCT GRID (IMAGES)
+========================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
 }
 
-/* SUB HEADINGS */
-.product-block h3 {
-    font-size: 18px;
-    margin-top: 18px;
-    color: #222;
+/* PRODUCT CARD */
+.product-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
 }
 
-/* TEXT */
-.product-block p {
-    font-size: 15px;
-    line-height: 1.7;
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* PRODUCT IMAGE */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* PRODUCT TITLE */
+.product-card h3 {
+    margin: 12px 0 5px;
+    font-size: 16px;
+}
+
+/* PRODUCT TEXT */
+.product-card p {
+    font-size: 13px;
+    padding: 0 10px 15px;
     color: #555;
+    line-height: 1.4;
 }
 
 /* =========================
@@ -209,5 +237,4 @@ footer {
     padding: 25px;
     background: #000;
     color: white;
-    font-size: 14px;
-}
+    font-size: 14px;}

@@ -1,134 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Living - Swakopmund</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- NAV -->
-<nav class="nav">
-    <div class="logo">Luxury Living</div>
-
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- HERO -->
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <h1>Luxury Living - Swakopmund</h1>
-
-        <p>Elegant Blinds, Curtains & Shutters for Coastal Homes</p>
-
-        <a href="#products" class="btn">Explore Products</a>
-
-    </div>
-
-</section>
-
-<!-- ABOUT -->
-<section class="about section">
-    <p>
-        We design and install premium blinds, curtains, and shutters tailored for coastal living comfort and modern interiors.
-    </p>
-</section>
-
-<!-- PRODUCTS -->
 <section id="products" class="section">
 
     <h2>OUR PRODUCTS</h2>
 
-    <div class="product-grid">
+    <!-- BLINDS -->
+    <div class="product-block">
+        <h2>BLINDS</h2>
 
-        <div class="product-card" onclick="openImage('roller.jpg')">
-            <div class="img roller"></div>
-            <h3>Roller Blinds</h3>
-            <p>Manual & Motorized • Blockout, Translucent, Screen, Zebra</p>
-        </div>
+        <h3>Roller Blinds</h3>
+        <p>Manual & Motorized — Blockout • Translucent • Screen • Zebra</p>
 
-        <div class="product-card" onclick="openImage('venetian.jpg')">
-            <div class="img venetian"></div>
-            <h3>Venetian Blinds</h3>
-            <p>Wood • Bamboo • PVC • Aluminium</p>
-        </div>
+        <h3>Venetian Blinds</h3>
+        <p>Wood • Bamboo • PVC • Aluminium</p>
 
-        <div class="product-card" onclick="openImage('vertical.jpg')">
-            <div class="img vertical"></div>
-            <h3>Vertical Blinds</h3>
-            <p>Blockout • Translucent • Screen</p>
-        </div>
-
-        <div class="product-card" onclick="openImage('shutters.jpg')">
-            <div class="img shutters"></div>
-            <h3>Shutters</h3>
-            <p>Shutterstyle • Shutterguard • Hurricane • Thermowood • Timberwood</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section dark">
-
-    <h2>PROJECTS</h2>
-
-    <div class="project-grid">
-
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-
+        <h3>Vertical Blinds</h3>
+        <p>Blockout • Translucent • Screen</p>
     </div>
 
-</section>
+    <!-- CURTAIN RAILS -->
+    <div class="product-block">
+        <h2>CURTAIN RAILS</h2>
+        <p>
+            Standard Curtain Rails<br>
+            Decorative Curtain Rails<br>
+            Motorized Curtain Rail Systems<br>
+            Custom installations for homes and businesses
+        </p>
+    </div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
+    <!-- CURTAINS -->
+    <div class="product-block">
+        <h2>CURTAINS</h2>
+        <p>
+            Sheer Curtains • Blockout Curtains • Wave Curtains • Eyelet Curtains<br>
+            Elegant coastal interior solutions for modern homes
+        </p>
+    </div>
 
-    <h2>Contact Us</h2>
-
-    <div class="contact-box">
-        <p><strong>Luxury Living - Swakopmund</strong></p>
-        <p>Igmanuel Bence</p>
-        <p>📞 081 622 5122</p>
-        <p>✉️ luxsales3@iway.na</p>
-
-        <a class="btn" href="https://wa.me/264816225122" target="_blank">
-            WhatsApp Us
-        </a>
+    <!-- SHUTTERS -->
+    <div class="product-block">
+        <h2>SHUTTERS</h2>
+        <p>
+            Shutterstyle • Shutterguard • Hurricane • Thermowood • Timberwood
+        </p>
     </div>
 
 </section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Luxury Living - Swakopmund</p>
-</footer>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox" onclick="this.style.display='none'">
-    <img id="lightbox-img" src="">
-</div>
-
-<!-- SCRIPT -->
-<script>
-function openImage(src){
-    document.getElementById("lightbox").style.display = "flex";
-    document.getElementById("lightbox-img").src = src;
-}
-</script>
-
-</body>
-</html>

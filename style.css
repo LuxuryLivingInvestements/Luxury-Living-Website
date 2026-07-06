@@ -399,3 +399,13 @@ footer {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+/* Hide any stray duplicate product headings */
+#products > h2 {
+    display: none;
+}
+
+/* Ensure only product-block headings show */
+.product-block h2 {
+    display: block;
+}

@@ -12,7 +12,6 @@
 
 <!-- NAV -->
 <nav class="nav">
-
     <div class="logo">Luxury Living</div>
 
     <ul class="nav-links">
@@ -20,7 +19,6 @@
         <li><a href="#products">Products</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-
 </nav>
 
 <!-- HERO -->
@@ -47,7 +45,6 @@
 
     <!-- BLINDS -->
     <div class="product-block">
-
         <h2>BLINDS</h2>
 
         <div class="product-grid">
@@ -71,12 +68,10 @@
             </div>
 
         </div>
-
     </div>
 
     <!-- CURTAIN RAILS -->
     <div class="product-block">
-
         <h2>CURTAIN RAILS</h2>
 
         <div class="product-grid">
@@ -84,72 +79,76 @@
             <div class="product-card">
                 <img src="rails1.jpg" alt="Curtain Rails">
                 <h3>Standard Rails</h3>
+                <p>Durable aluminium rail systems</p>
             </div>
 
             <div class="product-card">
-                <img src="rails2.jpg" alt="Decorative Rails">
+                <img src="rails2.jpg" alt="Curtain Rails">
                 <h3>Decorative Rails</h3>
+                <p>Stylish finishes for modern interiors</p>
             </div>
 
             <div class="product-card">
-                <img src="rails3.jpg" alt="Motorized Rails">
-                <h3>Motorized Systems</h3>
+                <img src="rails3.jpg" alt="Curtain Rails">
+                <h3>Motorized Rails</h3>
+                <p>Smart home curtain control systems</p>
             </div>
 
         </div>
-
     </div>
 
     <!-- CURTAINS -->
     <div class="product-block">
-
         <h2>CURTAINS</h2>
 
         <div class="product-grid">
 
             <div class="product-card">
-                <img src="curtain1.jpg" alt="Sheer Curtains">
+                <img src="curtain1.jpg" alt="Curtains">
                 <h3>Sheer Curtains</h3>
+                <p>Light and elegant soft fabric</p>
             </div>
 
             <div class="product-card">
-                <img src="curtain2.jpg" alt="Blockout Curtains">
+                <img src="curtain2.jpg" alt="Curtains">
                 <h3>Blockout Curtains</h3>
+                <p>Full privacy and light control</p>
             </div>
 
             <div class="product-card">
-                <img src="curtain3.jpg" alt="Wave Curtains">
+                <img src="curtain3.jpg" alt="Curtains">
                 <h3>Wave Curtains</h3>
+                <p>Modern flowing luxury design</p>
             </div>
 
         </div>
-
     </div>
 
     <!-- SHUTTERS -->
     <div class="product-block">
-
         <h2>SHUTTERS</h2>
 
         <div class="product-grid">
 
             <div class="product-card">
-                <img src="shutter1.jpg" alt="Shutterstyle">
+                <img src="shutter1.jpg" alt="Shutters">
                 <h3>Shutterstyle</h3>
+                <p>Classic elegant interior shutters</p>
             </div>
 
             <div class="product-card">
-                <img src="shutter2.jpg" alt="Shutterguard">
+                <img src="shutter2.jpg" alt="Shutters">
                 <h3>Shutterguard</h3>
+                <p>Durable protective shutter systems</p>
             </div>
 
             <div class="product-card">
-                <img src="shutter3.jpg" alt="Timberwood">
+                <img src="shutter3.jpg" alt="Shutters">
                 <h3>Timberwood</h3>
+                <p>Premium natural wood shutters</p>
             </div>
 
         </div>
-
     </div>
 
 </section>
@@ -180,99 +179,6 @@
 <footer>
     <p>© 2026 Luxury Living - Swakopmund</p>
 </footer>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close">&times;</span>
-    <img id="lightbox-img" src="">
-    <button class="prev" onclick="changeImage(-1, event)">&#10094;</button>
-    <button class="next" onclick="changeImage(1, event)">&#10095;</button>
-</div>
-
-<!-- SCRIPT -->
-<script>
-let images = [];
-let currentIndex = 0;
-
-/* LIGHTBOX */
-document.addEventListener("click", function(e){
-    if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
-        images = Array.from(document.querySelectorAll(".product-card img"));
-        currentIndex = images.indexOf(e.target);
-        openLightbox(e.target.src);
-    }
-});
-
-function openLightbox(src){
-    document.getElementById("lightbox").style.display = "flex";
-    document.getElementById("lightbox-img").src = src;
-}
-
-function closeLightbox(){
-    document.getElementById("lightbox").style.display = "none";
-}
-
-function changeImage(step, event){
-    event.stopPropagation();
-
-    currentIndex += step;
-
-    if(currentIndex < 0) currentIndex = images.length - 1;
-    if(currentIndex >= images.length) currentIndex = 0;
-
-    document.getElementById("lightbox-img").src = images[currentIndex].src;
-}
-
-
-/* NAV SCROLL EFFECT */
-const nav = document.querySelector(".nav");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        nav.classList.add("scrolled");
-    } else {
-        nav.classList.remove("scrolled");
-    }
-});
-
-
-/* SECTION FADE-IN */
-const sections = document.querySelectorAll(".section");
-
-function showSections() {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    sections.forEach(section => {
-        const top = section.getBoundingClientRect().top;
-
-        if (top < triggerBottom) {
-            section.classList.add("show");
-        }
-    });
-}
-
-window.addEventListener("scroll", showSections);
-showSections();
-
-
-/* PRODUCT BLOCK ANIMATION */
-const productBlocks = document.querySelectorAll(".product-block");
-
-function showBlocks() {
-    const triggerBottom = window.innerHeight * 0.85;
-
-    productBlocks.forEach(block => {
-        const top = block.getBoundingClientRect().top;
-
-        if (top < triggerBottom) {
-            block.classList.add("show");
-        }
-    });
-}
-
-window.addEventListener("scroll", showBlocks);
-showBlocks();
-</script>
 
 </body>
 </html>

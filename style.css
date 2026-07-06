@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +15,12 @@ body {
     font-family: Arial, sans-serif;
     background: #000;
     color: #222;
+    line-height: 1.5;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 .nav {
     position: fixed;
     top: 0;
@@ -34,20 +39,72 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .nav a:hover {
     color: #b38b59;
 }
 
-/* PAGE */
+/* =========================
+   HERO
+========================= */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url("coastal-room.jpg") center/cover no-repeat;
+    filter: brightness(0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.crown-img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 56px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 .page {
     padding: 120px 20px;
     background: #f6f6f6;
     text-align: center;
 }
 
-/* CARD */
+.page h1 {
+    margin-bottom: 25px;
+    font-size: 34px;
+}
+
+/* =========================
+   CARDS
+========================= */
 .card {
     background: white;
     padding: 25px;
@@ -55,9 +112,31 @@ body {
     max-width: 900px;
     border-radius: 14px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-/* BUTTON */
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   LINKS (PRODUCT LIST)
+========================= */
+.card a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    display: block;
+    padding: 6px;
+}
+
+.card a:hover {
+    color: #b38b59;
+}
+
+/* =========================
+   BUTTONS
+========================= */
 .btn {
     display: inline-block;
     margin-top: 12px;
@@ -66,13 +145,16 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 8px;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background: #9a764a;
 }
 
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -83,18 +165,39 @@ body {
 .gallery img {
     width: 100%;
     border-radius: 10px;
-    cursor: pointer;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .gallery img:hover {
     transform: scale(1.03);
 }
 
-/* FOOTER */
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
     background: #111;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
+💎 YOU NOW H

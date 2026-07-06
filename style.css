@@ -8,8 +8,9 @@
 /* BODY */
 body {
     font-family: Arial, sans-serif;
-    background: #f6f6f6;
+    background: #f2f2f2;
     color: #222;
+    line-height: 1.6;
 }
 
 /* NAV */
@@ -29,7 +30,6 @@ body {
     backdrop-filter: blur(14px);
 
     z-index: 1000;
-
     transition: background 0.4s ease;
 }
 
@@ -71,7 +71,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.35));
 }
 
 .hero-content {
@@ -82,6 +82,7 @@ body {
 
 .hero h1 {
     font-size: 70px;
+    letter-spacing: 2px;
 }
 
 .hero p {
@@ -89,7 +90,6 @@ body {
     margin-top: 15px;
 }
 
-/* PROJECTS ANIMATION */
 .hero-subtitle {
     font-size: 26px;
     letter-spacing: 6px;
@@ -115,9 +115,10 @@ body {
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
     padding: 100px 40px;
     text-align: center;
@@ -134,35 +135,46 @@ body {
 
 /* PRODUCT BLOCK */
 .product-block {
-    background: white;
-    padding: 40px;
-    margin: 40px auto;
-    border-radius: 16px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+
+    border-radius: 18px;
+    padding: 50px 45px;
+    margin: 50px auto;
     max-width: 1100px;
-    text-align: left;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.product-block.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* GRID */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
+    gap: 28px;
     margin-top: 25px;
 }
 
 /* CARD */
 .product-card {
-    background: white;
-    border-radius: 14px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
     overflow: hidden;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
 }
 
 .product-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.04);
 }
 
 /* IMAGE */
@@ -233,262 +245,3 @@ footer {
 
 .prev { left: 20px; }
 .next { right: 20px; }
-
-/* =========================
-   BETTER GLOBAL SPACING
-========================= */
-
-body {
-    line-height: 1.6;
-}
-
-/* =========================
-   HERO TEXT POLISH
-========================= */
-
-.hero h1 {
-    letter-spacing: 2px;
-    text-shadow: 0 5px 25px rgba(0,0,0,0.4);
-}
-
-.hero p {
-    opacity: 0.95;
-}
-
-/* =========================
-   BUTTON POLISH
-========================= */
-
-.btn {
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-/* =========================
-   SECTION TITLE IMPROVEMENT
-========================= */
-
-.section h2 {
-    font-size: 34px;
-    letter-spacing: 3px;
-    margin-bottom: 60px;
-}
-
-/* =========================
-   PRODUCT BLOCK POLISH
-========================= */
-
-.product-block {
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-/* =========================
-   IMAGE CARD IMPROVEMENT
-========================= */
-
-.product-card img {
-    transition: transform 0.4s ease;
-}
-
-.product-card:hover img {
-    transform: scale(1.08);
-}
-
-/* =========================
-   CONTACT POLISH
-========================= */
-
-.contact-box p {
-    margin: 6px 0;
-}
-
-/* =========================
-   LIGHTBOX IMPROVEMENT
-========================= */
-
-.lightbox {
-    animation: fadeIn 0.25s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* =========================
-   MOBILE FIX (IMPORTANT)
-========================= */
-
-@media (max-width: 768px) {
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero-subtitle {
-        font-size: 18px;
-        letter-spacing: 4px;
-    }
-
-    .nav {
-        padding: 0 20px;
-    }
-
-    .nav-links {
-        gap: 20px;
-        font-size: 14px;
-    }
-
-    .product-block {
-        padding: 25px;
-    }
-
-    .section {
-        padding: 70px 20px;
-    }
-
-    .product-card img {
-        height: 160px;
-    }
-}
-
-.product-block h2 {
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 5px;
-    font-weight: bold;
-    color: #111;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
-
-product-block {
-    padding: 50px 45px;
-    margin: 50px auto;
-    border-radius: 18px;
-    max-width: 1100px;
-    background: #ffffff;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-/* Better spacing between cards */
-.product-grid {
-    gap: 28px;
-}
-
-/* Slightly more premium card feel */
-.product-card {
-    border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-/* smoother hover */
-.product-card:hover {
-    transform: scale(1.04);
-}
-
-/* section title spacing improvement */
-.section h2 {
-    letter-spacing: 4px;
-    font-size: 36px;
-    margin-bottom: 50px;
-}
-
-/* =========================
-   MODERN LUXURY BACKGROUND DEPTH
-========================= */
-
-body {
-    background: #f2f2f2;
-}
-
-/* =========================
-   GLASS STYLE PRODUCT BLOCKS
-========================= */
-
-.product-block {
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
-
-    border: 1px solid rgba(255,255,255,0.4);
-
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-
-    transition: all 0.4s ease;
-}
-
-.product-block:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 55px rgba(0,0,0,0.12);
-}
-
-/* =========================
-   HERO ENHANCEMENT (MORE DEPTH)
-========================= */
-
-.hero::before {
-    background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.35)
-    );
-}
-
-/* =========================
-   PRODUCT CARDS LIFT FEEL
-========================= */
-
-.product-card {
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-/* stronger hover lift */
-.product-card:hover {
-    transform: translateY(-10px) scale(1.04);
-}
-
-/* =========================
-   SECTION TITLE POLISH
-========================= */
-
-.section h2 {
-    color: #111;
-    text-transform: uppercase;
-}
-
-/* =========================
-   INITIAL STATE (HIDDEN)
-========================= */
-
-.product-block {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease;
-}
-
-/* =========================
-   ACTIVE STATE (VISIBLE)
-========================= */
-
-.product-block.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================
-   CARD MICRO-ANIMATION ENHANCEMENT
-========================= */
-
-.product-card {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-10px) scale(1.04);
-}

@@ -356,3 +356,13 @@ body {
 
 .prev { left: 20px; }
 .next { right: 20px; }
+
+/* CENTER THE PRODUCT GRID CONTAINER */
+.product-grid {
+    justify-content: center;
+}
+
+/* MAKE GRID ITEMS NOT STRETCH FULL WIDTH */
+.product-card {
+    width: 260px;
+}

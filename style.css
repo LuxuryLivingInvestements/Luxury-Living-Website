@@ -16,7 +16,7 @@ body {
 }
 
 /* =========================
-   NAV (PREMIUM GLASS)
+   NAV (STAYS FLOATING)
 ========================= */
 .nav {
     position: fixed;
@@ -30,14 +30,12 @@ body {
     align-items: center;
     gap: 28px;
     z-index: 1000;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .nav a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
-    letter-spacing: 0.5px;
     transition: 0.3s;
 }
 
@@ -46,7 +44,7 @@ body {
 }
 
 /* =========================
-   HERO (MORE LUXURY DEPTH)
+   HERO (PARALLAX FEEL)
 ========================= */
 .hero {
     height: 100vh;
@@ -63,15 +61,21 @@ body {
     position: absolute;
     inset: 0;
     background: url("coastal-room.jpg") center/cover no-repeat;
-    filter: brightness(0.5) contrast(1.05);
-    transform: scale(1.05);
+    filter: brightness(0.55);
+    transform: scale(1.15);
+    animation: slowZoom 20s infinite alternate ease-in-out;
+}
+
+@keyframes slowZoom {
+    from { transform: scale(1.1); }
+    to { transform: scale(1.2); }
 }
 
 .hero-bg::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.75));
 }
 
 .hero-content {
@@ -81,18 +85,17 @@ body {
 }
 
 @keyframes fadeUp {
-    from {opacity: 0; transform: translateY(25px);}
+    from {opacity: 0; transform: translateY(30px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
 .crown-img {
     width: 95px;
     margin-bottom: 15px;
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 58px;
     letter-spacing: 2px;
 }
 
@@ -116,26 +119,37 @@ h1 {
 
 .btn:hover {
     background: #9a764a;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 /* =========================
-   SECTIONS (MORE SPACE)
+   SECTIONS (SCROLL REVEAL STYLE)
 ========================= */
 .page {
     padding: 120px 20px;
     background: #f6f6f6;
     text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 1s forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .page h1 {
     font-size: 36px;
     margin-bottom: 25px;
-    letter-spacing: 1px;
 }
 
 /* =========================
-   CARDS (LUXURY SOFT STYLE)
+   CARDS
 ========================= */
 .card {
     background: white;
@@ -149,11 +163,10 @@ h1 {
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
 }
 
 /* =========================
-   GALLERY (MORE PREMIUM GRID)
+   GALLERY
 ========================= */
 .gallery {
     display: grid;
@@ -167,22 +180,14 @@ h1 {
     width: 100%;
     border-radius: 12px;
     transition: 0.4s;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 /* =========================
-   TESTIMONIALS
-========================= */
-.card p {
-    font-style: italic;
-}
-
-/* =========================
-   WHATSAPP BUTTON
+   WHATSAPP FLOAT
 ========================= */
 .whatsapp {
     position: fixed;
@@ -195,21 +200,29 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-    transition: 0.3s;
-}
-
-.whatsapp:hover {
-    transform: scale(1.08);
+    z-index: 2000;
 }
 
 /* =========================
-   FOOTER
+   STICKY QUOTE BUTTON
 ========================= */
+.quote-btn {
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    background: #b38b59;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2000;
+}
+
+/* FOOTER */
 footer {
     background: #0f0f0f;
     color: white;
     text-align: center;
     padding: 25px;
-    margin-top: 40px;
-    letter-spacing: 0.5px;
 }

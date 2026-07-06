@@ -17,14 +17,13 @@
 }
 
 html, body {
-    width: 100%;
     font-family: Arial, sans-serif;
     background: #000;
     scroll-behavior: smooth;
 }
 
 /* =========================
-   NAV
+   NAV (SIMPLE CLEAN)
 ========================= */
 .nav {
     position: fixed;
@@ -35,11 +34,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 25px;
     z-index: 1000;
 }
 
 .nav a {
-    margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -55,6 +54,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .hero-bg {
@@ -66,7 +66,6 @@ html, body {
 
 .hero-content {
     position: relative;
-    color: white;
     z-index: 2;
 }
 
@@ -79,7 +78,7 @@ h1 {
     font-size: 48px;
 }
 
-p {
+.tagline {
     font-size: 16px;
     margin-top: 10px;
 }
@@ -88,7 +87,7 @@ p {
    SECTIONS
 ========================= */
 section {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: #f4f4f4;
     color: #222;
     text-align: center;
@@ -134,7 +133,7 @@ footer {
     <div class="hero-content">
         <img src="crown.png" class="crown-img">
         <h1>Luxury Living</h1>
-        <p>Blinds • Curtains • Curtain Rails • Shutters</p>
+        <p class="tagline">Blinds • Curtains • Curtain Rails • Shutters</p>
     </div>
 
 </div>

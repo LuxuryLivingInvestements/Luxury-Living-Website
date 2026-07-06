@@ -14,7 +14,10 @@ html, body {
     color: #222;
 }
 
-/* NAV */
+/* ==========================
+   NAV (GLASS EFFECT)
+========================== */
+
 .nav {
     position: fixed;
     top: 0;
@@ -26,8 +29,12 @@ html, body {
     justify-content: center;
     align-items: center;
 
-    background: white;
-    box-shadow: 0 2px 12px rgba(0,0,0,.10);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
     z-index: 1000;
 }
 
@@ -39,23 +46,28 @@ html, body {
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #fff;
     font-size: 23px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 10px 8px;
+
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #c8a03a;
+    color: #ffd700;
 }
 
-/* HERO */
+/* ==========================
+   HERO
+========================== */
+
 .hero {
     height: 100vh;
     width: 100%;
     margin-top: 85px;
+
+    position: relative;
 
     display: flex;
     align-items: flex-start;
@@ -67,10 +79,27 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: slowZoom 12s ease-in-out infinite alternate;
 }
 
-/* HERO CONTENT */
+/* DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.35);
+}
+
+/* KEEP CONTENT ABOVE OVERLAY */
 .hero-content {
+    position: relative;
+    z-index: 2;
+
     text-align: center;
     color: white;
 }
@@ -87,31 +116,27 @@ html, body {
     text-shadow: 0 5px 18px rgba(0,0,0,0.8);
 }
 
-/* PROJECTS (FIXED: BIG + SHARP) */
+/* PROJECTS TEXT */
 .hero-subtitle {
-    font-size: 38px;        /* bigger */
-    font-weight: 900;       /* stronger */
+    font-size: 38px;
+    font-weight: 900;
     letter-spacing: 10px;
 
     color: #ffd700;
-
     margin-bottom: 25px;
-
     text-transform: uppercase;
 
-    /* SHARP (NO BLUR) */
-    text-shadow:
-        0 2px 5px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
 
-/* MAIN TITLE */
+/* TITLE */
 .hero h1 {
     font-size: 44px;
     margin-bottom: 10px;
     text-shadow: 0 4px 14px rgba(0,0,0,0.8);
 }
 
-/* SUB TEXT */
+/* TEXT */
 .hero p {
     font-size: 20px;
     margin-bottom: 20px;
@@ -135,7 +160,10 @@ html, body {
     background: #d4af37;
 }
 
-/* SECTIONS */
+/* ==========================
+   SECTIONS
+========================== */
+
 .section {
     padding: 90px 20px;
     text-align: center;
@@ -174,7 +202,6 @@ html, body {
     display: inline-block;
     border-radius: 12px;
     margin-top: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
@@ -183,4 +210,40 @@ footer {
     padding: 22px;
     background: #111;
     color: white;
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+/* ==========================
+   WHATSAPP BUTTON
+========================== */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 14px 18px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    z-index: 2000;
+}
+
+.whatsapp:hover {
+    background: #1ebd5a;
 }

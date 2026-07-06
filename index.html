@@ -4,15 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luxury Living Swakopmund</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =========================
-     NAV
-========================= -->
+<!-- NAV -->
 <nav class="nav">
     <a href="index.html">Home</a>
     <a href="about-us.html">About</a>
@@ -20,44 +17,29 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 <header class="hero">
-
     <div class="hero-bg"></div>
 
     <div class="hero-content">
-        <img src="crown.png" class="crown-img" alt="Luxury Living Logo">
-
+        <img src="crown.png" class="crown-img">
         <h1>Luxury Living</h1>
-
-        <p class="tagline">
-            Blinds • Curtains • Curtain Rails • Shutters
-        </p>
-
-        <a href="contact.html" class="btn">Request a Quote</a>
+        <p class="tagline">Blinds • Curtains • Curtain Rails • Shutters</p>
+        <a href="#contact" class="btn">Get a Quote</a>
     </div>
-
 </header>
 
-<!-- =========================
-     ABOUT PREVIEW
-========================= -->
+<!-- ABOUT -->
 <section class="page">
     <h1>About Us</h1>
-
     <div class="card">
         Luxury Living Swakopmund creates premium blinds, curtains, and shutters for modern coastal homes.
-        We focus on elegance, comfort, and long-lasting quality.
     </div>
 </section>
 
-<!-- =========================
-     PRODUCTS PREVIEW
-========================= -->
+<!-- PRODUCTS -->
 <section class="page">
-    <h1>Our Products</h1>
+    <h1>Products</h1>
 
     <div class="card">Roller Blinds</div>
     <div class="card">Venetian Blinds</div>
@@ -66,78 +48,74 @@
     <div class="card">Custom Shutters</div>
 </section>
 
-<!-- =========================
-     GALLERY / WORK
-========================= -->
+<!-- GALLERY -->
 <section class="page">
     <h1>Our Work</h1>
 
     <div class="gallery">
-        <img src="coastal-room.jpg" alt="Blinds Installation">
-        <img src="coastal-room.jpg" alt="Curtains Design">
-        <img src="coastal-room.jpg" alt="Shutters Example">
+        <img src="coastal-room.jpg">
+        <img src="coastal-room.jpg">
+        <img src="coastal-room.jpg">
     </div>
 </section>
 
-<!-- =========================
-     BEFORE / AFTER
-========================= -->
+<!-- BEFORE / AFTER SLIDER -->
 <section class="page">
-    <h1>Transform Your Space</h1>
+    <h1>Before & After</h1>
 
     <div class="card">
-        <p>See how premium blinds and curtains completely change the feel of your home.</p>
-        <img src="coastal-room.jpg" style="width:100%; border-radius:12px; margin-top:15px;">
+        <p>Slide to see transformation effect:</p>
+
+        <div class="slider">
+            <img src="coastal-room.jpg">
+            <input type="range">
+        </div>
     </div>
 </section>
 
-<!-- =========================
-     TESTIMONIALS
-========================= -->
-<section class="page">
-    <h1>Testimonials</h1>
-
-    <div class="card">
-        “Excellent service and perfect installation. Highly recommended!”
-    </div>
-
-    <div class="card">
-        “Our home looks completely transformed. Very professional work.”
-    </div>
-</section>
-
-<!-- =========================
-     CONTACT PREVIEW
-========================= -->
-<section class="page">
+<!-- CONTACT + FORM -->
+<section class="page" id="contact">
     <h1>Contact Us</h1>
 
     <div class="card">
-        <strong>Igmanuel Bence</strong><br><br>
-        📞 081 622 5122<br>
-        📧 luxsales3@iway.na
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
         <br><br>
-        <a href="contact.html" class="btn">Go to Contact Page</a>
+
+        <p><strong>Igmanuel Bence</strong></p>
+        <p>081 622 5122</p>
+        <p>luxsales3@iway.na</p>
     </div>
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- MAP -->
+<section class="page">
+    <h1>Location</h1>
+
+    <div class="card">
+        <iframe
+            src="https://www.google.com/maps/embed?pb="
+            width="100%"
+            height="300"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
     Luxury Living Swakopmund © 2026
 </footer>
 
-<!-- =========================
-     FLOATING BUTTONS
-========================= -->
-
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/264816225122" target="_blank">
     WhatsApp
-</a>
-
-<a class="quote-btn" href="contact.html">
-    Request Quote
 </a>
 
 </body>

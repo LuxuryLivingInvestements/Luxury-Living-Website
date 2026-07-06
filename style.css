@@ -26,30 +26,12 @@ body {
     z-index: 1000;
 }
 
-/* 🔥 CROWN LOGO (SHINY GOLD BIG TEXT) */
+/* LOGO (NORMAL AGAIN) */
 .logo {
-    font-size: 42px;
-    font-weight: 900;
-    text-transform: uppercase;
-
-    background: linear-gradient(
-        45deg,
-        #fff7b0,
-        #ffd700,
-        #ffb700,
-        #fff8c4,
-        #d4af37
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-        0 0 10px rgba(255, 215, 0, 0.8),
-        0 0 20px rgba(255, 200, 0, 0.6),
-        0 0 30px rgba(255, 180, 0, 0.4);
-
-    letter-spacing: 3px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: 2px;
 }
 
 /* NAV LINKS */

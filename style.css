@@ -69,6 +69,7 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
+    text-align: center;
     padding: 20px;
 }
 
@@ -77,11 +78,23 @@ body {
     margin-bottom: 15px;
 }
 
+/* MAIN TITLE */
 h1 {
     font-size: 56px;
     letter-spacing: 1px;
 }
 
+/* PROJECTS (CENTER UNDER TITLE) */
+.projects-title {
+    font-size: 16px;
+    letter-spacing: 8px;
+    margin-top: 10px;
+    color: #c9a46a;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* TAGLINE */
 .tagline {
     margin-top: 10px;
     font-size: 16px;
@@ -119,9 +132,7 @@ h1 {
     transform: translateY(-3px);
 }
 
-/* =========================
-   LINKS (PRODUCT LIST)
-========================= */
+/* PRODUCT LINKS */
 .card a {
     text-decoration: none;
     color: #222;
@@ -153,27 +164,6 @@ h1 {
 }
 
 /* =========================
-   GALLERY
-========================= */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.gallery img:hover {
-    transform: scale(1.03);
-}
-
-/* =========================
    WHATSAPP BUTTON
 ========================= */
 .whatsapp {
@@ -200,4 +190,3 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
-💎 YOU NOW H

@@ -14,7 +14,7 @@ html, body {
     color: #222;
 }
 
-/* NAVIGATION */
+/* NAV */
 .nav {
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ html, body {
     color: white;
 }
 
-/* MAIN BRAND TITLE */
+/* BRAND */
 .brand {
     font-size: 80px;
     font-weight: 700;
@@ -87,22 +87,21 @@ html, body {
     text-shadow: 0 5px 18px rgba(0,0,0,0.8);
 }
 
-/* GOLD PROJECTS TEXT */
+/* PROJECTS (FIXED: BIG + SHARP) */
 .hero-subtitle {
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 6px;
+    font-size: 38px;        /* bigger */
+    font-weight: 900;       /* stronger */
+    letter-spacing: 10px;
+
     color: #ffd700;
 
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     text-transform: uppercase;
 
+    /* SHARP (NO BLUR) */
     text-shadow:
-        0 0 5px #ffd700,
-        0 0 10px #ffd700,
-        0 0 20px #ffcc00,
-        0 0 30px rgba(255, 215, 0, 0.8);
+        0 2px 5px rgba(0,0,0,0.6);
 }
 
 /* MAIN TITLE */

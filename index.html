@@ -30,7 +30,6 @@
 
         <h1>Luxury Living - Swakopmund</h1>
 
-        <!-- NEW PROJECTS TITLE -->
         <h2 class="hero-subtitle">PROJECTS</h2>
 
         <p>Elegant Blinds, Curtains & Shutters for Coastal Homes</p>
@@ -222,6 +221,35 @@ function changeImage(step, event){
 
     document.getElementById("lightbox-img").src = images[currentIndex].src;
 }
+
+/* SECTION FADE-IN */
+const sections = document.querySelectorAll(".section");
+
+function showSections() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+
+        if (top < triggerBottom) {
+            section.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", showSections);
+showSections();
+
+/* NAV SCROLL EFFECT */
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+});
 </script>
 
 </body>

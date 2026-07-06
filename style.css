@@ -398,3 +398,66 @@ product-block {
     font-size: 36px;
     margin-bottom: 50px;
 }
+
+/* =========================
+   MODERN LUXURY BACKGROUND DEPTH
+========================= */
+
+body {
+    background: #f2f2f2;
+}
+
+/* =========================
+   GLASS STYLE PRODUCT BLOCKS
+========================= */
+
+.product-block {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+
+    transition: all 0.4s ease;
+}
+
+.product-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 55px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   HERO ENHANCEMENT (MORE DEPTH)
+========================= */
+
+.hero::before {
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.35)
+    );
+}
+
+/* =========================
+   PRODUCT CARDS LIFT FEEL
+========================= */
+
+.product-card {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* stronger hover lift */
+.product-card:hover {
+    transform: translateY(-10px) scale(1.04);
+}
+
+/* =========================
+   SECTION TITLE POLISH
+========================= */
+
+.section h2 {
+    color: #111;
+    text-transform: uppercase;
+}

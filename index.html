@@ -32,7 +32,7 @@
 
         <p>Elegant Blinds, Curtains & Shutters for Coastal Homes</p>
 
-        <a href="#products" class="btn">Explore Products</a>
+        <a href="#products" class="btn">View Products</a>
 
     </div>
 
@@ -48,14 +48,27 @@
 
         <h2>BLINDS</h2>
 
-        <h3>Roller Blinds</h3>
-        <p>Manual & Motorized — Blockout • Translucent • Screen • Zebra</p>
+        <div class="product-grid">
 
-        <h3>Venetian Blinds</h3>
-        <p>Wood • Bamboo • PVC • Aluminium</p>
+            <div class="product-card">
+                <img src="roller.jpg" alt="Roller Blinds">
+                <h3>Roller Blinds</h3>
+                <p>Manual & Motorized • Blockout • Translucent • Zebra</p>
+            </div>
 
-        <h3>Vertical Blinds</h3>
-        <p>Blockout • Translucent • Screen</p>
+            <div class="product-card">
+                <img src="venetian.jpg" alt="Venetian Blinds">
+                <h3>Venetian Blinds</h3>
+                <p>Wood • Bamboo • PVC • Aluminium</p>
+            </div>
+
+            <div class="product-card">
+                <img src="vertical.jpg" alt="Vertical Blinds">
+                <h3>Vertical Blinds</h3>
+                <p>Blockout • Translucent • Screen</p>
+            </div>
+
+        </div>
 
     </div>
 
@@ -64,12 +77,24 @@
 
         <h2>CURTAIN RAILS</h2>
 
-        <p>
-            Standard Curtain Rails<br>
-            Decorative Curtain Rails<br>
-            Motorized Curtain Rail Systems<br>
-            Custom installations for residential and commercial spaces
-        </p>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="rails1.jpg" alt="Curtain Rails">
+                <h3>Standard Rails</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="rails2.jpg" alt="Decorative Rails">
+                <h3>Decorative Rails</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="rails3.jpg" alt="Motorized Rails">
+                <h3>Motorized Systems</h3>
+            </div>
+
+        </div>
 
     </div>
 
@@ -78,10 +103,24 @@
 
         <h2>CURTAINS</h2>
 
-        <p>
-            Sheer Curtains • Blockout Curtains • Wave Curtains • Eyelet Curtains<br>
-            Designed for coastal elegance and modern interiors
-        </p>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="curtain1.jpg" alt="Sheer Curtains">
+                <h3>Sheer Curtains</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="curtain2.jpg" alt="Blockout Curtains">
+                <h3>Blockout Curtains</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="curtain3.jpg" alt="Wave Curtains">
+                <h3>Wave Curtains</h3>
+            </div>
+
+        </div>
 
     </div>
 
@@ -90,9 +129,24 @@
 
         <h2>SHUTTERS</h2>
 
-        <p>
-            Shutterstyle • Shutterguard • Hurricane • Thermowood • Timberwood
-        </p>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="shutter1.jpg" alt="Shutterstyle">
+                <h3>Shutterstyle</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="shutter2.jpg" alt="Shutterguard">
+                <h3>Shutterguard</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="shutter3.jpg" alt="Timberwood">
+                <h3>Timberwood</h3>
+            </div>
+
+        </div>
 
     </div>
 
@@ -124,6 +178,52 @@
 <footer>
     <p>© 2026 Luxury Living - Swakopmund</p>
 </footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+    <span class="close">&times;</span>
+
+    <img id="lightbox-img" src="">
+
+    <button class="prev" onclick="changeImage(-1, event)">&#10094;</button>
+    <button class="next" onclick="changeImage(1, event)">&#10095;</button>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+let images = [];
+let currentIndex = 0;
+
+document.addEventListener("click", function(e){
+    if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
+        images = Array.from(document.querySelectorAll(".product-card img"));
+        currentIndex = images.indexOf(e.target);
+        openLightbox(e.target.src);
+    }
+});
+
+function openLightbox(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+
+function changeImage(step, event){
+    event.stopPropagation();
+
+    currentIndex += step;
+
+    if(currentIndex < 0) currentIndex = images.length - 1;
+    if(currentIndex >= images.length) currentIndex = 0;
+
+    document.getElementById("lightbox-img").src = images[currentIndex].src;
+}
+</script>
 
 </body>
 </html>

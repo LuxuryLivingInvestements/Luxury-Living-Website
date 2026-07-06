@@ -13,7 +13,7 @@ body {
 }
 
 /* =========================
-   NAV (GLASS LUXURY STYLE)
+   NAV (GLASS STYLE)
 ========================= */
 
 .nav {
@@ -52,7 +52,7 @@ body {
     color: white;
     font-size: 18px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -123,18 +123,16 @@ body {
 }
 
 /* =========================
-   PRODUCTS (NEW STRUCTURE FIX)
+   PRODUCT BLOCKS (SAFE SYSTEM)
 ========================= */
 
 .product-block {
     background: white;
     padding: 40px;
-    margin-top: 30px;
+    margin: 30px auto;
     border-radius: 12px;
 
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 
     text-align: left;
 
@@ -144,10 +142,10 @@ body {
 }
 
 .product-block:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
-/* PRODUCT HEADINGS */
+/* MAIN HEADINGS */
 .product-block h2 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -167,15 +165,6 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #444;
-}
-
-/* =========================
-   PROJECTS (IF USED)
-========================= */
-
-.section.dark {
-    background: #111;
-    color: white;
 }
 
 /* =========================

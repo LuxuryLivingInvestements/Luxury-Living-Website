@@ -245,3 +245,57 @@ footer {
 
 .prev { left: 20px; }
 .next { right: 20px; }
+
+/* =========================
+   CINEMATIC HERO UPGRADE
+========================= */
+
+.hero {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Stronger luxury overlay */
+.hero::before {
+    background: linear-gradient(
+        rgba(0,0,0,0.70),
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.65)
+    );
+}
+
+/* HERO TEXT REFINEMENT */
+.hero h1 {
+    font-size: 72px;
+    letter-spacing: 3px;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 22px;
+    opacity: 0.95;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* PROJECTS (MORE PREMIUM GLOW) */
+.hero-subtitle {
+    font-size: 28px;
+    letter-spacing: 8px;
+    color: #ffd700;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px rgba(255,215,0,0.4);
+    }
+    to {
+        text-shadow: 0 0 25px rgba(255,215,0,0.95);
+    }
+}
+
+/* HERO BUTTON IMPROVEMENT */
+.btn {
+    font-size: 16px;
+    letter-spacing: 1px;
+}

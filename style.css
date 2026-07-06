@@ -231,6 +231,9 @@ footer {
     cursor: pointer;
 }
 
+.prev { left: 20px; }
+.next { right: 20px; }
+
 /* =========================
    BETTER GLOBAL SPACING
 ========================= */
@@ -353,9 +356,6 @@ body {
         height: 160px;
     }
 }
-
-.prev { left: 20px; }
-.next { right: 20px; }
 
 /* CENTER THE PRODUCT GRID CONTAINER */
 .product-grid {

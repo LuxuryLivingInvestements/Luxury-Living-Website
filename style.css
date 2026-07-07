@@ -402,3 +402,12 @@ footer {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.hero {
+    background-image: url("hero.jpg") !important;
+}
+
+.hero::before {
+    background: rgba(0,0,0,0.20) !important;
+}
+

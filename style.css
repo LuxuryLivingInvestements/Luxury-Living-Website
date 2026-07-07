@@ -686,20 +686,5 @@ footer {
     color: gold;
 }
 
-/* ===========================
-   LL LOGO FONT + POSITION FIX
-=========================== */
-
-.back-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    top: -5px;
-}
-
-.front-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    top: 15px;
+px;
 }

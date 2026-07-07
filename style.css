@@ -634,3 +634,14 @@ footer {
 
 
 }
+
+.hero {
+    background-image: url("./hero.jpg") !important;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.hero::before {
+    display: none !important;
+}

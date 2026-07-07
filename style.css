@@ -680,7 +680,7 @@ footer {
     font-family: 'Cochocib Script Latin Pro', cursive;
     color: gold;
     position: relative;
-    top: -15px;
+    top: -10px;
     left: 8px;
 }
 
@@ -688,5 +688,5 @@ footer {
     font-family: 'Cochocib Script Latin Pro', cursive;
     color: gold;
     position: relative;
-    top: 5px;
+    top: 10px;
 }

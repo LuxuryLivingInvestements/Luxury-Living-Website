@@ -706,7 +706,7 @@ footer {
 }
 
 /* ===========================
-   LL LOGO PERFECT VERTICAL CENTER
+   LL LOGO FINAL CENTER POSITION
 =========================== */
 
 .logo {
@@ -719,20 +719,12 @@ footer {
     transform: translateY(0) !important;
 }
 
+
 .back-l {
     font-family: 'Cochocib Script Latin Pro', cursive;
     color: gold;
     position: relative;
     left: 8px;
     top: 0 !important;
-    font-size: 60px;
-}
-
-.front-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    top: 0 !important;
-    margin-left: 5px;
     font-size: 60px;
 }

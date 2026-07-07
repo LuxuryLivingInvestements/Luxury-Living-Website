@@ -83,15 +83,12 @@ body {
 .logo {
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     width: 120px;
 
     font-size: 42px;
-
     font-weight: bold;
 
     color: #ffd700;
@@ -100,6 +97,8 @@ body {
 
     text-shadow:
     0 0 12px rgba(255,215,0,0.7);
+
+    transform: translateY(-10px);
 
 }
 

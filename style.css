@@ -51,7 +51,6 @@ body {
     transition: background 0.4s ease;
 }
 
-
 .nav.scrolled {
     background: rgba(0,0,0,0.55);
 }
@@ -735,4 +734,38 @@ footer {
 
 .nav {
     transform: translateY(10px);
+}
+
+/* ===========================
+   LL LOGO CENTER IN NEW SPACE
+=========================== */
+
+.logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none !important;
+}
+
+
+.back-l {
+    font-family: 'Cochocib Script Latin Pro', cursive;
+    color: gold;
+    position: relative;
+    left: 8px;
+    top: 0;
+    font-size: 60px;
+}
+
+
+.front-l {
+    font-family: 'Cochocib Script Latin Pro', cursive;
+    color: gold;
+    position: relative;
+    top: 8px;
+    margin-left: 5px;
+    font-size: 60px;
 }

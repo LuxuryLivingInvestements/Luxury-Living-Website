@@ -672,19 +672,21 @@ footer {
     color: white;
 }
 
-.front-l {
-    position: absolute;
+/* ===========================
+   LL LOGO FONT + POSITION FIX
+=========================== */
 
-    left: 25px;
-    top: 12px;
-    color: #ffd700;
+.back-l {
+    font-family: 'Cochocib Script Latin Pro', cursive;
+    color: gold;
+    position: relative;
+    top: -15px;
+    left: 8px;
 }
-/* LL LOGO FONT UPDATE */
-.back-l,
+
 .front-l {
     font-family: 'Cochocib Script Latin Pro', cursive;
     color: gold;
-}
-
-px;
+    position: relative;
+    top: 5px;
 }

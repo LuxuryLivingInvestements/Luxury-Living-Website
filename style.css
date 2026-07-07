@@ -687,7 +687,7 @@ footer {
 }
 
 /* ===========================
-   LL LOGO FINAL POSITION + FONT
+   LL LOGO FONT + POSITION FIX
 =========================== */
 
 .back-l,
@@ -695,5 +695,5 @@ footer {
     font-family: 'Cochocib Script Latin Pro', cursive;
     color: gold;
     position: relative;
-    top: -10px;
+    top: -5px;
 }

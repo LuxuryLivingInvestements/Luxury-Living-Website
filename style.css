@@ -682,6 +682,7 @@ footer {
     position: relative;
     top: -10px;
     left: 8px;
+    font-size: 70px;
 }
 
 .front-l {
@@ -689,4 +690,5 @@ footer {
     color: gold;
     position: relative;
     top: 10px;
+    font-size: 70px;
 }

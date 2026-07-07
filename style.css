@@ -60,7 +60,7 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url("hero.jpg") center/cover no-repeat;
+    background: url("hero-test.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

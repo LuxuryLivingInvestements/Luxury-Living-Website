@@ -589,3 +589,21 @@ footer {
         filter: drop-shadow(0 0 25px rgba(255,215,0,1));
     }
 }
+
+.hero-crown {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
+    animation: crownGlow 3s infinite alternate;
+}
+
+@keyframes crownGlow {
+    from {
+        filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));
+    }
+
+    to {
+        filter: drop-shadow(0 0 25px rgba(255,215,0,1));
+    }
+}

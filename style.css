@@ -82,14 +82,18 @@ body {
    HERO SECTION
 ========================= */
 
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
 
     height: 100vh;
     width: 100%;
 
-    background-image: url("./hero.jpg");
+    background-image: url("hero.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
@@ -101,12 +105,12 @@ body {
 }
 
 
-
 .hero::before {
 
     content: "";
 
     position: absolute;
+
     inset: 0;
 
     background: rgba(0,0,0,0.30);
@@ -114,76 +118,17 @@ body {
 }
 
 
-
 .hero-content {
 
     position: relative;
+
     z-index: 2;
 
     text-align: center;
+
     color: white;
 
-    animation: heroLift 1.2s ease-out;
-
 }
-
-
-
-.hero h1 {
-
-    font-size: 78px;
-
-    font-weight: 700;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 10px;
-
-    text-shadow:
-    0 10px 30px rgba(0,0,0,0.6);
-
-}
-
-
-
-.hero-subtitle {
-
-    font-size: 28px;
-
-    letter-spacing: 8px;
-
-    color: #ffd700;
-
-    font-weight: bold;
-
-    text-transform: uppercase;
-
-    margin-top: 15px;
-
-    margin-bottom: 10px;
-
-    animation: glow 3s infinite alternate;
-
-}
-
-
-
-.hero p {
-
-    font-size: 20px;
-
-    letter-spacing: 1px;
-
-    margin-top: 10px;
-
-    opacity: 0.95;
-
-    text-shadow:
-    0 6px 20px rgba(0,0,0,0.5);
-
-}
-
-
 
 /* HERO ANIMATION */
 

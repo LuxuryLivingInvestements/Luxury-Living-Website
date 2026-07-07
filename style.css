@@ -706,12 +706,8 @@ footer {
 }
 
 /* ===========================
-   LL LOGO TRUE CENTER FIX
+   LL LOGO PERFECT VERTICAL CENTER
 =========================== */
-
-.nav {
-    align-items: center;
-}
 
 .logo {
     position: relative;
@@ -720,7 +716,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(0);
+    transform: translateY(0) !important;
 }
 
 .back-l {
@@ -728,7 +724,7 @@ footer {
     color: gold;
     position: relative;
     left: 8px;
-    top: 0;
+    top: 0 !important;
     font-size: 60px;
 }
 
@@ -736,8 +732,7 @@ footer {
     font-family: 'Cochocib Script Latin Pro', cursive;
     color: gold;
     position: relative;
-    left: 0;
-    top: 8px;
+    top: 0 !important;
     margin-left: 5px;
     font-size: 60px;
 }

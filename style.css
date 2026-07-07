@@ -453,14 +453,31 @@ footer {
     z-index: 5 !important;
 }
 
-/* FINAL HERO TEST */
+/* FINAL HERO SETUP */
 
 .hero {
     height: 100vh;
-    background-image: url("hero.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    width: 100%;
+    background-image: url("./hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.30);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero::before {

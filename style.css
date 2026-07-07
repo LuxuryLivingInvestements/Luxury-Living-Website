@@ -27,8 +27,6 @@ body {
     line-height: 1.6;
 }
 
-
-
 /* =========================
    NAVIGATION
 ========================= */
@@ -676,7 +674,16 @@ footer {
 
 .front-l {
     position: absolute;
+
     left: 25px;
     top: 12px;
     color: #ffd700;
 }
+/* LL LOGO FONT UPDATE */
+.back-l,
+.front-l {
+    font-family: 'Cochocib Script Latin Pro', cursive;
+    color: gold;
+}
+
+

@@ -1244,3 +1244,22 @@ footer {
 .logo .back-l {
     left: -3px !important;
 }
+
+/* Hero image enhancement */
+
+.hero::before {
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.25)
+    );
+
+}
+
+
+.hero {
+
+    background-position: center center;
+
+}

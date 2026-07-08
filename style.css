@@ -1241,3 +1241,6 @@ footer {
     margin-bottom: 20px;
 
 }
+.logo .back-l {
+    left: -3px !important;
+}

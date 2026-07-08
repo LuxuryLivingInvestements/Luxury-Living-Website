@@ -1263,3 +1263,102 @@ footer {
     background-position: center center;
 
 }
+
+/* HERO POLISH */
+
+.hero::before {
+
+    background:
+    rgba(0,0,0,0.38);
+
+}
+
+
+.hero-content {
+
+    transform: translateY(15px);
+
+}
+
+
+.hero-crown {
+
+    width: 150px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.hero h1 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.hero-subtitle {
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero p {
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* PREMIUM BUTTON */
+
+.hero .btn {
+
+    background: linear-gradient(
+        180deg,
+        #fff6a0,
+        #ffd700,
+        #c28b00
+    );
+
+    padding: 16px 45px;
+
+    border-radius: 30px;
+
+    letter-spacing: 3px;
+
+    box-shadow:
+    0 0 12px rgba(255,215,0,0.6);
+
+}
+
+
+.hero .btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,1);
+
+}
+
+
+/* NAV MENU */
+
+.nav-links {
+
+    gap: 60px;
+
+}
+
+
+.nav-links a {
+
+    letter-spacing: 2px;
+
+}

@@ -871,3 +871,9 @@ footer {
         0 0 12px rgba(255,215,0,0.9),
         0 0 25px rgba(255,180,0,0.8);
 }
+.logo .back-l,
+.logo .front-l {
+
+    font-size: 45px !important;
+
+}

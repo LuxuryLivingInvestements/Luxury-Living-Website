@@ -1168,3 +1168,37 @@ footer {
     0 0 18px rgba(255,180,0,0.7);
 
 }
+
+/* ===========================
+   LUXURY HERO IMAGE ENHANCEMENT
+=========================== */
+
+.hero::before {
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(0,0,0,0.15) 0%,
+        rgba(0,0,0,0.45) 100%
+    );
+
+}
+
+
+/* EXTRA HERO DEPTH */
+
+.hero {
+
+    background-position: center center;
+
+}
+
+
+/* MAKE HERO CONTENT POP */
+
+.hero-content {
+
+    text-shadow:
+    0 5px 20px rgba(0,0,0,0.8);
+
+}

@@ -1058,3 +1058,38 @@ footer {
         0 0 25px rgba(255,180,0,0.7);
 
 }
+
+/* ===========================
+   LUXURY MAIN TITLE STYLE
+=========================== */
+
+.hero h1 {
+
+    font-family: "Cochocib", cursive;
+
+    font-size: 58px;
+
+    font-weight: normal;
+
+    letter-spacing: 2px;
+
+    color: transparent;
+
+    background: linear-gradient(
+        180deg,
+        #fff8c6 0%,
+        #ffd700 35%,
+        #d4a017 70%,
+        #fff3a0 100%
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+
+    text-shadow:
+        0 0 6px rgba(255,215,0,0.8),
+        0 0 18px rgba(255,215,0,0.7);
+
+}

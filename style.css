@@ -759,3 +759,11 @@ footer {
     margin-left: 5px;
     font-size: 60px;
 }
+
+/* ===========================
+   MOVE TOP NAV UP
+=========================== */
+
+.nav {
+    transform: translateY(-15px);
+}

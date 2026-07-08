@@ -836,3 +836,10 @@ footer {
     margin-left: 12px !important;
 
 }
+/* ===========================
+   MOVE LL CIRCLE DOWN 15PX
+=========================== */
+
+.logo {
+    transform: translateY(15px) !important;
+}

@@ -1571,7 +1571,35 @@ footer {
 
 }
 
+/* PREMIUM PRODUCT HEADINGS */
 
+
+#products > h2 {
+
+    font-size: 42px;
+
+    letter-spacing: 8px;
+
+    font-weight: 500;
+
+    color: #222;
+
+    margin-bottom: 60px;
+
+}
+
+
+.product-block h2 {
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    letter-spacing: 6px;
+
+    color: #b8860b;
+
+}
 
 /* PRODUCT AREA BACKGROUND */
 

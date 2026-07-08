@@ -2652,3 +2652,23 @@ footer {
     translateY(-8px);
 
 }
+
+    /* ===========================
+   PRODUCT SUBTITLES
+=========================== */
+
+.product-card h3{
+    font-size:22px;
+    text-align:center;
+    line-height:1.3;
+}
+
+.product-subtitle{
+    display:block;
+    margin-top:6px;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:1px;
+    color:#888;
+    text-transform:none;
+}

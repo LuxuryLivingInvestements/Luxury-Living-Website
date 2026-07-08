@@ -808,3 +808,31 @@ footer {
         0 0 20px rgba(255,215,0,0.8),
         inset 0 0 15px rgba(255,215,0,0.4);
 }
+/* ===========================
+   CENTER LL INSIDE CIRCLE
+=========================== */
+
+.logo {
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+}
+
+
+.back-l {
+
+    left: 0 !important;
+    top: 0 !important;
+
+}
+
+
+.front-l {
+
+    left: 0 !important;
+    top: 0 !important;
+    margin-left: 12px !important;
+
+}

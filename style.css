@@ -32,14 +32,14 @@ body {
 ========================= */
 
 .nav {
-    position: absolute;
-    top: 15mm;
+    position: absolute !important;
+    top: 15px !important;
     left: 50px;
     right: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 10;
+    align-items: flex-start;
+    z-index: 999;
     background: transparent;
 }
 

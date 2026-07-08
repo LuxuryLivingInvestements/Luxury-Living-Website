@@ -1059,3 +1059,63 @@ footer {
 
 }
 
+/* ===========================
+   HERO SPACING BALANCE
+=========================== */
+
+.hero-content {
+
+    transform: translateY(10px);
+
+}
+
+
+/* CROWN */
+
+.hero-crown {
+
+    width: 150px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* MAIN TITLE */
+
+.hero h1 {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* PROJECTS */
+
+.hero-subtitle {
+
+    margin-top: 5px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* DESCRIPTION */
+
+.hero p {
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* BUTTON */
+
+.hero .btn {
+
+    margin-top: 20px;
+
+}

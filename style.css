@@ -780,3 +780,31 @@ footer {
 .front-l {
     margin-left: 15px;
 }
+
+/* ===========================
+   GOLD CIRCLE AROUND LL LOGO
+=========================== */
+
+.logo {
+
+    border: 3px solid #ffd700;
+
+    border-radius: 50%;
+
+    width: 120px;
+
+    height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(0,0,0,0.15);
+
+    box-shadow:
+        0 0 8px rgba(255,215,0,0.8),
+        0 0 20px rgba(255,215,0,0.8),
+        inset 0 0 15px rgba(255,215,0,0.4);
+}

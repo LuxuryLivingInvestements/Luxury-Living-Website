@@ -102,11 +102,21 @@ body {
 
     color: #ffd700;
 
-    text-shadow:
-    0 0 8px rgba(255,215,0,0.6),
-    0 0 18px rgba(255,215,0,0.9),
-    0 0 30px rgba(255,215,0,0.8);
+    background: linear-gradient(
+        180deg,
+        #fff2a6 0%,
+        #ffd700 35%,
+        #d4a000 65%,
+        #fff2a6 100%
+    );
 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 5px rgba(255,215,0,0.8),
+        0 0 15px rgba(255,215,0,0.9),
+        0 0 25px rgba(255,215,0,0.7);
 }
 
 /* =========================

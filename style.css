@@ -2672,3 +2672,81 @@ footer {
     color:#888;
     text-transform:none;
 }
+
+    /* ===========================
+   LUXURY PRODUCT CARD STYLE
+=========================== */
+
+.product-card {
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 20px;
+
+    padding: 35px 25px;
+
+    min-height: 170px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    border: 1px solid rgba(212,160,23,0.25);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+    transition: all 0.4s ease;
+
+}
+
+
+
+.product-card h3 {
+
+    font-family: "Cochocib", cursive;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    color: #b8860b;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.product-card p {
+
+    font-size: 15px;
+
+    letter-spacing: 1.5px;
+
+    color: #555;
+
+}
+
+
+
+/* GOLD HOVER EFFECT */
+
+.product-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #ffd700;
+
+    box-shadow:
+        0 15px 35px rgba(255,215,0,0.25);
+
+}

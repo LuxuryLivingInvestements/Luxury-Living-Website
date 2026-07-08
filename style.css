@@ -2510,3 +2510,145 @@ footer {
     margin-bottom: 20px;
 
 }
+/* ===========================
+   LUXURY PRODUCTS SECTION
+=========================== */
+
+
+#products {
+
+    padding-top: 120px;
+
+    padding-bottom: 120px;
+
+}
+
+
+
+/* MAIN PRODUCTS TITLE */
+
+.section > h2 {
+
+    font-size: 42px;
+
+    letter-spacing: 6px;
+
+    font-weight: 600;
+
+    color: #222;
+
+    margin-bottom: 70px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+
+/* PRODUCT CATEGORY BOXES */
+
+.product-block {
+
+    background:
+    rgba(255,255,255,0.85);
+
+    border-radius: 22px;
+
+    padding: 60px 50px;
+
+    margin: 70px auto;
+
+    max-width: 1150px;
+
+    box-shadow:
+
+    0 15px 45px rgba(0,0,0,0.10);
+
+}
+
+
+
+/* CATEGORY TITLES */
+
+.product-block h2 {
+
+    font-size: 34px;
+
+    letter-spacing: 5px;
+
+    font-weight: 600;
+
+    color: #b8860b;
+
+    margin-bottom: 45px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+
+/* GOLD LINE UNDER CATEGORY */
+
+.product-block h2::after {
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:3px;
+
+    background:#d4a017;
+
+    margin:18px auto 0;
+
+}
+
+
+
+
+/* PRODUCT GRID */
+
+.product-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit, minmax(240px,1fr));
+
+    gap:35px;
+
+}
+
+
+
+
+/* PRODUCT CARD IMPROVEMENT */
+
+.product-card {
+
+    min-height:200px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+}
+
+
+
+
+.product-card:hover {
+
+    transform:
+
+    translateY(-8px);
+
+}

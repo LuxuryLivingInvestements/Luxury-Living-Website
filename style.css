@@ -1059,37 +1059,3 @@ footer {
 
 }
 
-/* ===========================
-   LUXURY MAIN TITLE FIX
-=========================== */
-
-.hero h1 {
-
-    font-family: Arial, sans-serif;
-
-    font-size: 64px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
-
-    color: transparent;
-
-    background: linear-gradient(
-        180deg,
-        #fff8c6 0%,
-        #ffd700 35%,
-        #d4a017 65%,
-        #fff3a0 100%
-    );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-        0 0 8px rgba(255,215,0,0.9),
-        0 0 20px rgba(255,180,0,0.8);
-
-}

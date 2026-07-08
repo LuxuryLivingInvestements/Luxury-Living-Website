@@ -767,3 +767,11 @@ footer {
 .nav {
     transform: translateY(-50px);
 }
+
+/* ===========================
+   SPACE BETWEEN LL
+=========================== */
+
+.front-l {
+    margin-left: 15px;
+}

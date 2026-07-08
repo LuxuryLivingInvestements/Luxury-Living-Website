@@ -1119,3 +1119,52 @@ footer {
     margin-top: 20px;
 
 }
+
+/* ===========================
+   LUXURY NAVIGATION TEXT
+=========================== */
+
+.nav-links {
+
+    gap: 55px;
+
+}
+
+
+.nav-links a {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* GOLD HOVER */
+
+.nav-links a:hover {
+
+    color: transparent;
+
+    background: linear-gradient(
+        180deg,
+        #fff8c6 0%,
+        #ffd700 40%,
+        #d4a017 75%,
+        #fff3a0 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+    0 0 8px rgba(255,215,0,0.8),
+    0 0 18px rgba(255,180,0,0.7);
+
+}

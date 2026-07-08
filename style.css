@@ -877,3 +877,50 @@ footer {
     font-size: 45px !important;
 
 }
+
+/* ===========================
+   FINAL LL FIX
+=========================== */
+
+.logo .back-l,
+.logo .front-l {
+
+    font-family: "Cochocib", cursive !important;
+
+    font-size: 58px !important;
+
+    background: linear-gradient(
+        180deg,
+        #fff8b0 0%,
+        #ffd700 35%,
+        #d4a017 65%,
+        #fff3a0 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 5px rgba(255,215,0,0.9),
+        0 0 15px rgba(255,215,0,0.9),
+        0 0 25px rgba(255,180,0,0.8);
+}
+
+
+.logo .back-l {
+
+    position: relative !important;
+    left: 5px !important;
+    top: 0 !important;
+
+}
+
+
+.logo .front-l {
+
+    position: relative !important;
+    left: 0 !important;
+    top: 5px !important;
+    margin-left: 12px !important;
+
+}

@@ -1032,3 +1032,29 @@ footer {
         0 0 35px rgba(255,215,0,0.8);
 
 }
+
+/* ===========================
+   PROJECTS MATCH CROWN GOLD
+=========================== */
+
+.hero-subtitle {
+
+    color: transparent !important;
+
+    background: linear-gradient(
+        180deg,
+        #fff8c6 0%,
+        #ffd700 35%,
+        #d4a017 70%,
+        #fff3a0 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 5px rgba(255,215,0,0.9),
+        0 0 15px rgba(255,215,0,0.8),
+        0 0 25px rgba(255,180,0,0.7);
+
+}

@@ -1169,8 +1169,34 @@ footer {
 
 }
 
-/* ===========================
-   FINAL HERO TEXT POLISH
-=========================== */
+.hero h1 {
 
+    font-family: Arial, sans-serif !important;
+
+    font-size: 58px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #fff8e7;
+
+    text-shadow:
+        0 0 10px rgba(0,0,0,0.8);
+
+}
+
+
+.hero-subtitle {
+
+    font-size: 32px;
+
+    letter-spacing: 10px;
+
+    color: #ffd700;
+
+    text-shadow:
+        0 0 10px rgba(255,215,0,0.8);
+
+}
 

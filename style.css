@@ -843,3 +843,31 @@ footer {
 .logo {
     transform: translateY(15px) !important;
 }
+/* ===========================
+   REAL METALLIC GOLD LL
+=========================== */
+
+.logo .back-l,
+.logo .front-l {
+
+    color: transparent !important;
+
+    background: linear-gradient(
+        180deg,
+        #fff8b0 0%,
+        #ffd700 25%,
+        #f5b800 50%,
+        #b8860b 75%,
+        #fff1a3 100%
+    ) !important;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 4px rgba(255,255,220,0.9),
+        0 0 12px rgba(255,215,0,0.9),
+        0 0 25px rgba(255,180,0,0.8);
+}

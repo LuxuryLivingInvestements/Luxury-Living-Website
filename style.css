@@ -33,7 +33,7 @@ body {
 
 .nav {
     position: absolute;
-    top: 40px;
+    top: 15mm;
     left: 50px;
     right: 50px;
     display: flex;

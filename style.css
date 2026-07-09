@@ -176,9 +176,13 @@ body {
 
 }
 
+
+
+
 /* =========================
    HERO CROWN
 ========================= */
+
 
 .hero-crown {
 
@@ -189,6 +193,9 @@ body {
     margin-bottom: 10px;
 
 }
+
+
+
 
 @keyframes heroLift {
 
@@ -215,6 +222,72 @@ to {
 
 
 
+
+/* =========================
+   GOLD LUXURY TAGLINE
+========================= */
+
+
+.hero-tagline {
+
+
+    margin-bottom: 12px;
+
+
+    font-family: "Cochocib Script Latin Pro", "Brush Script MT", cursive;
+
+
+    font-size: 38px;
+
+
+    font-weight: normal;
+
+
+    letter-spacing: 2px;
+
+
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    #fff3b0 0%,
+
+    #d4af37 35%,
+
+    #b8860b 60%,
+
+    #ffe8a3 100%
+
+    );
+
+
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+
+
+    text-shadow:
+
+    0 3px 10px rgba(0,0,0,0.6);
+
+
+
+}
+
+
+
+
+
+/* =========================
+   MAIN HERO TITLE
+========================= */
+
+
 .hero h1 {
 
 
@@ -232,6 +305,8 @@ to {
     0 10px 30px rgba(0,0,0,0.6);
 
 }
+
+
 
 
 

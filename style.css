@@ -176,7 +176,19 @@ body {
 
 }
 
+/* =========================
+   HERO CROWN
+========================= */
 
+.hero-crown {
+
+    width: 90px;
+
+    height: auto;
+
+    margin-bottom: 10px;
+
+}
 
 @keyframes heroLift {
 

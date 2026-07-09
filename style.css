@@ -1183,3 +1183,53 @@ footer {
     2px 2px 8px black !important;
 
 }
+
+/* ==================================
+   ROLLER BLIND SUB PAGE FINAL FIX
+   ================================== */
+
+
+.sub-hero {
+
+    opacity: 1 !important;
+    transform: none !important;
+
+    height: 450px !important;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("hero.jpg") !important;
+
+    background-size: cover !important;
+
+    background-position: center !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+}
+
+
+
+.sub-hero .hero-content {
+
+    opacity: 1 !important;
+    transform: none !important;
+
+}
+
+
+
+.sub-hero + .section {
+
+    opacity: 1 !important;
+
+    transform: none !important;
+
+}

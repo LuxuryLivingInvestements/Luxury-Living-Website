@@ -1,10 +1,3 @@
-@font-face {
-    font-family: "Cochocib";
-    src: url("fonts/Cochocib.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* =========================
    RESET
 ========================= */
@@ -21,123 +14,130 @@
 ========================= */
 
 body {
-    font-family: Arial, sans-serif;
+
+    font-family: Arial, Helvetica, sans-serif;
+
     background: #f2f2f2;
+
     color: #222;
+
     line-height: 1.6;
+
 }
+
+
 
 /* =========================
    NAVIGATION
 ========================= */
 
 .nav {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    right: 50px;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 80px;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
-    z-index: 10;
-    background: transparent;
+
+
+    padding: 0 50px;
+
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(14px);
+
+
+    z-index: 1000;
+
+
+    transition: 0.4s ease;
+
 }
 
+
+
 .nav.scrolled {
-    background: rgba(0,0,0,0.55);
+
+    background: rgba(0,0,0,0.65);
+
 }
+
 
 
 .logo {
-    font-size: 20px;
+
+    font-size: 22px;
+
     font-weight: bold;
-    color: white;
+
     letter-spacing: 2px;
+
+    color: white;
+
 }
+
 
 
 .nav-links {
+
     list-style: none;
+
     display: flex;
+
     gap: 45px;
+
 }
+
 
 
 .nav-links a {
 
-    text-decoration: none;
     color: white;
 
+    text-decoration: none;
+
     font-size: 18px;
+
     font-weight: 600;
+
 }
+
+
 
 /* =========================
-   GOLD LL LOGO
+   HERO
 ========================= */
 
-.logo {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 120px;
-
-    font-size: 42px;
-    font-weight: bold;
-
-    color: #ffd700;
-
-    letter-spacing: 0;
-
-    text-shadow:
-    0 0 12px rgba(255,215,0,0.7);  
-
-}
-
-
-.logo .back-l,
-.logo .front-l {
-
-    font-family: "Cochocib", cursive;
-
-    background: linear-gradient(
-        180deg,
-        #fff8c6 0%,
-        #ffd700 35%,
-        #e6a800 70%,
-        #fff3a0 100%
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-        0 0 5px rgba(255,215,0,0.9),
-        0 0 15px rgba(255,215,0,0.9),
-        0 0 25px rgba(255,215,0,0.8);
-}
-
-/* =========================
-   HERO SECTION
-========================= */
 
 .hero {
+
     height: 100vh;
-    width: 100%;
-    background-image: url("hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+    background: url("hero.jpg") center/cover no-repeat;
+
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
+
     position: relative;
-    overflow: hidden;
+
 }
+
+
 
 
 .hero::before {
@@ -148,90 +148,193 @@ body {
 
     inset: 0;
 
-    background: rgba(0,0,0,0.30);
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,0.70),
+
+    rgba(0,0,0,0.45),
+
+    rgba(0,0,0,0.65)
+
+    );
 
 }
+
+
 
 
 .hero-content {
 
     position: relative;
 
-    z-index: 2;
-
     text-align: center;
 
     color: white;
 
+
+    animation: heroLift 1.2s ease-out;
+
 }
 
-/* HERO ANIMATION */
+
 
 @keyframes heroLift {
 
-    from {
 
-        transform: translateY(20px);
-        opacity: 0;
+from {
 
-    }
+    opacity: 0;
 
-
-    to {
-
-        transform: translateY(0);
-        opacity: 1;
-
-    }
+    transform: translateY(30px);
 
 }
+
+
+to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+}
+
+
+
+.hero h1 {
+
+
+    font-size: 78px;
+
+
+    letter-spacing: 4px;
+
+
+    font-weight: 700;
+
+
+    text-shadow:
+
+    0 10px 30px rgba(0,0,0,0.6);
+
+}
+
+
+
+.hero p {
+
+
+    margin-top: 15px;
+
+
+    font-size: 22px;
+
+
+    letter-spacing: 1px;
+
+
+    text-shadow:
+
+    0 6px 20px rgba(0,0,0,0.5);
+
+}
+
+
+
+
+.hero-subtitle {
+
+
+    margin-top: 15px;
+
+
+    font-size: 28px;
+
+
+    letter-spacing: 8px;
+
+
+    color: #ffd700;
+
+
+    font-weight: bold;
+
+
+    animation: glow 3s infinite alternate;
+
+}
+
 
 
 
 @keyframes glow {
 
-    from {
 
-        text-shadow:
-        0 0 8px rgba(255,215,0,0.4);
+from {
 
-    }
+text-shadow:
 
-
-    to {
-
-        text-shadow:
-        0 0 25px rgba(255,215,0,0.95);
-
-    }
+0 0 8px rgba(255,215,0,0.4);
 
 }
+
+
+to {
+
+text-shadow:
+
+0 0 25px rgba(255,215,0,0.95);
+
+}
+
+
+}
+
+
+
 
 /* =========================
    BUTTON
 ========================= */
 
+
 .btn {
+
 
     display: inline-block;
 
+
     margin-top: 25px;
+
 
     padding: 14px 34px;
 
+
     background: gold;
+
 
     color: black;
 
-    font-weight: bold;
 
     text-decoration: none;
 
-    border-radius: 8px;
+
+    font-weight: bold;
+
 
     letter-spacing: 2px;
 
+
     text-transform: uppercase;
+
+
+    border-radius: 8px;
+
 
     transition: 0.3s ease;
 
@@ -241,9 +344,14 @@ body {
 
 .btn:hover {
 
+
     transform: translateY(-3px);
 
+
 }
+
+
+
 
 
 
@@ -251,17 +359,23 @@ body {
    SECTIONS
 ========================= */
 
+
 .section {
+
 
     padding: 100px 40px;
 
+
     text-align: center;
+
 
     opacity: 0;
 
+
     transform: translateY(40px);
 
-    transition: all 0.8s ease;
+
+    transition: 0.8s ease;
 
 }
 
@@ -269,41 +383,53 @@ body {
 
 .section.show {
 
+
     opacity: 1;
+
 
     transform: translateY(0);
 
 }
 
-
-
 /* =========================
    PRODUCT BLOCKS
 ========================= */
 
+
 .product-block {
 
-    background:
-    rgba(255,255,255,0.75);
+
+    background: rgba(255,255,255,0.85);
+
 
     backdrop-filter: blur(10px);
 
+
     border-radius: 18px;
+
 
     padding: 50px 45px;
 
+
     margin: 60px auto;
+
 
     max-width: 1100px;
 
+
     box-shadow:
+
     0 15px 40px rgba(0,0,0,0.08);
+
+
 
     opacity: 0;
 
+
     transform: translateY(40px);
 
-    transition: all 0.8s ease;
+
+    transition: 0.8s ease;
 
 }
 
@@ -311,890 +437,121 @@ body {
 
 .product-block.show {
 
+
     opacity: 1;
+
 
     transform: translateY(0);
 
 }
 
+
+
+
+.product-block h2 {
+
+
+    margin-bottom: 25px;
+
+
+    letter-spacing: 3px;
+
+
+}
+
+
+
+
+
 /* =========================
    PRODUCT GRID
 ========================= */
 
+
 .product-grid {
+
 
     display: grid;
 
+
     grid-template-columns:
+
     repeat(auto-fit, minmax(220px, 1fr));
+
 
     gap: 32px;
 
-    margin-top: 25px;
 
 }
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Luxury Living - Swakopmund</title>
 
-   <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
+/* =========================
+   PRODUCT CARD
+========================= */
 
-<!-- HERO WITH NAV -->
-<section id="home" class="hero" style="background-image:url('hero.jpg');">
 
-    <nav class="nav">
+.product-card {
 
-        <div class="logo">
-            <span class="back-l">L</span><span class="front-l">L</span>
-        </div>
 
+    background: white;
 
-        <ul class="nav-links">
 
-            <li><a href="#home">Home</a></li>
+    border-radius: 18px;
 
-            <li><a href="#products">Products</a></li>
 
-            <li><a href="#contact">Contact</a></li>
+    overflow: hidden;
 
-        </ul>
 
-    </nav>
+    text-align: left;
 
 
+    box-shadow:
 
-    <div class="hero-content">
+    0 6px 18px rgba(0,0,0,0.08);
 
 
-        <img src="crown.png" class="hero-crown" alt="Luxury Crown">
 
+    transition: 0.4s ease;
 
-        <h1>
-            Luxury Living - Swakopmund
-        </h1>
-
-
-        <h2 class="hero-subtitle">
-            PROJECTS
-        </h2>
-
-
-        <p>
-            Elegant Blinds, Curtain Rails & Shutters for Coastal Homes
-        </p>
-
-
-        <a href="#products" class="btn">
-            View Products
-        </a>
-
-
-    </div>
-
-
-</section>
-
-
-<!DOCTYPE html>
-<html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Luxury Living - Swakopmund</title>
-
-   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- HERO WITH NAV -->
-<section id="home" class="hero" style="background-image:url('hero.jpg');">
-
-    <nav class="nav">
-
-        <div class="logo">
-            <span class="back-l">L</span><span class="front-l">L</span>
-        </div>
-
-
-        <ul class="nav-links">
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#products">Products</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-
-
-    <div class="hero-content">
-
-
-        <img src="crown.png" class="hero-crown" alt="Luxury Crown">
-
-
-        <h1>
-            Luxury Living - Swakopmund
-        </h1>
-
-
-        <h2 class="hero-subtitle">
-            PROJECTS
-        </h2>
-
-
-        <p>
-            Elegant Blinds, Curtain Rails & Shutters for Coastal Homes
-        </p>
-
-
-        <a href="#products" class="btn">
-            View Products
-        </a>
-
-
-    </div>
-
-
-</section>
-
-
-<!-- PRODUCTS -->
-<section id="products" class="section">
-
-    <h2>
-        OUR COLLECTION
-    </h2>
-
-
-    <!-- BLINDS -->
-    <div class="product-block">
-
-        <h2>
-            BLINDS
-        </h2>
-
-
-        <div class="product-grid">
-
-
-           <div class="product-card">
-
-    <h3>Roller Blinds</h3>
-
-    <p>
-    Manual & Motorized • Blockout • Translucent • Zebra
-    </p>
-
-</div>
-
-
-            <div class="product-card">
-
-                
-
-                <h3>
-                    Venetian Blinds
-                </h3>
-
-                <p>
-                    Wood • Bamboo • PVC • Aluminium
-                </p>
-
-            </div>
-
-
-
-            <div class="product-card">
-
-                
-
-                <h3>
-                    Vertical Blinds
-                </h3>
-
-                <p>
-                    Blockout • Translucent • Screen
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-
-    <!-- CURTAIN TRACKS & RAILS -->
-<div class="product-block">
-
-    <h2>
-        CURTAIN TRACKS & RAILS
-    </h2>
-
-    <div class="product-grid">
-
-        <div class="product-card">
-
-            <img src="images/curtain-tracks.jpg" alt="Curtain Tracks">
-
-            <h3>
-                Curtain Tracks
-            </h3>
-
-            <p>
-                Standard & Elite SQ Tracks
-            </p>
-
-        </div>
-
-
-        <div class="product-card">
-
-            <img src="images/motorized-tracks.jpg" alt="Motorized Curtain Tracks">
-
-            <h3>
-                Motorized Curtain Tracks
-            </h3>
-
-            <p>
-                Remote Controlled • Smart Home Compatible
-            </p>
-
-        </div>
-
-
-        <div class="product-card">
-
-            <img src="images/stainless-rods.jpg" alt="Stainless Steel Curtain Rods">
-
-            <h3>
-                Stainless Steel Curtain Rods
-            </h3>
-
-            <p>
-                Premium Brackets & Finials
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-   
-
-             <!-- SHUTTERS -->
-    <div class="product-block">
-
-        <h2>
-            SHUTTERS
-        </h2>
-
-
-        <div class="product-grid">
-
-
-            <div class="product-card">
-
-                
-
-                <h3>
-                    Shutterstyle
-                </h3>
-
-            </div>
-
-
-
-            <div class="product-card">
-
-                
-
-                <h3>
-                    Shutterguard
-                </h3>
-
-            </div>
-
-
-
-            <div class="product-card">
-
-                
-
-                <h3>
-                    Timberwood
-                </h3>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-</section>
-
-
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-
-    <h2>
-        CONTACT US
-    </h2>
-
-
-    <div class="contact-box">
-
-        <p>
-            <strong>
-                Luxury Living - Swakopmund
-            </strong>
-        </p>
-
-        <p>
-            Igmanuel Bence
-        </p>
-
-        <p>
-            📞 081 622 5122
-        </p>
-
-        <p>
-            ✉️ luxsales3@iway.na
-        </p>
-
-
-        <br>
-
-
-        <a class="btn" href="https://wa.me/264816225122" target="_blank">
-            WhatsApp Us
-        </a>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- FOOTER -->
-<footer>
-
-    <p>
-        © 2026 Luxury Living - Swakopmund
-    </p>
-
-</footer>
-
-
-
-
-<!-- LIGHTBOX -->
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-
-    <span class="close">
-        &times;
-    </span>
-
-
-    <img id="lightbox-img" src="">
-
-
-    <button class="prev" onclick="changeImage(-1, event)">
-        &#10094;
-    </button>
-
-
-    <button class="next" onclick="changeImage(1, event)">
-        &#10095;
-    </button>
-
-
-</div>
-
-
-
-
-<!-- SCRIPT -->
-
-<script>
-
-let images = [];
-let currentIndex = 0;
-
-
-/* LIGHTBOX */
-
-document.addEventListener("click", function(e){
-
-    if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
-
-        images = Array.from(
-            document.querySelectorAll(".product-card img")
-        );
-
-        currentIndex = images.indexOf(e.target);
-
-        openLightbox(e.target.src);
-
-    }
-
-});
-
-
-function openLightbox(src){
-
-    document.getElementById("lightbox").style.display = "flex";
-
-    document.getElementById("lightbox-img").src = src;
 
 }
 
 
 
-function closeLightbox(){
 
-    document.getElementById("lightbox").style.display = "none";
+.product-card:hover {
+
+
+    transform:
+
+    translateY(-10px)
+
+    scale(1.03);
+
 
 }
 
 
 
-function changeImage(step, event){
-
-    event.stopPropagation();
-
-
-    currentIndex += step;
-
-
-    if(currentIndex < 0){
-
-        currentIndex = images.length - 1;
-
-    }
-
-
-    if(currentIndex >= images.length){
-
-        currentIndex = 0;
-
-    }
-
-
-    document.getElementById("lightbox-img").src =
-    images[currentIndex].src;
-
-}
-
-
-
-/* NAV SCROLL EFFECT */
-
-const nav = document.querySelector(".nav");
-
-
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 50){
-
-        nav.classList.add("scrolled");
-
-    } else {
-
-        nav.classList.remove("scrolled");
-
-    }
-
-});
-
-
-
-/* SECTION FADE-IN */
-
-const sections = document.querySelectorAll(".section");
-
-
-function showSections(){
-
-    const triggerBottom = window.innerHeight * 0.85;
-
-
-    sections.forEach(section => {
-
-        const top = section.getBoundingClientRect().top;
-
-
-        if(top < triggerBottom){
-
-            section.classList.add("show");
-
-        }
-
-    });
-
-}
-
-
-window.addEventListener("scroll", showSections);
-
-showSections();
-
-
-
-
-/* PRODUCT BLOCK ANIMATION */
-
-const productBlocks = document.querySelectorAll(".product-block");
-
-
-function showBlocks(){
-
-    const triggerBottom = window.innerHeight * 0.85;
-
-
-    productBlocks.forEach(block => {
-
-        const top = block.getBoundingClientRect().top;
-
-
-        if(top < triggerBottom){
-
-            block.classList.add("show");
-
-        }
-
-    });
-
-}
-
-
-window.addEventListener("scroll", showBlocks);
-
-showBlocks();
-
-
-
-/* ALWAYS START PAGE AT TOP */
-
-window.history.scrollRestoration = "manual";
-
-window.onload = function() {
-
-    window.scrollTo(0,0);
-
-};
-
-
-</script>
-
-
-</body>
-
-</html>
-
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-
-    <h2>
-        CONTACT US
-    </h2>
-
-
-    <div class="contact-box">
-
-        <p>
-            <strong>
-                Luxury Living - Swakopmund
-            </strong>
-        </p>
-
-        <p>
-            Igmanuel Bence
-        </p>
-
-        <p>
-            📞 081 622 5122
-        </p>
-
-        <p>
-            ✉️ luxsales3@iway.na
-        </p>
-
-
-        <br>
-
-
-        <a class="btn" href="https://wa.me/264816225122" target="_blank">
-            WhatsApp Us
-        </a>
-
-
-    </div>
-
-
-</section>
-
-
-
-<!-- FOOTER -->
-<footer>
-
-    <p>
-        © 2026 Luxury Living - Swakopmund
-    </p>
-
-</footer>
-
-
-
-
-<!-- LIGHTBOX -->
-
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-
-    <span class="close">
-        &times;
-    </span>
-
-
-    <img id="lightbox-img" src="">
-
-
-    <button class="prev" onclick="changeImage(-1, event)">
-        &#10094;
-    </button>
-
-
-    <button class="next" onclick="changeImage(1, event)">
-        &#10095;
-    </button>
-
-
-</div>
-
-
-
-
-<!-- SCRIPT -->
-
-<script>
-
-let images = [];
-let currentIndex = 0;
-
-
-/* LIGHTBOX */
-
-document.addEventListener("click", function(e){
-
-    if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
-
-        images = Array.from(
-            document.querySelectorAll(".product-card img")
-        );
-
-        currentIndex = images.indexOf(e.target);
-
-        openLightbox(e.target.src);
-
-    }
-
-});
-
-
-function openLightbox(src){
-
-    document.getElementById("lightbox").style.display = "flex";
-
-    document.getElementById("lightbox-img").src = src;
-
-}
-
-
-
-function closeLightbox(){
-
-    document.getElementById("lightbox").style.display = "none";
-
-}
-
-
-
-function changeImage(step, event){
-
-    event.stopPropagation();
-
-
-    currentIndex += step;
-
-
-    if(currentIndex < 0){
-
-        currentIndex = images.length - 1;
-
-    }
-
-
-    if(currentIndex >= images.length){
-
-        currentIndex = 0;
-
-    }
-
-
-    document.getElementById("lightbox-img").src =
-    images[currentIndex].src;
-
-}
-
-
-
-/* NAV SCROLL EFFECT */
-
-const nav = document.querySelector(".nav");
-
-
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 50){
-
-        nav.classList.add("scrolled");
-
-    } else {
-
-        nav.classList.remove("scrolled");
-
-    }
-
-});
-
-
-
-/* SECTION FADE-IN */
-
-const sections = document.querySelectorAll(".section");
-
-
-function showSections(){
-
-    const triggerBottom = window.innerHeight * 0.85;
-
-
-    sections.forEach(section => {
-
-        const top = section.getBoundingClientRect().top;
-
-
-        if(top < triggerBottom){
-
-            section.classList.add("show");
-
-        }
-
-    });
-
-}
-
-
-window.addEventListener("scroll", showSections);
-
-showSections();
-
-
-
-
-/* PRODUCT BLOCK ANIMATION */
-
-const productBlocks = document.querySelectorAll(".product-block");
-
-
-function showBlocks(){
-
-    const triggerBottom = window.innerHeight * 0.85;
-
-
-    productBlocks.forEach(block => {
-
-        const top = block.getBoundingClientRect().top;
-
-
-        if(top < triggerBottom){
-
-            block.classList.add("show");
-
-        }
-
-    });
-
-}
-
-
-window.addEventListener("scroll", showBlocks);
-
-showBlocks();
-
-
-
-/* ALWAYS START PAGE AT TOP */
-
-window.history.scrollRestoration = "manual";
-
-window.onload = function() {
-
-    window.scrollTo(0,0);
-
-};
-
-
-</script>
-
-
-</body>
-
-</html>
-
-
-
-/* PRODUCT IMAGES */
 
 .product-card img {
 
+
     width: 100%;
+
 
     height: 190px;
 
+
     object-fit: cover;
 
-    transition:
-    transform 0.5s ease;
+
+    transition: 0.5s ease;
+
 
 }
 
@@ -1202,23 +559,28 @@ window.onload = function() {
 
 .product-card:hover img {
 
-    transform:
-    scale(1.08);
+
+    transform: scale(1.08);
+
 
 }
 
 
 
-/* PRODUCT TEXT */
 
 .product-card h3 {
 
+
     padding:
+
     14px 16px 6px;
+
 
     font-size: 18px;
 
+
     letter-spacing: 1px;
+
 
 }
 
@@ -1226,14 +588,22 @@ window.onload = function() {
 
 .product-card p {
 
+
     padding:
+
     0 16px 18px;
+
 
     font-size: 14px;
 
+
     opacity: 0.85;
 
+
 }
+
+
+
 
 
 
@@ -1241,29 +611,52 @@ window.onload = function() {
    CONTACT
 ========================= */
 
+
 .contact {
+
 
     padding: 80px 20px;
 
+
     text-align: center;
+
 
     background: white;
 
+
 }
+
 
 
 
 .contact-box {
 
+
+    margin-top: 30px;
+
+
     padding: 35px;
+
 
     background: #f4f4f4;
 
+
     display: inline-block;
+
 
     border-radius: 14px;
 
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,0.08);
+
+
 }
+
+
+
+
 
 
 
@@ -1271,17 +664,26 @@ window.onload = function() {
    FOOTER
 ========================= */
 
+
 footer {
+
 
     text-align: center;
 
+
     padding: 20px;
+
 
     background: black;
 
+
     color: white;
 
+
 }
+
+
+
 
 
 
@@ -1289,22 +691,33 @@ footer {
    LIGHTBOX
 ========================= */
 
+
 .lightbox {
+
 
     position: fixed;
 
+
     inset: 0;
 
+
     background:
-    rgba(0,0,0,0.90);
+
+    rgba(0,0,0,0.9);
+
+
 
     display: none;
 
+
     justify-content: center;
+
 
     align-items: center;
 
+
     z-index: 9999;
+
 
 }
 
@@ -1312,29 +725,41 @@ footer {
 
 .lightbox img {
 
+
     max-width: 90%;
+
 
     max-height: 85%;
 
+
     border-radius: 10px;
+
 
 }
 
 
 
+
 .close {
+
 
     position: absolute;
 
+
     top: 20px;
+
 
     right: 30px;
 
+
     font-size: 40px;
+
 
     color: white;
 
+
     cursor: pointer;
+
 
 }
 
@@ -1343,22 +768,30 @@ footer {
 .prev,
 .next {
 
+
     position: absolute;
+
 
     top: 50%;
 
-    transform:
-    translateY(-50%);
+
+    transform: translateY(-50%);
+
 
     font-size: 40px;
 
+
     color: white;
+
 
     background: none;
 
+
     border: none;
 
+
     cursor: pointer;
+
 
 }
 
@@ -1371,6 +804,7 @@ footer {
 }
 
 
+
 .next {
 
     right: 20px;
@@ -1379,812 +813,85 @@ footer {
 
 
 
+
+
+
 /* =========================
-   MOBILE FIX
+   MOBILE
 ========================= */
 
-@media(max-width:768px) {
 
+@media(max-width:768px){
 
-    .nav {
-
-        padding: 0 20px;
-
-    }
-
-
-    .nav-links {
-
-        gap: 15px;
-
-    }
-
-
-    .hero h1 {
-
-        font-size: 42px;
-
-    }
-
-
-    .hero-subtitle {
-
-        font-size: 22px;
-
-        letter-spacing: 5px;
-
-    }
-
-
-    .hero p {
-
-        font-size: 17px;
-
-    }
-
-
-}
-
-.hero-crown {
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
-    animation: crownGlow 3s infinite alternate;
-}
-
-@keyframes crownGlow {
-    from {
-        filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));
-    }
-
-    to {
-        filter: drop-shadow(0 0 25px rgba(255,215,0,1));
-    }
-}
-
-.hero-crown {
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
-    animation: crownGlow 3s infinite alternate;
-}
-
-@keyframes crownGlow {
-    from {
-        filter: drop-shadow(0 0 8px rgba(255,215,0,0.5));
-    }
-
-    to {
-        filter: drop-shadow(0 0 25px rgba(255,215,0,1));
-    }
-}
-.logo {
-    position: relative;
-    font-size: 55px;
-    font-weight: bold;
-    letter-spacing: 0;
-    width: 70px;
-    height: 60px;
-}
-
-.back-l {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: white;
-}
-
-/* ===========================
-   LL LOGO CENTER POSITION
-=========================== */
-
-.logo {
-    position: relative;
-    width: 90px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: none;
-}
-
-.back-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    left: 8px;
-    top: 0;
-    font-size: 60px;
-}
-
-.front-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    left: 0;
-    top: 8px;
-    margin-left: 5px;
-    font-size: 60px;
-}
-
-/* ===========================
-   LL LOGO FINAL CENTER POSITION
-=========================== */
-
-.logo {
-    position: relative;
-    width: 100px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(0) !important;
-}
-
-
-.back-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    left: 8px;
-    top: 0 !important;
-    font-size: 60px;
-}
-
-/* ===========================
-   MOVE TOP NAV DOWN SLIGHTLY
-=========================== */
 
 .nav {
-    transform: translateY(10px);
-}
-
-/* ===========================
-   LL LOGO CENTER IN NEW SPACE
-=========================== */
-
-.logo {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: none !important;
-}
 
 
-.back-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    left: 8px;
-    top: 0;
-    font-size: 60px;
-}
+    padding: 0 20px;
 
-
-.front-l {
-    font-family: 'Cochocib Script Latin Pro', cursive;
-    color: gold;
-    position: relative;
-    top: 8px;
-    margin-left: 5px;
-    font-size: 60px;
-}
-
-/* ===========================
-   MOVE TOP NAV UP
-=========================== */
-
-.nav {
-    transform: translateY(-40px);
-}
-
-/* ===========================
-   SPACE BETWEEN LL
-=========================== */
-
-.front-l {
-    margin-left: 15px;
-}
-
-/* ===========================
-   GOLD CIRCLE AROUND LL LOGO
-=========================== */
-
-.logo {
-
-    border: 3px solid #ffd700;
-
-    border-radius: 50%;
-
-    width: 120px;
-
-    height: 120px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    background: rgba(0,0,0,0.15);
-
-    box-shadow:
-        0 0 8px rgba(255,215,0,0.8),
-        0 0 20px rgba(255,215,0,0.8),
-        inset 0 0 15px rgba(255,215,0,0.4);
-}
-/* ===========================
-   CENTER LL INSIDE CIRCLE
-=========================== */
-
-.logo {
-
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
 
 }
 
 
-.back-l {
 
-    left: 0 !important;
-    top: 0 !important;
+.nav-links {
+
+
+    gap: 15px;
+
 
 }
 
 
-.front-l {
 
-    left: 0 !important;
-    top: 0 !important;
-    margin-left: 12px !important;
-
-}
-/* ===========================
-   MOVE LL CIRCLE DOWN 15PX
-=========================== */
-
-.logo {
-    transform: translateY(15px) !important;
-}
-/* ===========================
-   FINAL LL LOGO FIX
-=========================== */
-
-.logo {
-
-    position: relative;
-    width: 120px;
-    height: 120px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 3px solid #ffd700;
-    border-radius: 50%;
-
-    background: rgba(0,0,0,0.15);
-
-    box-shadow:
-    0 0 8px rgba(255,215,0,0.8),
-    0 0 20px rgba(255,215,0,0.8);
-
-    transform: translateY(15px) !important;
-}
+.nav-links a {
 
 
-/* BOTH L LETTERS */
+    font-size: 14px;
 
-.logo .back-l,
-.logo .front-l {
-
-    font-family: "Cochocib", cursive !important;
-
-    font-size: 60px !important;
-
-    color: #ffd700;
-
-    background: linear-gradient(
-        180deg,
-        #fff6a0,
-        #ffd700,
-        #b8860b
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-    0 0 8px rgba(255,215,0,0.9),
-    0 0 20px rgba(255,215,0,0.8);
 
 }
 
 
-/* FIRST L */
-
-.logo .back-l {
-
-    position: relative !important;
-
-    left: 12px !important;
-
-    top: 0 !important;
-
-}
-
-
-/* SECOND L */
-
-.logo .front-l {
-
-    position: relative !important;
-
-    left: -5px !important;
-
-    top: 8px !important;
-
-    margin-left: 0 !important;
-
-}
-
-/* ===========================
-   HERO LUXURY POSITIONING
-=========================== */
-
-.hero-content {
-
-    transform: translateY(20px);
-
-}
-
-
-/* CROWN SIZE */
-
-.hero-crown {
-
-    width: 150px;
-
-    margin-bottom: 25px;
-
-}
-
-
-/* MAIN TITLE */
 
 .hero h1 {
 
-    font-size: 52px;
 
-    letter-spacing: 2px;
+    font-size: 42px;
 
-    text-transform: none;
-
-    text-shadow:
-    0 0 10px rgba(0,0,0,0.8);
 
 }
 
 
-/* PROJECTS TITLE */
 
 .hero-subtitle {
 
-    font-size: 28px;
-
-    letter-spacing: 8px;
-
-    margin-top: 10px;
-
-    color: #ffd700;
-
-    text-shadow:
-    0 0 12px rgba(255,215,0,0.8);
-
-}
-
-
-/* DESCRIPTION */
-
-.hero p {
 
     font-size: 20px;
 
-    margin-top: 20px;
-
-}
-
-/* ===========================
-   LUXURY HERO BUTTON
-=========================== */
-
-.hero .btn {
-
-    background: linear-gradient(
-        180deg,
-        #fff6a0,
-        #ffd700,
-        #c28b00
-    );
-
-    color: #111;
-
-    padding: 16px 42px;
-
-    border-radius: 30px;
-
-    font-size: 15px;
-
-    letter-spacing: 3px;
-
-    box-shadow:
-        0 0 10px rgba(255,215,0,0.7),
-        0 0 25px rgba(255,215,0,0.5);
-
-    border: 1px solid #fff2a0;
-
-}
-
-
-.hero .btn:hover {
-
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 0 15px rgba(255,215,0,1),
-        0 0 35px rgba(255,215,0,0.8);
-
-}
-
-/* ===========================
-   PROJECTS MATCH CROWN GOLD
-=========================== */
-
-.hero-subtitle {
-
-    color: transparent !important;
-
-    background: linear-gradient(
-        180deg,
-        #fff8c6 0%,
-        #ffd700 35%,
-        #d4a017 70%,
-        #fff3a0 100%
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-        0 0 5px rgba(255,215,0,0.9),
-        0 0 15px rgba(255,215,0,0.8),
-        0 0 25px rgba(255,180,0,0.7);
-
-}
-
-/* ===========================
-   HERO SPACING BALANCE
-=========================== */
-
-.hero-content {
-
-    transform: translateY(10px);
-
-}
-
-
-/* CROWN */
-
-.hero-crown {
-
-    width: 150px;
-
-    margin-bottom: 15px;
-
-}
-
-
-/* MAIN TITLE */
-
-.hero h1 {
-
-    margin-bottom: 8px;
-
-}
-
-
-/* PROJECTS */
-
-.hero-subtitle {
-
-    margin-top: 5px;
-
-    margin-bottom: 12px;
-
-}
-
-
-/* DESCRIPTION */
-
-.hero p {
-
-    margin-top: 10px;
-
-    margin-bottom: 5px;
-
-}
-
-
-/* BUTTON */
-
-.hero .btn {
-
-    margin-top: 20px;
-
-}
-
-/* ===========================
-   LUXURY NAVIGATION TEXT
-=========================== */
-
-.nav-links {
-
-    gap: 55px;
-
-}
-
-
-.nav-links a {
-
-    font-size: 18px;
-
-    font-weight: 600;
-
-    letter-spacing: 2px;
-
-    color: white;
-
-    transition: 0.3s ease;
-
-}
-
-
-/* GOLD HOVER */
-
-.nav-links a:hover {
-
-    color: transparent;
-
-    background: linear-gradient(
-        180deg,
-        #fff8c6 0%,
-        #ffd700 40%,
-        #d4a017 75%,
-        #fff3a0 100%
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow:
-    0 0 8px rgba(255,215,0,0.8),
-    0 0 18px rgba(255,180,0,0.7);
-
-}
-
-.hero h1 {
-
-    font-family: Arial, sans-serif !important;
-
-    font-size: 58px;
-
-    font-weight: 600;
-
-    letter-spacing: 2px;
-
-    color: #fff8e7;
-
-    text-shadow:
-        0 0 10px rgba(0,0,0,0.8);
-
-}
-
-
-.hero-subtitle {
-
-    font-size: 32px;
-
-    letter-spacing: 10px;
-
-    color: #ffd700;
-
-    text-shadow:
-        0 0 10px rgba(255,215,0,0.8);
-
-}
-
-.hero-content {
-
-    transform: translateY(15px);
-
-}
-
-
-.hero-crown {
-
-    width: 140px;
-
-    margin-bottom: 10px;
-
-}
-
-
-.hero h1 {
-
-    margin-top: 0;
-
-    margin-bottom: 5px;
-
-}
-
-
-.hero-subtitle {
-
-    margin-top: 0;
-
-    margin-bottom: 10px;
-
-}
-
-
-.hero p {
-
-    margin-top: 10px;
-
-    margin-bottom: 20px;
-
-}
-.logo .back-l {
-    left: -3px !important;
-}
-
-/* Hero image enhancement */
-
-.hero::before {
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.25)
-    );
-
-}
-
-
-.hero {
-
-    background-position: center center;
-
-}
-
-/* HERO POLISH */
-
-.hero::before {
-
-    background:
-    rgba(0,0,0,0.38);
-
-}
-
-
-.hero-content {
-
-    transform: translateY(15px);
-
-}
-
-
-.hero-crown {
-
-    width: 150px;
-
-    margin-bottom: 12px;
-
-}
-
-
-.hero h1 {
-
-    margin-bottom: 5px;
-
-}
-
-
-.hero-subtitle {
-
-    margin-top: 0;
-
-    margin-bottom: 15px;
-
-}
-
-
-.hero p {
-
-    font-size: 21px;
-
-    margin-bottom: 20px;
-
-}
-
-
-/* PREMIUM BUTTON */
-
-.hero .btn {
-
-    background: linear-gradient(
-        180deg,
-        #fff6a0,
-        #ffd700,
-        #c28b00
-    );
-
-    padding: 16px 45px;
-
-    border-radius: 30px;
-
-    letter-spacing: 3px;
-
-    box-shadow:
-    0 0 12px rgba(255,215,0,0.6);
-
-}
-
-
-.hero .btn:hover {
-
-    transform: translateY(-4px);
-
-    box-shadow:
-    0 0 25px rgba(255,215,0,1);
-
-}
-
-
-/* NAV MENU */
-
-.nav-links {
-
-    gap: 60px;
-
-}
-
-
-.nav-links a {
-
-    letter-spacing: 2px;
-
-}
-
-/* PRODUCTS LUXURY DESIGN */
-
-
-.section h2 {
-
-    font-size: 38px;
 
     letter-spacing: 5px;
 
-    color: #222;
 
-    margin-bottom: 40px;
+}
+
+
+
+.hero p {
+
+
+    font-size: 16px;
+
+
+}
+
+
+
+.section {
+
+
+    padding: 70px 20px;
+
 
 }
 
@@ -2192,484 +899,12 @@ footer {
 
 .product-block {
 
-    background:
-    rgba(255,255,255,0.85);
 
-    border: 1px solid rgba(255,215,0,0.25);
+    padding: 30px 20px;
 
-    box-shadow:
-    0 20px 50px rgba(0,0,0,0.12);
-
-    padding: 60px 50px;
 
 }
 
 
 
-.product-block > h2 {
-
-    font-size: 32px;
-
-    letter-spacing: 6px;
-
-    color: #b8860b;
-
-    margin-bottom: 35px;
-
 }
-
-
-
-.product-grid {
-
-    gap: 35px;
-
-}
-
-
-
-.product-card {
-
-    background:
-    white;
-
-    border-radius: 20px;
-
-    min-height: 170px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    border-top: 3px solid #ffd700;
-
-    transition: all 0.4s ease;
-
-}
-
-
-
-.product-card h3 {
-
-    font-size: 22px;
-
-    letter-spacing: 2px;
-
-    color: #222;
-
-    text-align: center;
-
-}
-
-
-
-.product-card p {
-
-    text-align: center;
-
-    color: #555;
-
-}
-
-
-
-.product-card:hover {
-
-    transform:
-    translateY(-12px);
-
-    box-shadow:
-    0 15px 35px rgba(255,215,0,0.25);
-
-}
-
-
-
-.contact h2 {
-
-    font-size: 36px;
-
-    letter-spacing: 5px;
-
-}
-
-
-
-.contact-box {
-
-    border-top: 3px solid #ffd700;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.12);
-
-}
-
-/* LUXURY SECTION DETAILS */
-
-
-.product-block {
-
-    position: relative;
-
-}
-
-
-.product-block::before {
-
-    content: "";
-
-    width: 80px;
-
-    height: 3px;
-
-    background: linear-gradient(
-        90deg,
-        #fff6a0,
-        #ffd700,
-        #b8860b
-    );
-
-    position: absolute;
-
-    top: 30px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-}
-
-
-
-.product-block h2 {
-
-    padding-top: 20px;
-
-}
-
-
-
-.product-card {
-
-    padding: 25px;
-
-}
-
-
-
-.product-card h3 {
-
-    margin-bottom: 12px;
-
-}
-
-
-
-.product-card::after {
-
-    content: "";
-
-    width: 40px;
-
-    height: 2px;
-
-    background: #ffd700;
-
-    margin: 15px auto 0;
-
-}
-
-/* PREMIUM PRODUCT HEADINGS */
-
-
-#products > h2 {
-
-    font-size: 42px;
-
-    letter-spacing: 8px;
-
-    font-weight: 500;
-
-    color: #222;
-
-    margin-bottom: 60px;
-
-}
-
-
-.product-block h2 {
-
-    font-size: 34px;
-
-    font-weight: 500;
-
-    letter-spacing: 6px;
-
-    color: #b8860b;
-
-}
-
-/* PRODUCT AREA BACKGROUND */
-
-#products {
-
-    background:
-    linear-gradient(
-        180deg,
-        #f8f8f8,
-        #ffffff
-    );
-
-}
-
-
-
-/* CONTACT PREMIUM LOOK */
-
-
-.contact {
-
-    background:
-    linear-gradient(
-        180deg,
-        #ffffff,
-        #f4f4f4
-    );
-
-}
-
-
-
-.contact-box p {
-
-    font-size: 18px;
-
-    letter-spacing: 1px;
-
-}
-
-/* PRODUCT IMAGE READY CARDS */
-
-
-.product-card {
-
-    overflow: hidden;
-
-    padding: 0;
-
-    background: white;
-
-}
-
-
-
-.product-card img {
-
-    width: 100%;
-
-    height: 220px;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 0.5s ease;
-
-}
-
-
-
-.product-card:hover img {
-
-    transform: scale(1.08);
-
-}
-
-
-
-.product-card h3 {
-
-    padding: 20px 15px 8px;
-
-}
-
-
-
-.product-card p {
-
-    padding: 0 20px 25px;
-
-}
-
-
-
-.product-card::after {
-
-    margin-bottom: 20px;
-
-}
-/* ===========================
-   LUXURY PRODUCTS SECTION
-=========================== */
-
-
-#products {
-
-    padding-top: 120px;
-
-    padding-bottom: 120px;
-
-}
-
-
-
-/* MAIN PRODUCTS TITLE */
-
-.section > h2 {
-
-    font-size: 42px;
-
-    letter-spacing: 6px;
-
-    font-weight: 600;
-
-    color: #222;
-
-    margin-bottom: 70px;
-
-    text-transform: uppercase;
-
-}
-
-
-
-
-/* PRODUCT CATEGORY BOXES */
-
-.product-block {
-
-    background:
-    rgba(255,255,255,0.85);
-
-    border-radius: 22px;
-
-    padding: 60px 50px;
-
-    margin: 70px auto;
-
-    max-width: 1150px;
-
-    box-shadow:
-
-    0 15px 45px rgba(0,0,0,0.10);
-
-}
-
-
-
-/* CATEGORY TITLES */
-
-.product-block h2 {
-
-    font-size: 34px;
-
-    letter-spacing: 5px;
-
-    font-weight: 600;
-
-    color: #b8860b;
-
-    margin-bottom: 45px;
-
-    text-transform: uppercase;
-
-}
-
-
-
-
-/* GOLD LINE UNDER CATEGORY */
-
-.product-block h2::after {
-
-    content:"";
-
-    display:block;
-
-    width:90px;
-
-    height:3px;
-
-    background:#d4a017;
-
-    margin:18px auto 0;
-
-}
-
-
-
-
-/* PRODUCT GRID */
-
-.product-grid {
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit, minmax(240px,1fr));
-
-    gap:35px;
-
-}
-
-
-
-
-/* PRODUCT CARD IMPROVEMENT */
-
-.product-card {
-
-    min-height:200px;
-
-    background:white;
-
-    border-radius:18px;
-
-    padding:20px;
-
-}
-
-
-
-
-.product-card:hover {
-
-    transform:
-
-    translateY(-8px);
-
-}
-
-    /* ===========================
-   PRODUCT SUBTITLES
-=========================== */
-
-.product-card h3{
-    font-size:22px;
-    text-align:center;
-    line-height:1.3;
-}
-
-.product-subtitle{
-    display:block;
-    margin-top:6px;
-    font-size:14px;
-    font-weight:500;
-    letter-spacing:1px;
-    color:#888;
-    text-transform:none;
-}
-

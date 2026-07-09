@@ -1001,3 +1001,45 @@ footer {
 .product-btn {
     display: inline-block;
 }
+
+/* ==============================
+   SUB HERO CONTRAST FIX
+   ============================== */
+
+
+.sub-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sub-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+
+.sub-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.sub-hero .hero-crown {
+    filter: drop-shadow(0 0 10px black);
+}
+
+
+.sub-hero h1 {
+    color: #d4af37;
+    text-shadow: 2px 3px 8px black;
+}
+
+
+.sub-hero p {
+    color: white;
+    text-shadow: 2px 3px 8px black;
+}

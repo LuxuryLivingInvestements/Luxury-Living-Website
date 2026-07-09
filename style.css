@@ -1112,3 +1112,74 @@ footer {
     text-shadow: 2px 3px 8px black;
 
 }
+
+/* ======================================
+   CLEAN ROLLER BLINDS SUB PAGE HERO FIX
+   ====================================== */
+
+
+.sub-hero {
+
+    height: 450px !important;
+    width: 100% !important;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.60),
+        rgba(0,0,0,0.60)
+    ),
+    url("hero-interior.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+
+
+.sub-hero .hero-content {
+
+    background: transparent !important;
+
+    position: relative !important;
+
+    text-align: center !important;
+
+}
+
+
+
+.sub-hero .hero-crown {
+
+    width: 130px !important;
+
+}
+
+
+
+.sub-hero h1 {
+
+    color: #d4af37 !important;
+
+    text-shadow:
+    2px 2px 8px black !important;
+
+}
+
+
+
+.sub-hero p {
+
+    color: white !important;
+
+    text-shadow:
+    2px 2px 8px black !important;
+
+}

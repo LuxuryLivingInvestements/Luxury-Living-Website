@@ -43,7 +43,7 @@ body {
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content: flex-end;
 
     align-items: center;
 
@@ -68,20 +68,6 @@ body {
 .nav.scrolled {
 
     background: rgba(0,0,0,0.35);
-
-}
-
-
-
-.logo {
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    color: white;
 
 }
 

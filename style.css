@@ -985,3 +985,19 @@ footer {
 
 
 }
+
+.product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.product-link:hover {
+    cursor: pointer;
+}
+
+
+.product-btn {
+    display: inline-block;
+}

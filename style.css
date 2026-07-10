@@ -1240,3 +1240,49 @@ lid rgba(255,255,255,.15);
     text-align:center;
     color:#aaa;
 }
+
+/*=========================
+        ABOUT
+=========================*/
+
+.about{
+    padding:90px 8%;
+    background:#faf8f3;
+}
+
+.about-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.about-text{
+    flex:1;
+    min-width:320px;
+}
+
+.about-text h2{
+    font-size:2.3rem;
+    color:#b38b2d;
+    margin-bottom:25px;
+}
+
+.about-text p{
+    margin-bottom:20px;
+    line-height:1.9;
+    color:#444;
+}
+
+.about-image{
+    flex:1;
+    min-width:320px;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:14px;
+    display:block;
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}

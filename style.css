@@ -27,6 +27,7 @@ body {
 
 
 
+
 /* =========================
    NAVIGATION
 ========================= */
@@ -47,17 +48,13 @@ body {
 
     align-items: center;
 
-
     padding: 0 50px;
-
 
     background: transparent;
 
     backdrop-filter: none;
 
-
     z-index: 1000;
-
 
     transition: 0.4s ease;
 
@@ -96,6 +93,9 @@ body {
     font-weight: 600;
 
 }
+
+
+
 /* =========================
    HERO
 ========================= */
@@ -105,9 +105,7 @@ body {
 
     height: 100vh;
 
-
     background: url("hero.jpg") center/cover no-repeat;
-
 
     display: flex;
 
@@ -115,11 +113,9 @@ body {
 
     align-items: center;
 
-
     position: relative;
 
 }
-
 
 
 
@@ -130,7 +126,6 @@ body {
     position: absolute;
 
     inset: 0;
-
 
     background:
 
@@ -148,20 +143,19 @@ body {
 
 
 
-
 .hero-content {
 
     position: relative;
+
+    z-index: 2;
 
     text-align: center;
 
     color: white;
 
-
     animation: heroLift 1.2s ease-out;
 
 }
-
 
 
 
@@ -182,30 +176,26 @@ body {
 
 
 
-
 @keyframes heroLift {
 
+    from {
 
-from {
+        opacity: 0;
 
-    opacity: 0;
+        transform: translateY(30px);
 
-    transform: translateY(30px);
-
-}
+    }
 
 
-to {
+    to {
 
-    opacity: 1;
+        opacity: 1;
 
-    transform: translateY(0);
+        transform: translateY(0);
 
-}
-
+    }
 
 }
-
 
 
 
@@ -216,21 +206,15 @@ to {
 
 .hero-tagline {
 
-
     margin-bottom: 12px;
-
 
     font-family: "Cochocib Script Latin Pro", "Brush Script MT", cursive;
 
-
     font-size: 38px;
-
 
     font-weight: normal;
 
-
     letter-spacing: 2px;
-
 
 
     background:
@@ -256,11 +240,9 @@ to {
     );
 
 
-
     -webkit-background-clip: text;
 
     -webkit-text-fill-color: transparent;
-
 
 
     text-shadow:
@@ -269,10 +251,7 @@ to {
 
     0 5px 18px rgba(0,0,0,0.55);
 
-
-
 }
-
 
 
 
@@ -283,15 +262,11 @@ to {
 
 .hero h1 {
 
-
     font-size: 78px;
-
 
     letter-spacing: 4px;
 
-
     font-weight: 700;
-
 
     text-shadow:
 
@@ -301,19 +276,13 @@ to {
 
 
 
-
-
 .hero p {
-
 
     margin-top: 15px;
 
-
     font-size: 22px;
 
-
     letter-spacing: 1px;
-
 
     text-shadow:
 
@@ -323,24 +292,17 @@ to {
 
 
 
-
 .hero-subtitle {
-
 
     margin-top: 15px;
 
-
     font-size: 28px;
-
 
     letter-spacing: 8px;
 
-
     color: #ffd700;
 
-
     font-weight: bold;
-
 
     animation: glow 3s infinite alternate;
 
@@ -348,30 +310,26 @@ to {
 
 
 
-
 @keyframes glow {
 
+    from {
 
-from {
+        text-shadow:
 
-text-shadow:
+        0 0 8px rgba(255,215,0,0.4);
 
-0 0 8px rgba(255,215,0,0.4);
-
-}
+    }
 
 
-to {
+    to {
 
-text-shadow:
+        text-shadow:
 
-0 0 25px rgba(255,215,0,0.95);
+        0 0 25px rgba(255,215,0,0.95);
 
-}
-
+    }
 
 }
-
 
 
 
@@ -382,36 +340,25 @@ text-shadow:
 
 .btn {
 
-
     display: inline-block;
-
 
     margin-top: 25px;
 
-
     padding: 14px 34px;
-
 
     background: gold;
 
-
     color: black;
-
 
     text-decoration: none;
 
-
     font-weight: bold;
-
 
     letter-spacing: 2px;
 
-
     text-transform: uppercase;
 
-
     border-radius: 8px;
-
 
     transition: 0.3s ease;
 
@@ -421,14 +368,9 @@ text-shadow:
 
 .btn:hover {
 
-
     transform: translateY(-3px);
 
-
 }
-
-
-
 
 
 
@@ -439,20 +381,13 @@ text-shadow:
 
 .section {
 
+    padding:100px 40px;
 
-    padding: 100px 40px;
+    text-align:center;
 
+    opacity:1;
 
-    text-align: center;
-
-
-    opacity: 0;
-
-
-    transform: translateY(40px);
-
-
-    transition: 0.8s ease;
+    transform:none;
 
 }
 
@@ -460,13 +395,13 @@ text-shadow:
 
 .section.show {
 
+    opacity:1;
 
-    opacity: 1;
-
-
-    transform: translateY(0);
+    transform:translateY(0);
 
 }
+
+
 
 /* =========================
    PRODUCT BLOCKS
@@ -475,68 +410,33 @@ text-shadow:
 
 .product-block {
 
+    background:rgba(255,255,255,0.85);
 
-    background: rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
 
+    border-radius:18px;
 
-    backdrop-filter: blur(10px);
+    padding:50px 45px;
 
+    margin:60px auto;
 
-    border-radius: 18px;
-
-
-    padding: 50px 45px;
-
-
-    margin: 60px auto;
-
-
-    max-width: 1100px;
-
+    max-width:1100px;
 
     box-shadow:
 
     0 15px 40px rgba(0,0,0,0.08);
 
-
-
-    opacity: 0;
-
-
-    transform: translateY(40px);
-
-
-    transition: 0.8s ease;
-
 }
-
-
-
-.product-block.show {
-
-
-    opacity: 1;
-
-
-    transform: translateY(0);
-
-}
-
 
 
 
 .product-block h2 {
 
+    margin-bottom:25px;
 
-    margin-bottom: 25px;
-
-
-    letter-spacing: 3px;
-
+    letter-spacing:3px;
 
 }
-
-
 
 
 
@@ -547,785 +447,62 @@ text-shadow:
 
 .product-grid {
 
-
-    display: grid;
-
+    display:grid;
 
     grid-template-columns:
 
-    repeat(auto-fit, minmax(220px, 1fr));
+    repeat(auto-fit,minmax(220px,1fr));
 
-
-    gap: 32px;
-
+    gap:32px;
 
 }
 
 
 
-
-
-
 /* =========================
-   PRODUCT CARD
+   PREMIUM PRODUCT CARDS
 ========================= */
 
 
 .product-card {
 
-
-    background: white;
-
-
-    border-radius: 18px;
-
-
-    overflow: hidden;
-
-
-    text-align: left;
-
-
-    box-shadow:
-
-    0 6px 18px rgba(0,0,0,0.08);
-
-
-
-    transition: 0.4s ease;
-
-
-}
-
-
-
-
-.product-card:hover {
-
-
-    transform:
-
-    translateY(-10px)
-
-    scale(1.03);
-
-
-}
-
-
-
-
-.product-card img {
-
-
-    width: 100%;
-
-
-    height: 190px;
-
-
-    object-fit: cover;
-
-
-    transition: 0.5s ease;
-
-
-}
-
-
-
-.product-card:hover img {
-
-
-    transform: scale(1.08);
-
-
-}
-
-
-
-
-.product-card h3 {
-
-
-    padding:
-
-    14px 16px 6px;
-
-
-    font-size: 18px;
-
-
-    letter-spacing: 1px;
-
-
-}
-
-
-
-.product-card p {
-
-
-    padding:
-
-    0 16px 18px;
-
-
-    font-size: 14px;
-
-
-    opacity: 0.85;
-
-
-}
-
-
-
-
-
-
-/* =========================
-   CONTACT
-========================= */
-
-
-.contact {
-
-
-    padding: 80px 20px;
-
-
-    text-align: center;
-
-
-    background: white;
-
-
-}
-
-
-
-
-.contact-box {
-
-
-    margin-top: 30px;
-
-
-    padding: 35px;
-
-
-    background: #f4f4f4;
-
-
-    display: inline-block;
-
-
-    border-radius: 14px;
-
-
-    box-shadow:
-
-    0 10px 25px rgba(0,0,0,0.08);
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   FOOTER
-========================= */
-
-
-footer {
-
-
-    text-align: center;
-
-
-    padding: 20px;
-
-
-    background: black;
-
-
-    color: white;
-
-
-}
-
-
-
-
-
-
-/* =========================
-   LIGHTBOX
-========================= */
-
-
-.lightbox {
-
-
-    position: fixed;
-
-
-    inset: 0;
-
-
-    background:
-
-    rgba(0,0,0,0.9);
-
-
-
-    display: none;
-
-
-    justify-content: center;
-
-
-    align-items: center;
-
-
-    z-index: 9999;
-
-
-}
-
-
-
-.lightbox img {
-
-
-    max-width: 90%;
-
-
-    max-height: 85%;
-
-
-    border-radius: 10px;
-
-
-}
-
-
-
-
-.close {
-
-
-    position: absolute;
-
-
-    top: 20px;
-
-
-    right: 30px;
-
-
-    font-size: 40px;
-
-
-    color: white;
-
-
-    cursor: pointer;
-
-
-}
-
-
-
-.prev,
-.next {
-
-
-    position: absolute;
-
-
-    top: 50%;
-
-
-    transform: translateY(-50%);
-
-
-    font-size: 40px;
-
-
-    color: white;
-
-
-    background: none;
-
-
-    border: none;
-
-
-    cursor: pointer;
-
-
-}
-
-
-
-.prev {
-
-    left: 20px;
-
-}
-
-
-
-.next {
-
-    right: 20px;
-
-}
-
-
-
-
-
-
-/* =========================
-   MOBILE
-========================= */
-
-
-@media(max-width:768px){
-
-
-.nav {
-
-
-    padding: 0 20px;
-
-
-}
-
-
-
-.nav-links {
-
-
-    gap: 15px;
-
-
-}
-
-
-
-.nav-links a {
-
-
-    font-size: 14px;
-
-
-}
-
-
-
-.hero h1 {
-
-
-    font-size: 42px;
-
-
-}
-
-
-
-.hero-subtitle {
-
-
-    font-size: 20px;
-
-
-    letter-spacing: 5px;
-
-
-}
-
-
-
-.hero p {
-
-
-    font-size: 16px;
-
-
-}
-
-
-
-.section {
-
-
-    padding: 70px 20px;
-
-
-}
-
-
-
-.product-block {
-
-
-    padding: 30px 20px;
-
-
-}
-
-
-
-}
-
-.product-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-
-.product-link:hover {
-    cursor: pointer;
-}
-
-
-.product-btn {
-    display: inline-block;
-}
-
-/* ==============================
-   SUB HERO CONTRAST FIX
-   ============================== */
-
-
-.sub-hero {
-    position: relative;
-    overflow: hidden;
-}
-
-
-.sub-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    z-index: 1;
-}
-
-
-.sub-hero .hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-
-.sub-hero .hero-crown {
-    filter: drop-shadow(0 0 10px black);
-}
-
-
-.sub-hero h1 {
-    color: #d4af37;
-    text-shadow: 2px 3px 8px black;
-}
-
-
-.sub-hero p {
-    color: white;
-    text-shadow: 2px 3px 8px black;
-}
-
-/* =====================================
-   SUB PAGE HERO FIX
-   ===================================== */
-
-
-.sub-hero {
-
-    min-height: 420px;
-    width: 100%;
-
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.55)
-    ),
-    url("hero-interior.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    position: relative;
-
-}
-
-
-
-
-.sub-hero .hero-content {
-
-    position: relative;
-    z-index: 2;
-
-}
-
-
-
-.sub-hero .hero-crown {
-
-    width: 120px;
-    margin-bottom: 20px;
-
-}
-
-
-
-.sub-hero h1 {
-
-    color: #d4af37;
-    font-size: 55px;
-    text-shadow: 2px 3px 8px black;
-
-}
-
-
-
-.sub-hero p {
-
-    color: white;
-    font-size: 22px;
-    text-shadow: 2px 3px 8px black;
-
-}
-
-/* ======================================
-   CLEAN ROLLER BLINDS SUB PAGE HERO FIX
-   ====================================== */
-
-
-.sub-hero {
-
-    height: 450px !important;
-    width: 100% !important;
-
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.60),
-        rgba(0,0,0,0.60)
-    ),
-    url("hero-interior.jpg") !important;
-
-    background-size: cover !important;
-    background-position: center !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-}
-
-
-
-.sub-hero .hero-content {
-
-    background: transparent !important;
-
-    position: relative !important;
-
-    text-align: center !important;
-
-}
-
-
-
-.sub-hero .hero-crown {
-
-    width: 130px !important;
-
-}
-
-
-
-.sub-hero h1 {
-
-    color: #d4af37 !important;
-
-    text-shadow:
-    2px 2px 8px black !important;
-
-}
-
-
-
-.sub-hero p {
-
-    color: white !important;
-
-    text-shadow:
-    2px 2px 8px black !important;
-
-}
-
-/* ==================================
-   ROLLER BLIND SUB PAGE FINAL FIX
-   ================================== */
-
-
-.sub-hero {
-
-    opacity: 1 !important;
-    transform: none !important;
-
-    height: 450px !important;
-
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
-    ),
-    url("hero.jpg") !important;
-
-    background-size: cover !important;
-
-    background-position: center !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-}
-
-
-
-.sub-hero .hero-content {
-
-    opacity: 1 !important;
-    transform: none !important;
-
-}
-
-
-
-.sub-hero + .section {
-
-    opacity: 1 !important;
-
-    transform: none !important;
-
-}
-
-rgba(255,255,255,.15);
-    margin-top:40px;
-    padding-top:20px;
-    text-align:center;
-    color:#aaa;
-}
-
-/*=========================
-        ABOUT
-=========================*/
-
-.about{
-    padding:90px 8%;
-    background:#faf8f3;
-}
-
-.about-content{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:70px;
-    flex-wrap:wrap;
-}
-
-.about-text{
-    flex:1;
-    min-width:320px;
-}
-
-.about-text h2{
-    font-size:2.3rem;
-    color:#b38b2d;
-    margin-bottom:25px;
-}
-
-.about-text p{
-    margin-bottom:20px;
-    line-height:1.9;
-    color:#444;
-}
-
-.about-image{
-    flex:1;
-    min-width:320px;
-}
-
-.about-image img{
-    width:100%;
-    border-radius:14px;
-    display:block;
-    box-shadow:0 20px 45px rgba(0,0,0,.18);
-}
-
-
-    line-height:1.8;
-    font-size:1.1rem;
-}
-
-/* ===========================
-   PREMIUM PRODUCT CARDS
-=========================== */
-
-.product-card{
-
-    background:#fff;
+    background:#ffffff;
 
     border-radius:18px;
 
     overflow:hidden;
 
-    box-shadow:0 10px 35px rgba(0,0,0,0.12);
+    box-shadow:
+
+    0 10px 35px rgba(0,0,0,0.12);
 
     transition:all .4s ease;
 
     position:relative;
 
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
 }
 
 
 
-.product-card:hover{
+.product-card:hover {
 
     transform:translateY(-10px);
 
-    box-shadow:0 20px 45px rgba(0,0,0,0.22);
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,0.22);
 
 }
 
 
 
-
-.product-card img{
+.product-card img {
 
     width:100%;
 
@@ -1339,8 +516,7 @@ rgba(255,255,255,.15);
 
 
 
-
-.product-card:hover img{
+.product-card:hover img {
 
     transform:scale(1.08);
 
@@ -1348,23 +524,23 @@ rgba(255,255,255,.15);
 
 
 
-
-.product-card h3{
+.product-card h3 {
 
     color:#b38b2d;
 
-    font-size:1.25rem;
+    font-size:1.3rem;
 
     margin:22px 20px 10px;
 
     text-align:center;
 
+    letter-spacing:1px;
+
 }
 
 
 
-
-.product-card p{
+.product-card p {
 
     color:#555;
 
@@ -1374,12 +550,13 @@ rgba(255,255,255,.15);
 
     padding:0 25px 20px;
 
+    flex-grow:1;
+
 }
 
 
 
-
-.product-link{
+.product-link {
 
     text-decoration:none;
 
@@ -1387,12 +564,21 @@ rgba(255,255,255,.15);
 
     display:block;
 
+    height:100%;
+
 }
 
 
 
+.product-link:hover {
 
-.product-btn{
+    cursor:pointer;
+
+}
+
+
+
+.product-btn {
 
     display:block;
 
@@ -1404,7 +590,7 @@ rgba(255,255,255,.15);
 
     border:none;
 
-    padding:12px 28px;
+    padding:12px 30px;
 
     border-radius:30px;
 
@@ -1412,17 +598,402 @@ rgba(255,255,255,.15);
 
     font-size:.95rem;
 
-    transition:.3s;
+    letter-spacing:1px;
+
+    transition:.3s ease;
 
 }
 
 
 
+.product-btn:hover {
 
-.product-btn:hover{
+    background:#d4af37;
 
-    background:#8d6b20;
+    transform:translateY(-3px);
 
-    transform:scale(1.05);
+}
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+
+.contact {
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+
+
+.contact-box {
+
+    margin-top:30px;
+
+    padding:35px;
+
+    background:#f4f4f4;
+
+    display:inline-block;
+
+    border-radius:14px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+
+
+/* =========================
+   PREMIUM FOOTER
+========================= */
+
+
+.footer {
+
+    background:#111;
+
+    color:white;
+
+    padding:60px 8% 20px;
+
+}
+
+
+
+.footer-content {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+.footer-logo,
+.footer-links,
+.footer-contact {
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+
+
+.footer-crown {
+
+    width:80px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.footer h3 {
+
+    color:#d4af37;
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.footer h4 {
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+}
+
+
+
+.footer p {
+
+    color:#ddd;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.footer-links ul {
+
+    list-style:none;
+
+}
+
+
+
+.footer-links li {
+
+    margin-bottom:10px;
+
+}
+
+
+
+.footer-links a {
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+
+.footer-links a:hover {
+
+    color:#d4af37;
+
+}
+
+
+
+.footer-bottom {
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    color:#aaa;
+
+}
+
+
+
+/* =========================
+   ABOUT
+========================= */
+
+
+.about {
+
+    padding:90px 8%;
+
+    background:#faf8f3;
+
+}
+
+
+
+.about-content {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.about-text {
+
+    flex:1;
+
+    min-width:320px;
+
+}
+
+
+
+.about-text h2 {
+
+    font-size:2.3rem;
+
+    color:#b38b2d;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-text p {
+
+    margin-bottom:20px;
+
+    line-height:1.9;
+
+    color:#444;
+
+}
+
+
+
+.about-image {
+
+    flex:1;
+
+    min-width:320px;
+
+}
+
+
+
+.about-image img {
+
+    width:100%;
+
+    border-radius:14px;
+
+    display:block;
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.18);
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+
+.nav {
+
+    padding:0 20px;
+
+}
+
+
+
+.nav-links {
+
+    gap:15px;
+
+}
+
+
+
+.nav-links a {
+
+    font-size:14px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:42px;
+
+}
+
+
+
+.hero-tagline {
+
+    font-size:28px;
+
+}
+
+
+
+.hero-crown {
+
+    width:90px;
+
+}
+
+
+
+.hero-subtitle {
+
+    font-size:20px;
+
+    letter-spacing:5px;
+
+}
+
+
+
+.hero p {
+
+    font-size:16px;
+
+}
+
+
+
+.section {
+
+    padding:70px 20px;
+
+}
+
+
+
+.product-block {
+
+    padding:30px 20px;
+
+}
+
+
+
+.product-card img {
+
+    height:220px;
+
+}
+
+
+
+.about {
+
+    padding:70px 20px;
+
+}
+
+
+
+.about-content {
+
+    gap:35px;
+
+}
+
 
 }

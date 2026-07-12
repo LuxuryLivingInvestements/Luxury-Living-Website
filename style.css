@@ -1,46 +1,45 @@
 /* =========================
-   PART 1 START
-   RESET + BODY + NAVIGATION + HERO + BUTTONS
+   LUXURY LIVING SWAKOPMUND
+   COMPLETE STYLE SHEET
+   PAGE 1/6
+   RESET + BODY + NAVIGATION + HERO
 ========================= */
-
 
 
 /* =========================
    RESET
 ========================= */
 
-
 * {
 
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
 
 }
 
 
 
+html {
 
-/* =========================
-   BODY
-========================= */
+    scroll-behavior: smooth;
+
+}
+
+
 
 
 body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background: #f2f2f2;
+    background:#f2f2f2;
 
-    color: #222;
+    color:#222;
 
-    line-height: 1.6;
+    line-height:1.6;
 
-    scroll-behavior: smooth;
-
-    overflow-x: hidden;
+    overflow-x:hidden;
 
 }
 
@@ -55,29 +54,29 @@ body {
 
 .nav {
 
-    position: fixed;
+    position:fixed;
 
-    top: 0;
+    top:0;
 
-    left: 0;
+    left:0;
 
-    width: 100%;
+    width:100%;
 
-    height: 80px;
+    height:80px;
 
-    display: flex;
+    display:flex;
 
-    justify-content: flex-end;
+    justify-content:flex-end;
 
-    align-items: center;
+    align-items:center;
 
-    padding: 0 50px;
+    padding:0 50px;
 
-    background: transparent;
+    background:transparent;
 
-    z-index: 1000;
+    z-index:1000;
 
-    transition: 0.4s ease;
+    transition:0.4s ease;
 
 }
 
@@ -85,57 +84,49 @@ body {
 
 .nav.scrolled {
 
-    background: rgba(0,0,0,0.65);
+    background:rgba(0,0,0,0.75);
 
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
 
 }
-
-
 
 
 
 .nav-links {
 
-    list-style: none;
+    list-style:none;
 
-    display: flex;
+    display:flex;
 
-    gap: 45px;
+    gap:45px;
 
 }
-
-
 
 
 
 .nav-links a {
 
-    color: white;
+    color:white;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    font-size: 17px;
+    font-size:17px;
 
-    font-weight: 600;
+    font-weight:600;
 
-    letter-spacing: 1px;
+    letter-spacing:1px;
 
-    transition: 0.3s ease;
+    transition:0.3s ease;
 
 }
-
-
 
 
 
 .nav-links a:hover {
 
-    color: #d4af37;
+    color:#d4af37;
 
 }
-
-
 
 
 
@@ -144,15 +135,15 @@ body {
 
 
 /* =========================
-   HERO
+   HERO SECTION
 ========================= */
 
 
 .hero {
 
-    height: 90vh;
+    height:90vh;
 
-    min-height: 650px;
+    min-height:650px;
 
     background:
 
@@ -160,13 +151,13 @@ body {
 
     center / cover no-repeat;
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    justify-content:center;
 
-    align-items: center;
+    align-items:center;
 
-    position: relative;
+    position:relative;
 
 }
 
@@ -176,21 +167,21 @@ body {
 
 .hero::before {
 
-    content: "";
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    inset: 0;
+    inset:0;
 
     background:
 
     linear-gradient(
 
-        rgba(0,0,0,0.70),
+    rgba(0,0,0,0.70),
 
-        rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45),
 
-        rgba(0,0,0,0.70)
+    rgba(0,0,0,0.70)
 
     );
 
@@ -200,73 +191,61 @@ body {
 
 
 
-
 .hero-content {
 
-    position: relative;
+    position:relative;
 
-    z-index: 2;
+    z-index:2;
 
-    text-align: center;
+    text-align:center;
 
-    color: white;
+    color:white;
 
-    animation: heroLift 1.2s ease-out;
+    max-width:1100px;
 
-    max-width: 1100px;
+    padding:20px;
 
-    padding: 20px;
+    animation:heroLift 1.2s ease-out;
 
 }
 
 
 
-
-
-/* =========================
-   HERO CROWN
-========================= */
 
 
 .hero-crown {
 
-    width: 150px;
+    width:150px;
 
-    height: auto;
+    height:auto;
 
-    margin-bottom: 20px;
+    margin-bottom:20px;
 
 }
 
 
 
-
-
-
-/* =========================
-   HERO ANIMATION
-========================= */
 
 
 @keyframes heroLift {
 
 
-    from {
+from {
 
-        opacity: 0;
+    opacity:0;
 
-        transform: translateY(35px);
+    transform:translateY(35px);
 
-    }
+}
 
 
-    to {
+to {
 
-        opacity: 1;
+    opacity:1;
 
-        transform: translateY(0);
+    transform:translateY(0);
 
-    }
+}
 
 
 }
@@ -284,13 +263,13 @@ body {
 
 .hero h1 {
 
-    font-size: 76px;
+    font-size:76px;
 
-    letter-spacing: 4px;
+    font-weight:700;
 
-    font-weight: 700;
+    letter-spacing:4px;
 
-    line-height: 1.1;
+    line-height:1.1;
 
     text-shadow:
 
@@ -303,56 +282,44 @@ body {
 
 
 
-
-/* =========================
-   HERO TAGLINE
-========================= */
-
-
 .hero-tagline {
 
-    margin-top: 18px;
+    margin-top:18px;
 
-    margin-bottom: 15px;
-
+    margin-bottom:15px;
 
     font-family:
 
     "Cochocib Script Latin Pro",
-
     "Brush Script MT",
-
     cursive;
 
 
-    font-size: 38px;
+    font-size:38px;
 
-    font-weight: normal;
+    font-weight:normal;
 
-    letter-spacing: 2px;
-
+    letter-spacing:2px;
 
 
     background:
 
     linear-gradient(
 
-        180deg,
+    180deg,
 
-        #fff8c6,
+    #fff8c6,
 
-        #d4af37,
+    #d4af37,
 
-        #fff2b8
+    #fff2b8
 
     );
 
 
+    -webkit-background-clip:text;
 
-    -webkit-background-clip: text;
-
-    -webkit-text-fill-color: transparent;
-
+    -webkit-text-fill-color:transparent;
 
 
     text-shadow:
@@ -365,24 +332,21 @@ body {
 
 
 
-/* =========================
-   HERO SUBTITLE
-========================= */
 
 
 .hero-subtitle {
 
-    margin-top: 20px;
+    margin-top:20px;
 
-    font-size: 28px;
+    font-size:28px;
 
-    letter-spacing: 8px;
+    letter-spacing:8px;
 
-    color: #ffd700;
+    color:#ffd700;
 
-    font-weight: bold;
+    font-weight:bold;
 
-    animation: glow 3s infinite alternate;
+    animation:glow 3s infinite alternate;
 
 }
 
@@ -393,22 +357,22 @@ body {
 @keyframes glow {
 
 
-    from {
+from {
 
-        text-shadow:
+text-shadow:
 
-        0 0 8px rgba(255,215,0,0.4);
+0 0 8px rgba(255,215,0,0.4);
 
-    }
+}
 
 
-    to {
+to {
 
-        text-shadow:
+text-shadow:
 
-        0 0 25px rgba(255,215,0,0.9);
+0 0 25px rgba(255,215,0,0.9);
 
-    }
+}
 
 
 }
@@ -421,19 +385,17 @@ body {
 
 .hero p {
 
-    margin-top: 20px;
+    margin-top:20px;
 
-    font-size: 21px;
+    font-size:21px;
 
-    letter-spacing: 1px;
+    letter-spacing:1px;
 
     text-shadow:
 
     0 6px 20px rgba(0,0,0,0.5);
 
 }
-
-
 
 
 
@@ -448,50 +410,35 @@ body {
 
 .btn {
 
-    display: inline-block;
+    display:inline-block;
 
-    margin-top: 30px;
+    margin-top:30px;
 
-    padding:
+    padding:14px 34px;
 
-    14px 34px;
+    background:#d4af37;
 
+    color:#111;
 
-    background:
+    text-decoration:none;
 
-    #d4af37;
+    font-weight:bold;
 
+    letter-spacing:2px;
 
-    color: #111;
+    text-transform:uppercase;
 
+    border-radius:8px;
 
-    text-decoration: none;
-
-
-    font-weight: bold;
-
-
-    letter-spacing: 2px;
-
-
-    text-transform: uppercase;
-
-
-    border-radius: 8px;
-
-
-    transition: 0.3s ease;
+    transition:0.3s ease;
 
 }
 
 
 
-
-
 .btn:hover {
 
-    transform: translateY(-4px);
-
+    transform:translateY(-4px);
 
     box-shadow:
 
@@ -499,18 +446,9 @@ body {
 
 }
 
-
-
-
-
-
 /* =========================
-   PART 1 END
-========================= */
-
-/* =========================
-   PART 2 START
-   SECTIONS + ABOUT + PRODUCTS INTRO + PRODUCT BLOCKS
+   PAGE 2/6
+   GENERAL SECTIONS + ABOUT + PRODUCTS INTRO
 ========================= */
 
 
@@ -525,7 +463,29 @@ body {
 
     text-align:center;
 
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+
+    opacity 0.8s ease,
+
+    transform 0.8s ease;
+
 }
+
+
+
+.section.show {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
 
 
 
@@ -540,6 +500,7 @@ body {
 
 
 
+
 /* =========================
    ABOUT SECTION
 ========================= */
@@ -547,9 +508,9 @@ body {
 
 .about {
 
-    background: #ffffff;
+    background:#ffffff;
 
-    padding: 100px 40px;
+    padding:100px 40px;
 
 }
 
@@ -559,17 +520,17 @@ body {
 
 .about-content {
 
-    max-width: 1200px;
+    max-width:1200px;
 
-    margin: auto;
+    margin:auto;
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr;
 
-    gap: 60px;
+    gap:60px;
 
-    align-items: center;
+    align-items:center;
 
 }
 
@@ -579,7 +540,7 @@ body {
 
 .about-text {
 
-    text-align: left;
+    text-align:left;
 
 }
 
@@ -589,13 +550,13 @@ body {
 
 .about-text h2 {
 
-    font-size: 38px;
+    font-size:38px;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    margin-bottom: 30px;
+    margin-bottom:30px;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -605,13 +566,13 @@ body {
 
 .about-text p {
 
-    font-size: 17px;
+    font-size:17px;
 
-    line-height: 1.8;
+    line-height:1.8;
 
-    margin-bottom: 20px;
+    margin-bottom:20px;
 
-    color: #444;
+    color:#444;
 
 }
 
@@ -621,7 +582,7 @@ body {
 
 .about-image {
 
-    text-align: center;
+    text-align:center;
 
 }
 
@@ -631,27 +592,31 @@ body {
 
 .about-image img {
 
-    width: 100%;
+    width:100%;
 
-    max-width: 550px;
+    max-width:550px;
 
-    border-radius: 18px;
+    border-radius:18px;
 
     box-shadow:
 
     0 15px 35px rgba(0,0,0,0.15);
 
-    transition: 0.4s ease;
+    transition:0.4s ease;
 
 }
+
+
 
 
 
 .about-image img:hover {
 
-    transform: scale(1.03);
+    transform:scale(1.03);
 
 }
+
+
 
 
 
@@ -664,9 +629,11 @@ body {
 
 .products-intro {
 
-    max-width: 900px;
+    max-width:900px;
 
-    margin: 0 auto 60px;
+    margin:
+
+    0 auto 60px;
 
 }
 
@@ -676,13 +643,13 @@ body {
 
 .products-intro h2 {
 
-    font-size: 38px;
+    font-size:38px;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    margin-bottom: 20px;
+    margin-bottom:20px;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -692,13 +659,15 @@ body {
 
 .products-intro p {
 
-    font-size: 18px;
+    font-size:18px;
 
-    line-height: 1.7;
+    line-height:1.7;
 
-    color: #555;
+    color:#555;
 
 }
+
+
 
 
 
@@ -713,18 +682,22 @@ body {
 
     background:
 
-    rgba(255,255,255,0.85);
+    rgba(255,255,255,0.88);
 
 
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
 
-    border-radius: 18px;
 
-    padding: 50px 45px;
+    border-radius:18px;
 
-    margin: 60px auto;
 
-    max-width: 1100px;
+    padding:50px 45px;
+
+
+    margin:60px auto;
+
+
+    max-width:1100px;
 
 
     box-shadow:
@@ -732,11 +705,17 @@ body {
     0 15px 40px rgba(0,0,0,0.08);
 
 
-    opacity: 0;
+    opacity:0;
 
-    transform: translateY(40px);
 
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform:translateY(40px);
+
+
+    transition:
+
+    opacity 0.8s ease,
+
+    transform 0.8s ease;
 
 }
 
@@ -746,9 +725,9 @@ body {
 
 .product-block.show {
 
-    opacity: 1;
+    opacity:1;
 
-    transform: translateY(0);
+    transform:translateY(0);
 
 }
 
@@ -758,13 +737,13 @@ body {
 
 .product-block h2 {
 
-    margin-bottom: 35px;
+    margin-bottom:35px;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    font-size: 34px;
+    font-size:34px;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -772,13 +751,25 @@ body {
 
 
 
-/* =========================
-   PART 2 END
-========================= */
+#products {
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    #f2f2f2 0%,
+
+    #ffffff 100%
+
+    );
+
+}
 
 /* =========================
-   PART 3 START
-   PRODUCT GRID + PRODUCT CARDS + PRODUCT BUTTONS
+   PAGE 3/6
+   PRODUCT GRID + PRODUCT CARDS + BUTTONS
 ========================= */
 
 
@@ -789,11 +780,13 @@ body {
 
 .product-grid {
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns:
 
-    gap: 32px;
+    repeat(auto-fit, minmax(220px,1fr));
+
+    gap:32px;
 
 }
 
@@ -810,13 +803,13 @@ body {
 
 .product-card {
 
-    background: #ffffff;
+    background:#ffffff;
 
-    border-radius: 18px;
+    border-radius:18px;
 
-    overflow: hidden;
+    overflow:hidden;
 
-    text-align: left;
+    text-align:left;
 
     box-shadow:
 
@@ -828,9 +821,9 @@ body {
 
     box-shadow 0.4s ease;
 
-    display: flex;
+    display:flex;
 
-    flex-direction: column;
+    flex-direction:column;
 
 }
 
@@ -840,7 +833,7 @@ body {
 
 .product-card:hover {
 
-    transform: translateY(-10px);
+    transform:translateY(-10px);
 
     box-shadow:
 
@@ -861,15 +854,17 @@ body {
 
 .product-card img {
 
-    width: 100%;
+    width:100%;
 
-    height: 220px;
+    height:220px;
 
-    object-fit: cover;
+    object-fit:cover;
 
-    display: block;
+    display:block;
 
-    transition: transform 0.5s ease;
+    transition:
+
+    transform 0.5s ease;
 
 }
 
@@ -879,7 +874,7 @@ body {
 
 .product-card:hover img {
 
-    transform: scale(1.08);
+    transform:scale(1.08);
 
 }
 
@@ -896,13 +891,13 @@ body {
 
 .product-link {
 
-    display: block;
+    display:block;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    color: inherit;
+    color:inherit;
 
-    overflow: hidden;
+    overflow:hidden;
 
 }
 
@@ -912,7 +907,7 @@ body {
 
 .product-link:hover {
 
-    cursor: pointer;
+    cursor:pointer;
 
 }
 
@@ -934,11 +929,11 @@ body {
     18px 18px 8px;
 
 
-    font-size: 18px;
+    font-size:18px;
 
-    letter-spacing: 1px;
+    letter-spacing:1px;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -953,13 +948,13 @@ body {
     0 18px 20px;
 
 
-    font-size: 14px;
+    font-size:14px;
 
-    line-height: 1.6;
+    line-height:1.6;
 
-    color: #555;
+    color:#555;
 
-    flex-grow: 1;
+    flex-grow:1;
 
 }
 
@@ -976,7 +971,7 @@ body {
 
 .product-btn {
 
-    display: block;
+    display:block;
 
     margin:
 
@@ -988,23 +983,32 @@ body {
     12px 18px;
 
 
-    background: #d4af37;
+    background:#d4af37;
 
-    color: #111;
 
-    text-decoration: none;
+    color:#111;
 
-    font-size: 13px;
 
-    font-weight: bold;
+    text-decoration:none;
 
-    letter-spacing: 1px;
 
-    text-transform: uppercase;
+    font-size:13px;
 
-    border-radius: 6px;
 
-    text-align: center;
+    font-weight:bold;
+
+
+    letter-spacing:1px;
+
+
+    text-transform:uppercase;
+
+
+    border-radius:6px;
+
+
+    text-align:center;
+
 
     transition:
 
@@ -1022,54 +1026,16 @@ body {
 
 .product-btn:hover {
 
-    background: #b8860b;
+    background:#b8860b;
 
-    color: #ffffff;
+    color:white;
 
-    transform: translateY(-3px);
-
-}
-
-
-
-
-
-
-
-/* =========================
-   PRODUCT SECTION SPACING
-========================= */
-
-
-#products {
-
-    background:
-
-    linear-gradient(
-
-        180deg,
-
-        #f2f2f2 0%,
-
-        #ffffff 100%
-
-    );
+    transform:translateY(-3px);
 
 }
 
-
-
-
-
-
-
 /* =========================
-   PART 3 END
-========================= */
-
-
-/* =========================
-   PART 4 START
+   PAGE 4/6
    CONTACT + FOOTER
 ========================= */
 
@@ -1081,11 +1047,11 @@ body {
 
 .contact {
 
-    padding: 100px 40px;
+    padding:100px 40px;
 
-    text-align: center;
+    text-align:center;
 
-    background: #ffffff;
+    background:#ffffff;
 
 }
 
@@ -1095,13 +1061,13 @@ body {
 
 .contact h2 {
 
-    font-size: 38px;
+    font-size:38px;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    margin-bottom: 35px;
+    margin-bottom:35px;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -1111,21 +1077,21 @@ body {
 
 .contact-box {
 
-    max-width: 650px;
+    max-width:650px;
 
-    margin: 0 auto;
+    margin:0 auto;
 
-    padding: 50px;
+    padding:50px;
 
-    background: #f4f4f4;
+    background:#f4f4f4;
 
-    border-radius: 18px;
+    border-radius:18px;
 
     box-shadow:
 
     0 15px 35px rgba(0,0,0,0.12);
 
-    text-align: left;
+    text-align:left;
 
 }
 
@@ -1135,11 +1101,11 @@ body {
 
 .contact-box h3 {
 
-    font-size: 26px;
+    font-size:26px;
 
-    margin-bottom: 15px;
+    margin-bottom:15px;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -1149,11 +1115,23 @@ body {
 
 .contact-box p {
 
-    font-size: 17px;
+    font-size:17px;
 
-    color: #333;
+    color:#333;
 
-    margin-bottom: 18px;
+    margin-bottom:18px;
+
+}
+
+
+
+
+
+.contact-box a {
+
+    color:inherit;
+
+    text-decoration:none;
 
 }
 
@@ -1163,9 +1141,9 @@ body {
 
 .contact-box strong {
 
-    color: #d4af37;
+    color:#d4af37;
 
-    letter-spacing: 1px;
+    letter-spacing:1px;
 
 }
 
@@ -1175,13 +1153,11 @@ body {
 
 .contact-box .btn {
 
-    margin-right: 10px;
+    margin-right:10px;
 
-    margin-top: 10px;
+    margin-top:10px;
 
 }
-
-
 
 
 
@@ -1194,9 +1170,9 @@ body {
 
 .footer {
 
-    background: #111;
+    background:#111;
 
-    color: white;
+    color:white;
 
     padding:
 
@@ -1210,21 +1186,23 @@ body {
 
 .footer-content {
 
-    max-width: 1200px;
+    max-width:1200px;
 
-    margin: auto;
+    margin:auto;
 
-    display: grid;
+    display:grid;
 
     grid-template-columns:
 
     repeat(3,1fr);
 
-    gap: 50px;
+    gap:50px;
 
-    text-align: left;
+    text-align:left;
 
 }
+
+
 
 
 
@@ -1237,11 +1215,11 @@ body {
 
 .footer-logo img {
 
-    width: 95px;
+    width:95px;
 
-    height: auto;
+    height:auto;
 
-    margin-bottom: 15px;
+    margin-bottom:15px;
 
 }
 
@@ -1251,13 +1229,13 @@ body {
 
 .footer-logo h3 {
 
-    color: #d4af37;
+    color:#d4af37;
 
-    font-size: 22px;
+    font-size:22px;
 
-    letter-spacing: 2px;
+    letter-spacing:2px;
 
-    margin-bottom: 12px;
+    margin-bottom:12px;
 
 }
 
@@ -1267,9 +1245,9 @@ body {
 
 .footer-logo p {
 
-    color: #ccc;
+    color:#ccc;
 
-    line-height: 1.7;
+    line-height:1.7;
 
 }
 
@@ -1285,15 +1263,16 @@ body {
 
 
 .footer-links h4,
+
 .footer-contact h4 {
 
-    color: #d4af37;
+    color:#d4af37;
 
-    font-size: 18px;
+    font-size:18px;
 
-    letter-spacing: 2px;
+    letter-spacing:2px;
 
-    margin-bottom: 20px;
+    margin-bottom:20px;
 
 }
 
@@ -1303,7 +1282,7 @@ body {
 
 .footer-links ul {
 
-    list-style: none;
+    list-style:none;
 
 }
 
@@ -1313,7 +1292,7 @@ body {
 
 .footer-links li {
 
-    margin-bottom: 12px;
+    margin-bottom:12px;
 
 }
 
@@ -1323,11 +1302,11 @@ body {
 
 .footer-links a {
 
-    color: white;
+    color:white;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    transition: color 0.3s ease;
+    transition:0.3s ease;
 
 }
 
@@ -1337,7 +1316,7 @@ body {
 
 .footer-links a:hover {
 
-    color: #d4af37;
+    color:#d4af37;
 
 }
 
@@ -1354,9 +1333,31 @@ body {
 
 .footer-contact p {
 
-    color: #ddd;
+    color:#ddd;
 
-    margin-bottom: 12px;
+    margin-bottom:12px;
+
+}
+
+
+
+
+
+.footer-contact a {
+
+    color:#ddd;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+.footer-contact a:hover {
+
+    color:#d4af37;
 
 }
 
@@ -1373,33 +1374,30 @@ body {
 
 .footer-bottom {
 
-    max-width: 1200px;
+    max-width:1200px;
 
     margin:
 
     40px auto 0;
 
 
-    padding-top: 20px;
+    padding-top:20px;
+
 
     border-top:
 
     1px solid rgba(255,255,255,0.2);
 
 
-    text-align: center;
+    text-align:center;
 
-    color: #aaa;
 
-    font-size: 14px;
+    color:#aaa;
+
+
+    font-size:14px;
 
 }
-
-
-
-/* =========================
-   PART 4 END
-========================= */
 
 /* =========================
    PART 5 START
@@ -1413,7 +1411,6 @@ body {
 
 
 @media (max-width:768px) {
-
 
 
 /* =========================
@@ -1431,9 +1428,9 @@ body {
 
     justify-content:center;
 
-    background:rgba(0,0,0,0.45);
+    background:rgba(0,0,0,0.55);
 
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(10px);
 
 }
 
@@ -1441,15 +1438,17 @@ body {
 
 .nav-links {
 
+    width:100%;
+
+    display:flex;
+
     flex-wrap:wrap;
 
     justify-content:center;
 
     align-items:center;
 
-    gap:12px 20px;
-
-    width:100%;
+    gap:15px 25px;
 
 }
 
@@ -1467,6 +1466,7 @@ body {
 
 
 
+
 /* =========================
    HERO
 ========================= */
@@ -1474,11 +1474,19 @@ body {
 
 .hero {
 
-    min-height:600px;
-
     height:auto;
 
+    min-height:650px;
+
     padding:130px 20px 80px;
+
+}
+
+
+
+.hero-content {
+
+    max-width:100%;
 
 }
 
@@ -1488,15 +1496,7 @@ body {
 
     width:110px;
 
-}
-
-
-
-.hero-tagline {
-
-    font-size:28px;
-
-    letter-spacing:1px;
+    margin-bottom:15px;
 
 }
 
@@ -1512,11 +1512,21 @@ body {
 
 
 
+.hero-tagline {
+
+    font-size:28px;
+
+    letter-spacing:1px;
+
+}
+
+
+
 .hero-subtitle {
 
     font-size:20px;
 
-    letter-spacing:5px;
+    letter-spacing:4px;
 
 }
 
@@ -1526,19 +1536,31 @@ body {
 
     font-size:16px;
 
+    line-height:1.6;
+
 }
 
 
 
+
+
+
+/* =========================
+   BUTTONS
+========================= */
 
 
 .btn {
 
-    padding:12px 25px;
+    padding:12px 24px;
 
     font-size:13px;
 
+    letter-spacing:1px;
+
 }
+
+
 
 
 
@@ -1554,6 +1576,8 @@ body {
     padding:70px 20px;
 
 }
+
+
 
 
 
@@ -1606,8 +1630,6 @@ body {
 
 
 
-
-
 .about-image img {
 
     max-width:100%;
@@ -1621,8 +1643,16 @@ body {
 
 
 /* =========================
-   PRODUCTS
+   PRODUCTS INTRO
 ========================= */
+
+
+.products-intro {
+
+    margin-bottom:40px;
+
+}
+
 
 
 .products-intro h2 {
@@ -1643,15 +1673,22 @@ body {
 
 
 
+
+
+/* =========================
+   PRODUCT BLOCKS
+========================= */
+
+
 .product-block {
 
     padding:30px 20px;
 
     margin:40px auto;
 
+    border-radius:15px;
+
 }
-
-
 
 
 
@@ -1659,10 +1696,19 @@ body {
 
     font-size:26px;
 
+    margin-bottom:25px;
+
 }
 
 
 
+
+
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
 
 
 .product-grid {
@@ -1677,6 +1723,21 @@ body {
 
 
 
+
+
+/* =========================
+   PRODUCT CARDS
+========================= */
+
+
+.product-card {
+
+    border-radius:15px;
+
+}
+
+
+
 .product-card img {
 
     height:220px;
@@ -1685,11 +1746,36 @@ body {
 
 
 
-
-
 .product-card h3 {
 
     font-size:17px;
+
+}
+
+
+
+.product-card p {
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PRODUCT BUTTON
+========================= */
+
+
+.product-btn {
+
+    margin:0 15px 18px;
+
+    font-size:12px;
 
 }
 
@@ -1706,7 +1792,7 @@ body {
 
 .contact {
 
-    padding:60px 20px;
+    padding:70px 20px;
 
 }
 
@@ -1724,7 +1810,23 @@ body {
 
     width:100%;
 
-    padding:25px;
+    padding:30px 20px;
+
+}
+
+
+
+.contact-box h3 {
+
+    font-size:23px;
+
+}
+
+
+
+.contact-box p {
+
+    font-size:16px;
 
 }
 
@@ -1771,6 +1873,14 @@ body {
 
 
 
+.footer-logo img {
+
+    width:85px;
+
+}
+
+
+
 .footer-bottom {
 
     margin-top:30px;
@@ -1800,6 +1910,14 @@ body {
 
 
 
+.hero {
+
+    min-height:600px;
+
+}
+
+
+
 .hero h1 {
 
     font-size:34px;
@@ -1818,7 +1936,17 @@ body {
 
 .hero-subtitle {
 
-    font-size:18px;
+    font-size:17px;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.hero p {
+
+    font-size:15px;
 
 }
 
@@ -1840,8 +1968,6 @@ body {
 
 
 
-
-
 .product-block {
 
     padding:25px 15px;
@@ -1850,11 +1976,17 @@ body {
 
 
 
-
-
 .product-card img {
 
     height:200px;
+
+}
+
+
+
+.contact-box {
+
+    padding:25px 15px;
 
 }
 
@@ -1872,9 +2004,10 @@ body {
    PART 5 END
 ========================= */
 
+
 /* =========================
    PART 6 START
-   LIGHTBOX
+   LIGHTBOX + FINAL FIXES
 ========================= */
 
 
@@ -1891,7 +2024,7 @@ body {
 
     inset:0;
 
-    background:rgba(0,0,0,0.90);
+    background:rgba(0,0,0,0.92);
 
     z-index:2000;
 
@@ -1902,6 +2035,8 @@ body {
     padding:40px;
 
 }
+
+
 
 
 
@@ -1924,7 +2059,7 @@ body {
 
     box-shadow:
 
-    0 20px 50px rgba(0,0,0,0.5);
+    0 20px 50px rgba(0,0,0,0.6);
 
 }
 
@@ -1963,8 +2098,6 @@ body {
 
 
 
-
-
 .close:hover {
 
     color:#d4af37;
@@ -1991,21 +2124,29 @@ body {
 
     transform:translateY(-50%);
 
-    background:rgba(212,175,55,0.85);
-
-    color:#111;
-
-    border:none;
-
     width:55px;
 
     height:55px;
 
     border-radius:50%;
 
+    border:none;
+
+    background:#d4af37;
+
+    color:#111;
+
     font-size:30px;
 
+    font-weight:bold;
+
     cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
     transition:0.3s ease;
 
@@ -2013,18 +2154,14 @@ body {
 
 
 
-
-
 .prev:hover,
 .next:hover {
 
-    background:#d4af37;
+    background:#ffffff;
 
     transform:translateY(-50%) scale(1.1);
 
 }
-
-
 
 
 
@@ -2036,11 +2173,68 @@ body {
 
 
 
-
-
 .next {
 
     right:40px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SECTION ANIMATION SAFETY
+========================= */
+
+
+.section {
+
+    opacity:1;
+
+}
+
+
+
+.section.show {
+
+    opacity:1;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   IMAGE SAFETY
+========================= */
+
+
+img {
+
+    max-width:100%;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   LINK FIXES
+========================= */
+
+
+a {
+
+    transition:0.3s ease;
 
 }
 
@@ -2096,7 +2290,7 @@ body {
 
     height:45px;
 
-    font-size:24px;
+    font-size:22px;
 
 }
 
@@ -2127,7 +2321,54 @@ body {
 
 
 /* =========================
-   PART 6 END
+   VERY SMALL SCREENS
 ========================= */
 
 
+@media (max-width:380px) {
+
+
+
+.hero h1 {
+
+    font-size:30px;
+
+}
+
+
+
+.hero-tagline {
+
+    font-size:21px;
+
+}
+
+
+
+.hero-subtitle {
+
+    font-size:15px;
+
+}
+
+
+
+.nav-links a {
+
+    font-size:12px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PART 6 END
+========================= */

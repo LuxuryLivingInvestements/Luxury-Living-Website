@@ -521,24 +521,9 @@ body {
 
 .section {
 
-    padding: 100px 40px;
+    padding:100px 40px;
 
-    text-align: center;
-
-    opacity: 0;
-
-    transform: translateY(40px);
-
-    transition: opacity 0.8s ease, transform 0.8s ease;
-
-}
-
-
-.section.show {
-
-    opacity: 1;
-
-    transform: translateY(0);
+    text-align:center;
 
 }
 
@@ -546,12 +531,11 @@ body {
 
 .section h2 {
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    font-weight: 700;
+    font-weight:700;
 
 }
-
 
 
 

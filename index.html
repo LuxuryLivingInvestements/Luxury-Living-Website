@@ -974,11 +974,17 @@ onclick="changeImage(1, event)"
 
 
 
-<!-- =========================
+
+    <!-- =========================
      JAVASCRIPT
 ========================= -->
 
 <script>
+
+
+/* =========================
+   PAGE LOAD
+========================= */
 
 
 window.onload = function(){
@@ -989,6 +995,15 @@ window.onload = function(){
 
 
 
+
+
+
+
+/* =========================
+   LIGHTBOX SYSTEM
+========================= */
+
+
 let images = [];
 
 let currentIndex = 0;
@@ -997,7 +1012,7 @@ let currentIndex = 0;
 
 
 
-/* LIGHTBOX OPEN */
+/* OPEN LIGHTBOX */
 
 
 document.addEventListener("click", function(e){
@@ -1008,7 +1023,9 @@ document.addEventListener("click", function(e){
         e.target.closest(".product-card")
     ){
 
+
         e.preventDefault();
+
 
 
         images = Array.from(
@@ -1016,16 +1033,23 @@ document.addEventListener("click", function(e){
         );
 
 
-        currentIndex = images.indexOf(e.target);
+
+        currentIndex =
+        images.indexOf(e.target);
 
 
-        openLightbox(e.target.src);
+
+        openLightbox(
+            e.target.src
+        );
 
 
     }
 
 
 });
+
+
 
 
 
@@ -1035,13 +1059,31 @@ document.addEventListener("click", function(e){
 function openLightbox(src){
 
 
-    document.getElementById("lightbox").style.display = "flex";
+    const lightbox =
+    document.getElementById("lightbox");
 
 
-    document.getElementById("lightbox-img").src = src;
+
+    const image =
+    document.getElementById("lightbox-img");
+
+
+
+    if(lightbox && image){
+
+
+        lightbox.style.display = "flex";
+
+
+        image.src = src;
+
+
+    }
 
 
 }
+
+
 
 
 
@@ -1051,7 +1093,18 @@ function openLightbox(src){
 function closeLightbox(){
 
 
-    document.getElementById("lightbox").style.display = "none";
+    const lightbox =
+    document.getElementById("lightbox");
+
+
+
+    if(lightbox){
+
+
+        lightbox.style.display = "none";
+
+
+    }
 
 
 }
@@ -1061,92 +1114,29 @@ function closeLightbox(){
 
 
 
-/* CLOSE WITH X */
 
 
-document.querySelector(".close").onclick = function(e){
+/* CLOSE BUTTON */
 
-    e.stopPropagation();
 
-    closeLightbox();
-
-};
+const closeButton =
+document.querySelector(".close");
 
 
 
+if(closeButton){
 
 
+    closeButton.onclick=function(e){
 
 
-/* CLOSE WHEN CLICKING OUTSIDE IMAGE */
-
-
-document.getElementById("lightbox").addEventListener(
-"click",
-function(e){
-
-
-    if(e.target.id === "lightbox"){
+        e.stopPropagation();
 
 
         closeLightbox();
 
 
-    }
-
-
-});
-
-
-
-
-
-
-
-
-/* NEXT / PREVIOUS IMAGE */
-
-
-function changeImage(step,event){
-
-
-    if(event){
-
-        event.stopPropagation();
-
-    }
-
-
-    if(images.length === 0){
-
-        return;
-
-    }
-
-
-
-    currentIndex += step;
-
-
-
-    if(currentIndex < 0){
-
-        currentIndex = images.length - 1;
-
-    }
-
-
-
-    if(currentIndex >= images.length){
-
-        currentIndex = 0;
-
-    }
-
-
-
-    document.getElementById("lightbox-img").src =
-    images[currentIndex].src;
+    };
 
 
 }
@@ -1157,65 +1147,29 @@ function changeImage(step,event){
 
 
 
-/* NAV SCROLL EFFECT */
+
+/* CLOSE WHEN CLICKING OUTSIDE */
 
 
-const nav = document.querySelector(".nav");
-
-
-
-window.addEventListener("scroll",()=>{
-
-
-    if(window.scrollY > 50){
-
-
-        nav.classList.add("scrolled");
-
-
-    } else {
-
-
-        nav.classList.remove("scrolled");
-
-
-    }
-
-
-});
+const lightbox =
+document.getElementById("lightbox");
 
 
 
+if(lightbox){
 
 
+    lightbox.addEventListener(
+    "click",
+    function(e){
 
 
-
-/* SECTION FADE-IN */
-
-
-const sections = document.querySelectorAll(".section");
+        if(
+            e.target.id === "lightbox"
+        ){
 
 
-
-function showSections(){
-
-
-    const triggerBottom = window.innerHeight * 0.85;
-
-
-
-    sections.forEach(section=>{
-
-
-        const top = section.getBoundingClientRect().top;
-
-
-
-        if(top < triggerBottom){
-
-
-            section.classList.add("show");
+            closeLightbox();
 
 
         }
@@ -1228,10 +1182,272 @@ function showSections(){
 
 
 
+
+
+
+
+
+/* NEXT / PREVIOUS */
+
+
+function changeImage(step,event){
+
+
+    if(event){
+
+
+        event.stopPropagation();
+
+
+    }
+
+
+
+    if(images.length === 0){
+
+
+        return;
+
+
+    }
+
+
+
+
+    currentIndex += step;
+
+
+
+
+
+    if(currentIndex < 0){
+
+
+        currentIndex =
+        images.length - 1;
+
+
+    }
+
+
+
+
+
+    if(currentIndex >= images.length){
+
+
+        currentIndex = 0;
+
+
+    }
+
+
+
+
+
+
+    const lightboxImage =
+    document.getElementById("lightbox-img");
+
+
+
+    if(lightboxImage){
+
+
+        lightboxImage.src =
+        images[currentIndex].src;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* KEYBOARD CONTROL */
+
+
+document.addEventListener(
+"keydown",
+function(e){
+
+
+
+    const box =
+    document.getElementById("lightbox");
+
+
+
+    if(
+        box &&
+        box.style.display === "flex"
+    ){
+
+
+
+        if(e.key === "Escape"){
+
+
+            closeLightbox();
+
+
+        }
+
+
+
+
+        if(e.key === "ArrowRight"){
+
+
+            changeImage(1);
+
+
+        }
+
+
+
+
+        if(e.key === "ArrowLeft"){
+
+
+            changeImage(-1);
+
+
+        }
+
+
+
+    }
+
+
+
+});
+
+
+
+
+
+
+
+
+
+/* =========================
+   NAVIGATION EFFECT
+========================= */
+
+
+const nav =
+document.querySelector(".nav");
+
+
+
+window.addEventListener(
+"scroll",
+function(){
+
+
+
+    if(window.scrollY > 50){
+
+
+        nav.classList.add(
+        "scrolled"
+        );
+
+
+    }
+    else{
+
+
+        nav.classList.remove(
+        "scrolled"
+        );
+
+
+    }
+
+
+
+});
+
+
+
+
+
+
+
+
+
+/* =========================
+   SECTION FADE IN
+========================= */
+
+
+const sections =
+document.querySelectorAll(".section");
+
+
+
+
+
+function showSections(){
+
+
+
+    const triggerBottom =
+    window.innerHeight * 0.85;
+
+
+
+
+
+    sections.forEach(function(section){
+
+
+
+        const top =
+        section.getBoundingClientRect().top;
+
+
+
+
+
+        if(top < triggerBottom){
+
+
+
+            section.classList.add(
+            "show"
+            );
+
+
+
+        }
+
+
+
+    });
+
+
+
+}
+
+
+
+
+
+
 window.addEventListener(
 "scroll",
 showSections
 );
+
 
 
 showSections();
@@ -1243,7 +1459,10 @@ showSections();
 
 
 
-/* PRODUCT BLOCK ANIMATION */
+
+/* =========================
+   PRODUCT BLOCK ANIMATION
+========================= */
 
 
 const productBlocks =
@@ -1251,33 +1470,52 @@ document.querySelectorAll(".product-block");
 
 
 
+
+
 function showBlocks(){
 
 
-    const triggerBottom = window.innerHeight * 0.85;
+
+    const triggerBottom =
+    window.innerHeight * 0.85;
 
 
 
-    productBlocks.forEach(block=>{
 
 
-        const top = block.getBoundingClientRect().top;
+    productBlocks.forEach(function(block){
+
+
+
+        const top =
+        block.getBoundingClientRect().top;
+
+
 
 
 
         if(top < triggerBottom){
 
 
-            block.classList.add("show");
+
+            block.classList.add(
+            "show"
+            );
+
 
 
         }
 
 
+
     });
 
 
+
 }
+
+
+
 
 
 
@@ -1287,14 +1525,67 @@ showBlocks
 );
 
 
+
 showBlocks();
 
 
 
+
+
+
+
+
+
+/* =========================
+   SMOOTH INTERNAL LINKS
+========================= */
+
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach(function(link){
+
+
+
+    link.addEventListener(
+    "click",
+    function(e){
+
+
+
+        const target =
+        document.querySelector(
+        this.getAttribute("href")
+        );
+
+
+
+        if(target){
+
+
+
+            e.preventDefault();
+
+
+
+            target.scrollIntoView({
+
+                behavior:"smooth"
+
+            });
+
+
+
+        }
+
+
+
+    });
+
+
+
+});
+
+
+
 </script>
-     
-
-</body>
-
-</html>
-

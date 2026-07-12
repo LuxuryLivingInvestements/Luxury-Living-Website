@@ -34,6 +34,8 @@ body {
 
     scroll-behavior: smooth;
 
+    overflow-x: hidden;
+
 }
 
 
@@ -285,11 +287,11 @@ body {
     -webkit-text-fill-color: transparent;
 
 
-    text-shadow:
+   text-shadow:
 
-    0 2px 5px rgba(255,215,100,0.45),
+0 2px 5px rgba(255,215,100,0.45),
 
-    0 5px 18px rgba(0,0,0,0.55);
+0 5px 18px rgba(0,0,0,0.55);
 
 }
 

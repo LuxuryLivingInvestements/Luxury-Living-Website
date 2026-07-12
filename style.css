@@ -1915,3 +1915,262 @@ body {
 /* =========================
    PART 6 END
 ========================= */
+
+/* =========================
+   PART 7 START
+   PRODUCT SUB-PAGES
+========================= */
+
+
+/* =========================
+   SUB HERO
+========================= */
+
+
+.sub-hero {
+
+    height: 65vh;
+
+    min-height: 500px;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.55)
+    ),
+
+    url("hero.jpg") center / cover no-repeat;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   SUB PAGE CONTENT
+========================= */
+
+
+.sub-page-section {
+
+    padding:100px 40px;
+
+    background:#f2f2f2;
+
+    text-align:center;
+
+}
+
+
+
+.sub-page-section h2 {
+
+    font-size:38px;
+
+    letter-spacing:3px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+
+/* =========================
+   PRODUCT INTRO
+========================= */
+
+
+.product-intro,
+.roller-intro {
+
+    max-width:900px;
+
+    margin:0 auto 60px;
+
+}
+
+
+
+.product-intro h3,
+.roller-intro h3 {
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.product-intro p,
+.roller-intro p {
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+
+
+/* =========================
+   SUB PAGE FOOTER
+========================= */
+
+
+footer {
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+
+/* =========================
+   PART 7 END
+========================= */
+
+/* =========================
+   PART 8 START
+   SUB PAGE HERO CONTENT
+========================= */
+
+
+/* PRODUCT PAGE HERO CONTENT */
+
+
+.sub-hero .hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+    animation:heroLift 1.2s ease-out;
+
+}
+
+
+
+.sub-hero h1 {
+
+    font-size:64px;
+
+    letter-spacing:5px;
+
+    font-weight:700;
+
+    text-shadow:
+
+    0 10px 30px rgba(0,0,0,0.7);
+
+}
+
+
+
+.sub-hero p {
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+    text-shadow:
+
+    0 6px 20px rgba(0,0,0,0.6);
+
+}
+
+
+
+.sub-hero .hero-crown {
+
+    width:120px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* =========================
+   MOBILE SUB HERO
+========================= */
+
+
+@media (max-width:768px){
+
+
+    .sub-hero {
+
+        min-height:450px;
+
+        height:auto;
+
+        padding:120px 20px 80px;
+
+    }
+
+
+
+    .sub-hero h1 {
+
+        font-size:38px;
+
+        letter-spacing:3px;
+
+    }
+
+
+
+    .sub-hero p {
+
+        font-size:16px;
+
+    }
+
+
+
+    .sub-hero .hero-crown {
+
+        width:90px;
+
+    }
+
+
+}
+
+
+
+/* =========================
+   PART 8 END
+========================= */

@@ -2004,6 +2004,204 @@ text-shadow:
    PART 5 END
 ========================= */
 
+/* =========================
+   PRODUCT PAGE SECTIONS
+   SUB HERO + SUB PAGE CONTENT
+========================= */
+
+
+/* =========================
+   SUB HERO
+========================= */
+
+
+.sub-hero {
+
+    height:70vh;
+
+    min-height:550px;
+
+    background:
+
+    url("hero.jpg")
+
+    center / cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+
+
+.sub-hero::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,0.75),
+
+    rgba(0,0,0,0.45),
+
+    rgba(0,0,0,0.75)
+
+    );
+
+}
+
+
+
+.sub-hero .hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+
+
+.sub-hero h1 {
+
+    font-size:60px;
+
+    letter-spacing:5px;
+
+    text-shadow:
+
+    0 10px 30px rgba(0,0,0,0.7);
+
+}
+
+
+
+
+
+.sub-hero p {
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SUB PAGE SECTION
+========================= */
+
+
+.sub-page-section {
+
+    padding:90px 40px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+}
+
+
+
+
+
+.sub-page-section h2 {
+
+    font-size:38px;
+
+    letter-spacing:3px;
+
+    margin-bottom:50px;
+
+    color:#222;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PRODUCT PAGE MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+.sub-hero {
+
+    min-height:500px;
+
+    height:auto;
+
+    padding:140px 20px 80px;
+
+}
+
+
+
+.sub-hero h1 {
+
+    font-size:38px;
+
+}
+
+
+
+.sub-hero p {
+
+    font-size:16px;
+
+}
+
+
+
+.sub-page-section {
+
+    padding:60px 20px;
+
+}
+
+
+
+.sub-page-section h2 {
+
+    font-size:28px;
+
+}
+
+
+
+}
 
 /* =========================
    PART 6 START
@@ -2014,7 +2212,6 @@ text-shadow:
 /* =========================
    LIGHTBOX CONTAINER
 ========================= */
-
 
 .lightbox {
 
@@ -2040,12 +2237,9 @@ text-shadow:
 
 
 
-
-
 /* =========================
    LIGHTBOX IMAGE
 ========================= */
-
 
 .lightbox img {
 
@@ -2058,7 +2252,6 @@ text-shadow:
     border-radius:12px;
 
     box-shadow:
-
     0 20px 50px rgba(0,0,0,0.6);
 
 }
@@ -2067,12 +2260,9 @@ text-shadow:
 
 
 
-
-
 /* =========================
    CLOSE BUTTON
 ========================= */
-
 
 .close {
 
@@ -2108,12 +2298,9 @@ text-shadow:
 
 
 
-
-
 /* =========================
    PREVIOUS / NEXT BUTTONS
 ========================= */
-
 
 .prev,
 .next {
@@ -2183,27 +2370,9 @@ text-shadow:
 
 
 
-
-
-/* =========================
-   SECTION ANIMATION SAFETY
-========================= */
-
-
-.section {
-
-    opacity:1;
-
-}
-
-
-
-
-
 /* =========================
    IMAGE SAFETY
 ========================= */
-
 
 img {
 
@@ -2215,12 +2384,9 @@ img {
 
 
 
-
-
 /* =========================
    LINK FIXES
 ========================= */
-
 
 a {
 
@@ -2232,12 +2398,35 @@ a {
 
 
 
+/* =========================
+   CURTAIN RAILS FEATURE IMAGE
+========================= */
+
+.curtain-rails-feature-image {
+
+    width:100%;
+
+    max-width:900px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:10px;
+
+}
+
+
+
 
 
 /* =========================
    MOBILE LIGHTBOX
 ========================= */
-
 
 @media (max-width:768px) {
 
@@ -2308,12 +2497,9 @@ a {
 
 
 
-
-
 /* =========================
    VERY SMALL SCREENS
 ========================= */
-
 
 @media (max-width:380px) {
 
@@ -2352,30 +2538,6 @@ a {
 
 
 }
-
-/* =========================
-   CURTAIN RAILS FEATURE IMAGE
-========================= */
-
-.curtain-rails-feature-image {
-
-    width: 100%;
-
-    max-width: 900px;
-
-    height: 350px;
-
-    object-fit: cover;
-
-    display: block;
-
-    margin: 30px auto;
-
-    border-radius: 10px;
-
-}
-
-
 
 
 

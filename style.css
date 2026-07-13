@@ -2039,6 +2039,8 @@ text-shadow:
 
 
 
+
+
 .sub-hero::before {
 
     content:"";
@@ -2063,6 +2065,8 @@ text-shadow:
 
 
 
+
+
 .sub-hero .hero-content {
 
     position:relative;
@@ -2079,11 +2083,29 @@ text-shadow:
 
 
 
+.sub-hero .hero-crown {
+
+    width:150px;
+
+    height:auto;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
 .sub-hero h1 {
 
     font-size:60px;
 
+    font-weight:700;
+
     letter-spacing:5px;
+
+    line-height:1.1;
 
     text-shadow:
 
@@ -2103,7 +2125,10 @@ text-shadow:
 
     letter-spacing:2px;
 
+    color:white;
+
 }
+
 
 
 
@@ -2136,11 +2161,102 @@ text-shadow:
 
     letter-spacing:3px;
 
-    margin-bottom:50px;
+    margin-bottom:35px;
 
     color:#222;
 
 }
+
+
+
+
+
+
+
+
+/* =========================
+   PRODUCTS INTRO
+========================= */
+
+
+.products-intro {
+
+    max-width:950px;
+
+    margin:
+
+    0 auto 50px;
+
+}
+
+
+
+
+
+.products-intro p {
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   CURTAIN RAIL FEATURE IMAGE
+========================= */
+
+
+.curtain-rails-feature-image {
+
+    width:100%;
+
+    max-width:900px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:30px auto 60px;
+
+    border-radius:12px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   PRODUCT PAGE GRID
+========================= */
+
+
+.sub-page-section .product-grid {
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
 
 
 
@@ -2169,9 +2285,19 @@ text-shadow:
 
 
 
+.sub-hero .hero-crown {
+
+    width:110px;
+
+}
+
+
+
 .sub-hero h1 {
 
     font-size:38px;
+
+    letter-spacing:3px;
 
 }
 
@@ -2180,6 +2306,8 @@ text-shadow:
 .sub-hero p {
 
     font-size:16px;
+
+    letter-spacing:1px;
 
 }
 
@@ -2196,6 +2324,22 @@ text-shadow:
 .sub-page-section h2 {
 
     font-size:28px;
+
+}
+
+
+
+.products-intro p {
+
+    font-size:16px;
+
+}
+
+
+
+.curtain-rails-feature-image {
+
+    height:220px;
 
 }
 

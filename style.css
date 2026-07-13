@@ -2363,7 +2363,27 @@ a {
 
 }
 
+/* =========================
+   CURTAIN RAILS FEATURE IMAGE
+========================= */
 
+.curtain-rails-feature-image {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 30px auto;
+
+    border-radius: 10px;
+
+}
 
 
 

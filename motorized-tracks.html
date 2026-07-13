@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Motorized Curtain Tracks - Luxury Living Swakopmund</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+
+<span class="close">
+&times;
+</span>
+
+
+<img id="lightbox-img" src="">
+
+
+<button class="prev" onclick="changeImage(-1,event)">
+&#10094;
+</button>
+
+
+<button class="next" onclick="changeImage(1,event)">
+&#10095;
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- NAV -->
+
+<nav class="nav">
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="curtain-rails.html">Curtain Rails</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="sub-hero">
+
+
+<div class="hero-content">
+
+
+<img src="crown.png" alt="Luxury Crown" class="hero-crown">
+
+
+<h1>
+MOTORIZED CURTAIN TRACKS
+</h1>
+
+
+<p>
+Smart Home Control • Remote Operation • Luxury Automation
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTENT -->
+
+<section class="sub-page-section">
+
+
+<h2>
+MOTORIZED CURTAIN TRACK COLLECTION
+</h2>
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/curtain-rails/motorized/motorized1.jpg" alt="Motorized Curtain Track">
+
+
+<h3>
+Smart Curtain Automation
+</h3>
+
+
+<p>
+Experience effortless curtain control with modern motorized track systems.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/curtain-rails/motorized/motorized2.jpg" alt="Remote Controlled Curtain Track">
+
+
+<h3>
+Remote Control Operation
+</h3>
+
+
+<p>
+Open and close curtains easily with convenient remote operation.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/curtain-rails/motorized/motorized3.jpg" alt="Smart Home Curtain System">
+
+
+<h3>
+Smart Home Integration
+</h3>
+
+
+<p>
+Designed for luxury homes requiring comfort, technology and style.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/curtain-rails/motorized/motorized4.jpg" alt="Motorized Curtain Installation">
+
+
+<h3>
+Professional Installation
+</h3>
+
+
+<p>
+Custom measured and installed systems for a perfect luxury finish.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Luxury Living - Swakopmund
+</p>
+
+</footer>
+
+
+
+
+
+
+<script>
+
+
+let images = [];
+
+let currentIndex = 0;
+
+
+
+document.addEventListener("click", function(e){
+
+
+if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
+
+
+images = Array.from(
+document.querySelectorAll(".product-card img")
+);
+
+
+currentIndex = images.indexOf(e.target);
+
+
+openLightbox(e.target.src);
+
+
+}
+
+
+});
+
+
+
+function openLightbox(src){
+
+document.getElementById("lightbox").style.display="flex";
+
+document.getElementById("lightbox-img").src=src;
+
+}
+
+
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+
+
+function changeImage(step,event){
+
+event.stopPropagation();
+
+
+currentIndex += step;
+
+
+if(currentIndex < 0){
+
+currentIndex = images.length - 1;
+
+}
+
+
+if(currentIndex >= images.length){
+
+currentIndex = 0;
+
+}
+
+
+document.getElementById("lightbox-img").src =
+images[currentIndex].src;
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Timberwood Shutters - Luxury Living Swakopmund</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+
+<span class="close">
+&times;
+</span>
+
+
+<img id="lightbox-img" src="">
+
+
+<button class="prev" onclick="changeImage(-1, event)">
+&#10094;
+</button>
+
+
+<button class="next" onclick="changeImage(1, event)">
+&#10095;
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- NAV -->
+
+<nav class="nav">
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#products">Products</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="sub-hero">
+
+
+<div class="hero-content">
+
+
+<img src="crown.png" alt="Luxury Crown" class="hero-crown">
+
+
+<h1>
+TIMBERWOOD SHUTTERS
+</h1>
+
+
+<p>
+Natural Wood Look • Warm Interior Style • Premium Finish
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTENT -->
+
+<section class="sub-page-section">
+
+
+<h2>
+TIMBERWOOD SHUTTER COLLECTION
+</h2>
+
+
+
+
+<div class="roller-intro">
+
+
+<h3>
+Natural Timber Appearance
+</h3>
+
+
+<p>
+Timberwood Shutters bring warmth and elegance into your home with the appearance of natural wood combined with a durable premium finish.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<!-- GALLERY -->
+
+
+<div class="product-grid">
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/timberwood/timberwood1.jpg" alt="Timberwood Shutters">
+
+
+<h3>
+Warm Interior Style
+</h3>
+
+
+<p>
+Create a timeless natural look for living areas, bedrooms and entertainment spaces.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/timberwood/timberwood2.jpg" alt="Timberwood Interior Shutters">
+
+
+<h3>
+Premium Wood Finish
+</h3>
+
+
+<p>
+Elegant finishes designed to complement luxury interiors.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/timberwood/timberwood3.jpg" alt="Timberwood Shutter Design">
+
+
+<h3>
+Custom Made Solutions
+</h3>
+
+
+<p>
+Made to suit your windows with precision and quality craftsmanship.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/timberwood/timberwood4.jpg" alt="Timberwood Detail">
+
+
+<h3>
+Light & Privacy Control
+</h3>
+
+
+<p>
+Adjustable louvres provide comfort, privacy and natural light management.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/timberwood/timberwood5.jpg" alt="Timberwood Luxury Shutters">
+
+
+<h3>
+Luxury Coastal Living
+</h3>
+
+
+<p>
+A stylish shutter solution for elegant modern homes.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Luxury Living - Swakopmund
+</p>
+
+</footer>
+
+
+
+
+
+
+
+
+<!-- SCRIPT -->
+
+<script>
+
+
+let images = [];
+
+let currentIndex = 0;
+
+
+
+document.addEventListener("click", function(e){
+
+
+if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
+
+
+images = Array.from(
+document.querySelectorAll(".product-card img")
+);
+
+
+currentIndex = images.indexOf(e.target);
+
+
+openLightbox(e.target.src);
+
+
+}
+
+
+});
+
+
+
+function openLightbox(src){
+
+document.getElementById("lightbox").style.display = "flex";
+
+document.getElementById("lightbox-img").src = src;
+
+}
+
+
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display = "none";
+
+}
+
+
+
+function changeImage(step, event){
+
+event.stopPropagation();
+
+
+currentIndex += step;
+
+
+
+if(currentIndex < 0){
+
+currentIndex = images.length - 1;
+
+}
+
+
+
+if(currentIndex >= images.length){
+
+currentIndex = 0;
+
+}
+
+
+
+document.getElementById("lightbox-img").src =
+images[currentIndex].src;
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+Save as:
+
+timberwood.html
+
+After testing, we continue with Hurricane Shutters.
+
+

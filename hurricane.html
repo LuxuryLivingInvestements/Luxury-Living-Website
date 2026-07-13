@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hurricane Shutters - Luxury Living Swakopmund</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+<span class="close">
+&times;
+</span>
+
+
+<img id="lightbox-img" src="">
+
+
+<button class="prev" onclick="changeImage(-1, event)">
+&#10094;
+</button>
+
+
+<button class="next" onclick="changeImage(1, event)">
+&#10095;
+</button>
+
+
+</div>
+
+
+
+
+
+<!-- NAV -->
+
+<nav class="nav">
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#products">Products</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="sub-hero">
+
+
+<div class="hero-content">
+
+
+<img src="crown.png" alt="Luxury Crown" class="hero-crown">
+
+
+<h1>
+HURRICANE SHUTTERS
+</h1>
+
+
+<p>
+Storm Protection • Coastal Protection • Heavy Duty Design
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTENT -->
+
+<section class="sub-page-section">
+
+
+<h2>
+HURRICANE SHUTTER COLLECTION
+</h2>
+
+
+
+
+<div class="roller-intro">
+
+
+<h3>
+Coastal Storm Protection
+</h3>
+
+
+<p>
+Designed for coastal environments, Hurricane Shutters provide strong protection against harsh weather while maintaining a clean and professional appearance.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<!-- GALLERY -->
+
+
+<div class="product-grid">
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/hurricane/hurricane1.jpg" alt="Hurricane Shutters">
+
+
+<h3>
+Heavy Duty Protection
+</h3>
+
+
+<p>
+Built for strength and designed to protect your home during severe weather conditions.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/hurricane/hurricane2.jpg" alt="Hurricane Shutter System">
+
+
+<h3>
+Coastal Security
+</h3>
+
+
+<p>
+Ideal for homes requiring additional protection in coastal areas.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/hurricane/hurricane3.jpg" alt="Hurricane Shutter Installation">
+
+
+<h3>
+Professional Installation
+</h3>
+
+
+<p>
+Custom fitted solutions designed around your window requirements.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/hurricane/hurricane4.jpg" alt="Hurricane Shutter Detail">
+
+
+<h3>
+Strong Construction
+</h3>
+
+
+<p>
+Durable materials providing reliable long-term performance.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/shutters/hurricane/hurricane5.jpg" alt="Hurricane Shutter Finish">
+
+
+<h3>
+Protection Meets Style
+</h3>
+
+
+<p>
+A practical security solution without sacrificing modern design.
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Luxury Living - Swakopmund
+</p>
+
+</footer>
+
+
+
+
+
+
+
+
+<!-- SCRIPT -->
+
+<script>
+
+
+let images = [];
+
+let currentIndex = 0;
+
+
+
+document.addEventListener("click", function(e){
+
+
+if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
+
+
+images = Array.from(
+document.querySelectorAll(".product-card img")
+);
+
+
+currentIndex = images.indexOf(e.target);
+
+
+openLightbox(e.target.src);
+
+
+}
+
+
+});
+
+
+
+function openLightbox(src){
+
+document.getElementById("lightbox").style.display = "flex";
+
+document.getElementById("lightbox-img").src = src;
+
+}
+
+
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display = "none";
+
+}
+
+
+
+function changeImage(step, event){
+
+event.stopPropagation();
+
+
+currentIndex += step;
+
+
+
+if(currentIndex < 0){
+
+currentIndex = images.length - 1;
+
+}
+
+
+
+if(currentIndex >= images.length){
+
+currentIndex = 0;
+
+}
+
+
+
+document.getElementById("lightbox-img").src =
+images[currentIndex].src;
+
+
+}
+
+
+
+</script>
+
+
+
+</body>

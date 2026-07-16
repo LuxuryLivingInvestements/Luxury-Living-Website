@@ -642,3 +642,625 @@ Swakopmund, Namibia
 <!-- =========================
    PAGE 4 END
 ========================= -->
+
+
+<!-- =========================
+   PAGE 5/5
+   JAVASCRIPT
+========================= -->
+
+
+<script>
+
+
+/* =========================
+   PAGE LOAD RESET
+========================= */
+
+
+window.addEventListener(
+
+"load",
+
+function(){
+
+window.scrollTo(0,0);
+
+}
+
+);
+
+
+
+
+
+/* =========================
+   PRODUCT IMAGE LIGHTBOX
+========================= */
+
+
+let productImages = [];
+
+let productIndex = 0;
+
+
+
+
+
+document.addEventListener(
+
+"click",
+
+function(e){
+
+
+
+if(
+
+e.target.tagName === "IMG" &&
+
+e.target.closest(".product-gallery")
+
+){
+
+
+
+productImages = Array.from(
+
+document.querySelectorAll(
+
+".product-gallery img"
+
+)
+
+);
+
+
+
+productIndex =
+
+productImages.indexOf(e.target);
+
+
+
+openLightbox(
+
+e.target.src
+
+);
+
+
+
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+function openLightbox(src){
+
+
+
+let lightbox =
+
+document.getElementById(
+
+"product-lightbox"
+
+);
+
+
+
+
+
+if(!lightbox){
+
+
+
+lightbox =
+
+document.createElement(
+
+"div"
+
+);
+
+
+
+lightbox.id =
+
+"product-lightbox";
+
+
+
+
+
+lightbox.innerHTML = `
+
+
+<span class="lightbox-close">
+
+&times;
+
+</span>
+
+
+
+<button class="lightbox-prev">
+
+&#10094;
+
+</button>
+
+
+
+<img
+
+class="lightbox-image"
+
+alt="Venetian Blinds Product Preview"
+
+>
+
+
+
+<button class="lightbox-next">
+
+&#10095;
+
+</button>
+
+
+`;
+
+
+
+document.body.appendChild(
+
+lightbox
+
+);
+
+
+
+
+
+document
+
+.querySelector(
+
+".lightbox-close"
+
+)
+
+.onclick = function(){
+
+closeLightbox();
+
+};
+
+
+
+
+
+
+document
+
+.querySelector(
+
+".lightbox-prev"
+
+)
+
+.onclick = function(){
+
+changeProductImage(-1);
+
+};
+
+
+
+
+
+
+document
+
+.querySelector(
+
+".lightbox-next"
+
+)
+
+.onclick = function(){
+
+changeProductImage(1);
+
+};
+
+
+
+
+
+
+lightbox.onclick = function(e){
+
+
+
+if(
+
+e.target === lightbox
+
+){
+
+
+
+closeLightbox();
+
+
+
+}
+
+
+
+};
+
+
+
+}
+
+
+
+
+
+
+
+lightbox.style.display =
+
+"flex";
+
+
+
+
+
+document
+
+.querySelector(
+
+".lightbox-image"
+
+)
+
+.src = src;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+function closeLightbox(){
+
+
+
+const lightbox =
+
+document.getElementById(
+
+"product-lightbox"
+
+);
+
+
+
+
+
+if(lightbox){
+
+
+
+lightbox.style.display =
+
+"none";
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+function changeProductImage(step){
+
+
+
+if(
+
+productImages.length === 0
+
+){
+
+return;
+
+}
+
+
+
+productIndex += step;
+
+
+
+
+
+if(
+
+productIndex < 0
+
+){
+
+
+
+productIndex =
+
+productImages.length - 1;
+
+
+
+}
+
+
+
+
+
+
+if(
+
+productIndex >= productImages.length
+
+){
+
+
+
+productIndex = 0;
+
+
+
+}
+
+
+
+
+
+
+
+const image =
+
+document.querySelector(
+
+".lightbox-image"
+
+);
+
+
+
+
+
+if(image){
+
+
+
+image.src =
+
+productImages[productIndex].src;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   KEYBOARD CONTROL
+========================= */
+
+
+document.addEventListener(
+
+"keydown",
+
+function(e){
+
+
+
+const lightbox =
+
+document.getElementById(
+
+"product-lightbox"
+
+);
+
+
+
+
+
+if(
+
+lightbox &&
+
+lightbox.style.display === "flex"
+
+){
+
+
+
+if(e.key === "Escape"){
+
+
+
+closeLightbox();
+
+
+
+}
+
+
+
+if(e.key === "ArrowRight"){
+
+
+
+changeProductImage(1);
+
+
+
+}
+
+
+
+if(e.key === "ArrowLeft"){
+
+
+
+changeProductImage(-1);
+
+
+
+}
+
+
+
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+/* =========================
+   NAVIGATION SCROLL EFFECT
+========================= */
+
+
+const nav =
+
+document.querySelector(
+
+".nav"
+
+);
+
+
+
+
+
+if(nav){
+
+
+
+window.addEventListener(
+
+"scroll",
+
+function(){
+
+
+
+if(
+
+window.scrollY > 50
+
+){
+
+
+
+nav.classList.add(
+
+"scrolled"
+
+);
+
+
+
+}
+
+else{
+
+
+
+nav.classList.remove(
+
+"scrolled"
+
+);
+
+
+
+}
+
+
+
+});
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+<!-- =========================
+   PAGE 5/5 END
+========================= -->

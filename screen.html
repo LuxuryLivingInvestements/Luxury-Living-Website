@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Screen Roller Blinds - Luxury Living Swakopmund</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+<span class="close">
+×
+</span>
+<img id="lightbox-img" src=""/>
+<button class="prev" onclick="changeImage(-1, event)">
+❮
+</button>
+<button class="next" onclick="changeImage(1, event)">
+❯
+</button>
+</div>
+<!-- NAV -->
+<nav class="nav">
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="roller-blinds.html">Roller Blinds</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+<!-- HERO -->
+<section class="sub-hero">
+<div class="hero-content">
+<img alt="Luxury Crown" class="hero-crown" src="crown.png"/>
+<h1>
+SCREEN ROLLER BLINDS
+</h1>
+<p>
+UV Protection • Heat Control • Modern Coastal Living
+</p>
+</div>
+</section>
+<!-- CONTENT -->
+<section class="sub-page-section">
+<h2>
+SCREEN ROLLER BLIND COLLECTION
+</h2>
+<div class="roller-intro">
+<h3>
+Screen Roller Blinds
+</h3>
+<p>
+UV Protection • Heat Control • Glare Reduction • Modern Style
+</p>
+</div>
+<!-- SCREEN GALLERY -->
+<div class="product-grid" id="screen-gallery">
+<div class="product-card">
+<img alt="Screen Roller Blind" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Premium Screen Fabrics
+</h3>
+<p>
+Designed to reduce heat and glare while allowing natural light into your living spaces.
+</p>
+</div>
+<div class="product-card">
+<img alt="Motorized Screen Roller Blind" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Motorized Screen Systems
+</h3>
+<p>
+Enjoy effortless operation with modern motorized roller blind solutions.
+</p>
+</div>
+<div class="product-card">
+<img alt="Screen Blind Interior" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Coastal Living Comfort
+</h3>
+<p>
+Ideal for homes requiring privacy, sun control and a stylish interior finish.
+</p>
+</div>
+<div class="product-card">
+<img alt="Screen Blind Detail" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Elegant Finishes
+</h3>
+<p>
+Available in a variety of colours and textures to complement luxury interiors.
+</p>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<p>
+© 2026 Luxury Living - Swakopmund
+</p>
+</footer>
+<!-- SCRIPT -->
+<script>
+
+
+let images = [];
+
+let currentIndex = 0;
+
+
+
+document.addEventListener("click", function(e){
+
+
+    if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
+
+
+        images = Array.from(
+            document.querySelectorAll(".product-card img")
+        );
+
+
+        currentIndex = images.indexOf(e.target);
+
+
+        openLightbox(e.target.src);
+
+
+    }
+
+
+});
+
+
+
+function openLightbox(src){
+
+    document.getElementById("lightbox").style.display = "flex";
+
+    document.getElementById("lightbox-img").src = src;
+
+}
+
+
+
+function closeLightbox(){
+
+    document.getElementById("lightbox").style.display = "none";
+
+}
+
+
+
+function changeImage(step, event){
+
+    event.stopPropagation();
+
+
+    currentIndex += step;
+
+
+
+    if(currentIndex < 0){
+
+        currentIndex = images.length - 1;
+
+    }
+
+
+
+    if(currentIndex >= images.length){
+
+        currentIndex = 0;
+
+    }
+
+
+
+    document.getElementById("lightbox-img").src =
+    images[currentIndex].src;
+
+}
+
+
+
+</script>
+</body>
+</html>

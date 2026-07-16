@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Decorative Curtain Rods - Luxury Living Swakopmund</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+<span class="close">
+×
+</span>
+<img id="lightbox-img" src=""/>
+<button class="prev" onclick="changeImage(-1,event)">
+❮
+</button>
+<button class="next" onclick="changeImage(1,event)">
+❯
+</button>
+</div>
+<!-- NAV -->
+<nav class="nav">
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="curtain-rails.html">Curtain Rails</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</nav>
+<!-- HERO -->
+<section class="sub-hero">
+<div class="hero-content">
+<img alt="Luxury Crown" class="hero-crown" src="crown.png"/>
+<h1>
+DECORATIVE CURTAIN RODS
+</h1>
+<p>
+Stainless Steel • Premium Finishes • Elegant Interior Style
+</p>
+</div>
+</section>
+<!-- CONTENT -->
+<section class="sub-page-section">
+<h2>
+DECORATIVE CURTAIN ROD COLLECTION
+</h2>
+<div class="product-grid">
+<div class="product-card">
+<img alt="Decorative Curtain Rods" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Premium Decorative Rods
+</h3>
+<p>
+Elegant curtain rods designed to enhance luxury interiors with timeless style.
+</p>
+</div>
+<div class="product-card">
+<img alt="Stainless Steel Curtain Rods" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Stainless Steel Finishes
+</h3>
+<p>
+High-quality rods, brackets and finials available in modern premium finishes.
+</p>
+</div>
+<div class="product-card">
+<img alt="Decorative Curtain Finials" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Luxury Details
+</h3>
+<p>
+Beautiful finials and accessories create the perfect finishing touch.
+</p>
+</div>
+<div class="product-card">
+<img alt="Decorative Curtain Installation" src="Luxury-Living-Website/images/shutters/timberwood/timberwood3.jpg"/>
+<h3>
+Custom Installation
+</h3>
+<p>
+Professionally measured and installed to complement your curtains and interior design.
+</p>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<p>
+© 2026 Luxury Living - Swakopmund
+</p>
+</footer>
+<script>
+
+
+let images = [];
+
+let currentIndex = 0;
+
+
+
+document.addEventListener("click", function(e){
+
+
+if(e.target.tagName === "IMG" && e.target.closest(".product-card")){
+
+
+images = Array.from(
+document.querySelectorAll(".product-card img")
+);
+
+
+currentIndex = images.indexOf(e.target);
+
+
+openLightbox(e.target.src);
+
+
+}
+
+
+});
+
+
+
+function openLightbox(src){
+
+document.getElementById("lightbox").style.display="flex";
+
+document.getElementById("lightbox-img").src=src;
+
+}
+
+
+
+function closeLightbox(){
+
+document.getElementById("lightbox").style.display="none";
+
+}
+
+
+
+function changeImage(step,event){
+
+event.stopPropagation();
+
+
+currentIndex += step;
+
+
+if(currentIndex < 0){
+
+currentIndex = images.length - 1;
+
+}
+
+
+if(currentIndex >= images.length){
+
+currentIndex = 0;
+
+}
+
+
+document.getElementById("lightbox-img").src =
+images[currentIndex].src;
+
+}
+
+
+</script>
+</body>
+</html>

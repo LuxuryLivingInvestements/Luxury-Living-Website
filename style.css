@@ -75,7 +75,7 @@ a {
 
     display:flex;
 
-    justify-content:flex-end;
+    justify-content:space-between;
 
     align-items:center;
 
@@ -1443,7 +1443,7 @@ a {
 
     height:auto;
 
-    padding:130px 20px 80px;
+    padding:150px 20px 90px;
 
 }
 
@@ -1545,10 +1545,9 @@ a {
 
 .product-card img {
 
-    height:220px;
+    height:240px;
 
 }
-
 
 
 .sub-hero {
@@ -1589,7 +1588,7 @@ a {
 
 .contact-box {
 
-    padding:30px 20px;
+    padding:35px 25px;
 
 }
 
@@ -1619,8 +1618,9 @@ a {
 
     text-align:center;
 
-}
+    gap:35px;
 
+}
 
 
 .close {
@@ -1721,7 +1721,7 @@ a {
 
 .product-card img {
 
-    height:200px;
+    height:220px;
 
 }
 

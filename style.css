@@ -1,8 +1,8 @@
 /* =========================
    LUXURY LIVING SWAKOPMUND
-   COMPLETE STYLE SHEET
-   PAGE 1/6
-   RESET + BODY + NAVIGATION + HERO
+   CLEAN MASTER STYLE.CSS
+   PART 1/4
+   RESET + BODY + NAV + HERO
 ========================= */
 
 
@@ -11,27 +11,20 @@
 ========================= */
 
 * {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
 
 
 html {
-
-    scroll-behavior: smooth;
-
+    scroll-behavior:smooth;
 }
-
-
 
 
 body {
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
     background:#f2f2f2;
 
@@ -44,6 +37,22 @@ body {
 }
 
 
+img {
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+a {
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+
+}
 
 
 
@@ -72,14 +81,13 @@ body {
 
     padding:0 50px;
 
-    background:transparent;
-
     z-index:1000;
+
+    background:transparent;
 
     transition:0.4s ease;
 
 }
-
 
 
 .nav.scrolled {
@@ -108,15 +116,11 @@ body {
 
     color:white;
 
-    text-decoration:none;
-
     font-size:17px;
 
     font-weight:600;
 
     letter-spacing:1px;
-
-    transition:0.3s ease;
 
 }
 
@@ -131,11 +135,8 @@ body {
 
 
 
-
-
-
 /* =========================
-   HERO SECTION
+   HERO
 ========================= */
 
 
@@ -145,11 +146,7 @@ body {
 
     min-height:650px;
 
-    background:
-
-    url("hero.jpg")
-
-    center / cover no-repeat;
+    background:url("hero.jpg") center/cover no-repeat;
 
     display:flex;
 
@@ -160,8 +157,6 @@ body {
     position:relative;
 
 }
-
-
 
 
 
@@ -189,8 +184,6 @@ body {
 
 
 
-
-
 .hero-content {
 
     position:relative;
@@ -211,53 +204,40 @@ body {
 
 
 
-
-
 .hero-crown {
 
     width:150px;
 
-    height:auto;
-
-    margin-bottom:20px;
+    margin:0 auto 20px;
 
 }
-
-
 
 
 
 @keyframes heroLift {
 
+    from {
 
-from {
+        opacity:0;
 
-    opacity:0;
+        transform:translateY(35px);
 
-    transform:translateY(35px);
+    }
 
-}
+    to {
 
+        opacity:1;
 
-to {
+        transform:translateY(0);
 
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
+    }
 
 }
-
-
-
-
 
 
 
 /* =========================
-   HERO TITLE
+   HERO TEXT
 ========================= */
 
 
@@ -271,36 +251,21 @@ to {
 
     line-height:1.1;
 
-    text-shadow:
-
-    0 10px 30px rgba(0,0,0,0.7);
+    text-shadow:0 10px 30px rgba(0,0,0,0.7);
 
 }
 
 
 
-
-
-
 .hero-tagline {
 
-    margin-top:18px;
+    margin:18px 0 15px;
 
-    margin-bottom:15px;
-
-    font-family:
-
-    "Cochocib Script Latin Pro",
-    "Brush Script MT",
-    cursive;
-
+    font-family:"Brush Script MT", cursive;
 
     font-size:38px;
 
-    font-weight:normal;
-
     letter-spacing:2px;
-
 
     background:
 
@@ -316,21 +281,11 @@ to {
 
     );
 
-
     -webkit-background-clip:text;
 
     -webkit-text-fill-color:transparent;
 
-
-    text-shadow:
-
-    0 5px 18px rgba(0,0,0,0.6);
-
 }
-
-
-
-
 
 
 
@@ -346,40 +301,7 @@ to {
 
     font-weight:bold;
 
-    animation:glow 3s infinite alternate;
-
 }
-
-
-
-
-
-@keyframes glow {
-
-
-from {
-
-text-shadow:
-
-0 0 8px rgba(255,215,0,0.4);
-
-}
-
-
-to {
-
-text-shadow:
-
-0 0 25px rgba(255,215,0,0.9);
-
-}
-
-
-}
-
-
-
-
 
 
 
@@ -391,15 +313,7 @@ text-shadow:
 
     letter-spacing:1px;
 
-    text-shadow:
-
-    0 6px 20px rgba(0,0,0,0.5);
-
 }
-
-
-
-
 
 
 
@@ -420,8 +334,6 @@ text-shadow:
 
     color:#111;
 
-    text-decoration:none;
-
     font-weight:bold;
 
     letter-spacing:2px;
@@ -429,8 +341,6 @@ text-shadow:
     text-transform:uppercase;
 
     border-radius:8px;
-
-    transition:0.3s ease;
 
 }
 
@@ -440,15 +350,14 @@ text-shadow:
 
     transform:translateY(-4px);
 
-    box-shadow:
-
-    0 10px 25px rgba(0,0,0,0.3);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
 
 }
 
+
 /* =========================
-   PAGE 2/6
-   GENERAL SECTIONS + ABOUT + PRODUCTS INTRO
+   PART 2/4
+   SECTIONS + ABOUT + PRODUCT BLOCKS
 ========================= */
 
 
@@ -487,8 +396,6 @@ text-shadow:
 
 
 
-
-
 .section h2 {
 
     letter-spacing:3px;
@@ -496,8 +403,6 @@ text-shadow:
     font-weight:700;
 
 }
-
-
 
 
 
@@ -513,8 +418,6 @@ text-shadow:
     padding:100px 40px;
 
 }
-
-
 
 
 
@@ -536,8 +439,6 @@ text-shadow:
 
 
 
-
-
 .about-text {
 
     text-align:left;
@@ -546,21 +447,15 @@ text-shadow:
 
 
 
-
-
 .about-text h2 {
 
     font-size:38px;
 
-    letter-spacing:3px;
-
     margin-bottom:30px;
 
-    color:#222;
+    letter-spacing:3px;
 
 }
-
-
 
 
 
@@ -578,8 +473,6 @@ text-shadow:
 
 
 
-
-
 .about-image {
 
     text-align:center;
@@ -588,13 +481,13 @@ text-shadow:
 
 
 
-
-
 .about-image img {
 
     width:100%;
 
     max-width:550px;
+
+    margin:auto;
 
     border-radius:18px;
 
@@ -608,17 +501,11 @@ text-shadow:
 
 
 
-
-
 .about-image img:hover {
 
     transform:scale(1.03);
 
 }
-
-
-
-
 
 
 
@@ -629,7 +516,7 @@ text-shadow:
 
 .products-intro {
 
-    max-width:900px;
+    max-width:950px;
 
     margin:
 
@@ -639,21 +526,15 @@ text-shadow:
 
 
 
-
-
 .products-intro h2 {
 
     font-size:38px;
 
-    letter-spacing:3px;
-
     margin-bottom:20px;
 
-    color:#222;
+    letter-spacing:3px;
 
 }
-
-
 
 
 
@@ -661,7 +542,7 @@ text-shadow:
 
     font-size:18px;
 
-    line-height:1.7;
+    line-height:1.8;
 
     color:#555;
 
@@ -669,7 +550,26 @@ text-shadow:
 
 
 
+/* =========================
+   PRODUCTS AREA
+========================= */
 
+
+#products {
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    #f2f2f2,
+
+    #ffffff
+
+    );
+
+}
 
 
 
@@ -684,32 +584,23 @@ text-shadow:
 
     rgba(255,255,255,0.88);
 
-
     backdrop-filter:blur(10px);
-
 
     border-radius:18px;
 
-
     padding:50px 45px;
-
 
     margin:60px auto;
 
-
     max-width:1100px;
-
 
     box-shadow:
 
     0 15px 40px rgba(0,0,0,0.08);
 
-
     opacity:0;
 
-
     transform:translateY(40px);
-
 
     transition:
 
@@ -718,8 +609,6 @@ text-shadow:
     transform 0.8s ease;
 
 }
-
-
 
 
 
@@ -733,43 +622,56 @@ text-shadow:
 
 
 
-
-
 .product-block h2 {
 
     margin-bottom:35px;
 
-    letter-spacing:3px;
-
     font-size:34px;
 
-    color:#222;
+    letter-spacing:3px;
 
 }
 
 
-
-
-
-#products {
-
-    background:
-
-    linear-gradient(
-
-    180deg,
-
-    #f2f2f2 0%,
-
-    #ffffff 100%
-
-    );
-
-}
 
 /* =========================
-   PAGE 3/6
-   PRODUCT GRID + PRODUCT CARDS + BUTTONS
+   PRODUCT COVER
+========================= */
+
+
+.product-cover {
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:0 auto 40px;
+
+}
+
+
+
+.product-cover img {
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================
+   PART 3/4
+   PRODUCT GRID + CARDS
+   PRODUCT PAGES
 ========================= */
 
 
@@ -784,13 +686,11 @@ text-shadow:
 
     grid-template-columns:
 
-    repeat(auto-fit, minmax(220px,1fr));
+    repeat(auto-fit,minmax(220px,1fr));
 
     gap:32px;
 
 }
-
-
 
 
 
@@ -811,6 +711,10 @@ text-shadow:
 
     text-align:left;
 
+    display:flex;
+
+    flex-direction:column;
+
     box-shadow:
 
     0 6px 18px rgba(0,0,0,0.08);
@@ -821,13 +725,7 @@ text-shadow:
 
     box-shadow 0.4s ease;
 
-    display:flex;
-
-    flex-direction:column;
-
 }
-
-
 
 
 
@@ -840,10 +738,6 @@ text-shadow:
     0 15px 35px rgba(0,0,0,0.18);
 
 }
-
-
-
-
 
 
 
@@ -860,8 +754,6 @@ text-shadow:
 
     object-fit:cover;
 
-    display:block;
-
     transition:
 
     transform 0.5s ease;
@@ -870,15 +762,11 @@ text-shadow:
 
 
 
-
-
 .product-card:hover img {
 
     transform:scale(1.08);
 
 }
-
-
 
 
 
@@ -893,25 +781,11 @@ text-shadow:
 
     display:block;
 
-    text-decoration:none;
-
     color:inherit;
 
     overflow:hidden;
 
 }
-
-
-
-
-
-.product-link:hover {
-
-    cursor:pointer;
-
-}
-
-
 
 
 
@@ -928,16 +802,11 @@ text-shadow:
 
     18px 18px 8px;
 
-
     font-size:18px;
 
     letter-spacing:1px;
 
-    color:#222;
-
 }
-
-
 
 
 
@@ -946,7 +815,6 @@ text-shadow:
     padding:
 
     0 18px 20px;
-
 
     font-size:14px;
 
@@ -957,8 +825,6 @@ text-shadow:
     flex-grow:1;
 
 }
-
-
 
 
 
@@ -977,50 +843,27 @@ text-shadow:
 
     0 18px 20px;
 
-
     padding:
 
     12px 18px;
 
-
     background:#d4af37;
-
 
     color:#111;
 
-
-    text-decoration:none;
-
-
     font-size:13px;
-
 
     font-weight:bold;
 
-
     letter-spacing:1px;
-
 
     text-transform:uppercase;
 
-
     border-radius:6px;
-
 
     text-align:center;
 
-
-    transition:
-
-    background 0.3s ease,
-
-    color 0.3s ease,
-
-    transform 0.3s ease;
-
 }
-
-
 
 
 
@@ -1034,9 +877,168 @@ text-shadow:
 
 }
 
+
+
+
+
 /* =========================
-   PAGE 4/6
+   PRODUCT PAGE HERO
+========================= */
+
+
+.sub-hero {
+
+    height:70vh;
+
+    min-height:550px;
+
+    background:url("hero.jpg")
+
+    center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+
+
+.sub-hero::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,0.75),
+
+    rgba(0,0,0,0.45),
+
+    rgba(0,0,0,0.75)
+
+    );
+
+}
+
+
+
+.sub-hero .hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+}
+
+
+
+.sub-hero h1 {
+
+    font-size:60px;
+
+    letter-spacing:5px;
+
+}
+
+
+
+.sub-hero p {
+
+    margin-top:20px;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* =========================
+   SUB PAGE CONTENT
+========================= */
+
+
+.sub-page-section {
+
+    padding:90px 40px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+}
+
+
+
+.sub-page-section h2 {
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+    letter-spacing:3px;
+
+}
+
+
+
+.sub-page-section .product-grid {
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* =========================
+   CURTAIN RAIL IMAGE
+========================= */
+
+
+.curtain-rails-feature-image {
+
+    width:100%;
+
+    max-width:900px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:30px auto 60px;
+
+    border-radius:12px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================
+   PART 4/4
    CONTACT + FOOTER
+   MOBILE + LIGHTBOX
 ========================= */
 
 
@@ -1057,8 +1059,6 @@ text-shadow:
 
 
 
-
-
 .contact h2 {
 
     font-size:38px;
@@ -1067,11 +1067,7 @@ text-shadow:
 
     margin-bottom:35px;
 
-    color:#222;
-
 }
-
-
 
 
 
@@ -1079,7 +1075,7 @@ text-shadow:
 
     max-width:650px;
 
-    margin:0 auto;
+    margin:auto;
 
     padding:50px;
 
@@ -1097,19 +1093,13 @@ text-shadow:
 
 
 
-
-
 .contact-box h3 {
 
     font-size:26px;
 
     margin-bottom:15px;
 
-    color:#222;
-
 }
-
-
 
 
 
@@ -1117,25 +1107,9 @@ text-shadow:
 
     font-size:17px;
 
-    color:#333;
-
     margin-bottom:18px;
 
 }
-
-
-
-
-
-.contact-box a {
-
-    color:inherit;
-
-    text-decoration:none;
-
-}
-
-
 
 
 
@@ -1143,11 +1117,15 @@ text-shadow:
 
     color:#d4af37;
 
-    letter-spacing:1px;
-
 }
 
 
+
+.contact-box a {
+
+    color:inherit;
+
+}
 
 
 
@@ -1158,8 +1136,6 @@ text-shadow:
     margin-top:10px;
 
 }
-
-
 
 
 
@@ -1174,13 +1150,9 @@ text-shadow:
 
     color:white;
 
-    padding:
-
-    60px 40px 20px;
+    padding:60px 40px 20px;
 
 }
-
-
 
 
 
@@ -1204,26 +1176,13 @@ text-shadow:
 
 
 
-
-
-
-
-/* =========================
-   FOOTER LOGO
-========================= */
-
-
 .footer-logo img {
 
     width:95px;
 
-    height:auto;
-
     margin-bottom:15px;
 
 }
-
-
 
 
 
@@ -1235,11 +1194,7 @@ text-shadow:
 
     letter-spacing:2px;
 
-    margin-bottom:12px;
-
 }
-
-
 
 
 
@@ -1247,19 +1202,8 @@ text-shadow:
 
     color:#ccc;
 
-    line-height:1.7;
-
 }
 
-
-
-
-
-
-
-/* =========================
-   FOOTER LINKS
-========================= */
 
 
 .footer-links h4,
@@ -1268,15 +1212,11 @@ text-shadow:
 
     color:#d4af37;
 
-    font-size:18px;
-
     letter-spacing:2px;
 
     margin-bottom:20px;
 
 }
-
-
 
 
 
@@ -1288,8 +1228,6 @@ text-shadow:
 
 
 
-
-
 .footer-links li {
 
     margin-bottom:12px;
@@ -1298,62 +1236,17 @@ text-shadow:
 
 
 
-
-
-.footer-links a {
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:0.3s ease;
-
-}
-
-
-
-
-
-.footer-links a:hover {
-
-    color:#d4af37;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   FOOTER CONTACT
-========================= */
-
-
-.footer-contact p {
-
-    color:#ddd;
-
-    margin-bottom:12px;
-
-}
-
-
-
-
+.footer-links a,
 
 .footer-contact a {
 
-    color:#ddd;
-
-    text-decoration:none;
+    color:white;
 
 }
 
 
 
-
+.footer-links a:hover,
 
 .footer-contact a:hover {
 
@@ -1363,46 +1256,143 @@ text-shadow:
 
 
 
+.footer-contact p {
 
+    margin-bottom:12px;
 
+}
 
-
-/* =========================
-   FOOTER BOTTOM
-========================= */
 
 
 .footer-bottom {
 
     max-width:1200px;
 
-    margin:
-
-    40px auto 0;
-
+    margin:40px auto 0;
 
     padding-top:20px;
-
 
     border-top:
 
     1px solid rgba(255,255,255,0.2);
 
-
     text-align:center;
 
-
     color:#aaa;
-
 
     font-size:14px;
 
 }
 
+
+
+
+
 /* =========================
-   PART 5 START
-   MOBILE RESPONSIVE
+   LIGHTBOX
 ========================= */
+
+
+.lightbox {
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.92);
+
+    z-index:2000;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+
+.lightbox img {
+
+    max-width:90%;
+
+    max-height:85vh;
+
+    object-fit:contain;
+
+    border-radius:12px;
+
+}
+
+
+
+.close {
+
+    position:absolute;
+
+    top:25px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+}
+
+
+
+.prev,
+
+.next {
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#d4af37;
+
+    color:#111;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+
+
+.prev {
+
+    left:40px;
+
+}
+
+
+
+.next {
+
+    right:40px;
+
+}
+
+
+
 
 
 /* =========================
@@ -1410,19 +1400,12 @@ text-shadow:
 ========================= */
 
 
-@media (max-width:768px) {
-
-
-/* =========================
-   NAVIGATION
-========================= */
+@media(max-width:768px){
 
 
 .nav {
 
     height:auto;
-
-    min-height:70px;
 
     padding:15px 20px;
 
@@ -1430,23 +1413,15 @@ text-shadow:
 
     background:rgba(0,0,0,0.55);
 
-    backdrop-filter:blur(10px);
-
 }
 
 
 
 .nav-links {
 
-    width:100%;
-
-    display:flex;
-
     flex-wrap:wrap;
 
     justify-content:center;
-
-    align-items:center;
 
     gap:15px 25px;
 
@@ -1458,45 +1433,17 @@ text-shadow:
 
     font-size:14px;
 
-    letter-spacing:1px;
-
 }
 
-
-
-
-
-
-/* =========================
-   HERO
-========================= */
 
 
 .hero {
 
-    height:auto;
-
     min-height:650px;
 
+    height:auto;
+
     padding:130px 20px 80px;
-
-}
-
-
-
-.hero-content {
-
-    max-width:100%;
-
-}
-
-
-
-.hero-crown {
-
-    width:110px;
-
-    margin-bottom:15px;
 
 }
 
@@ -1506,8 +1453,6 @@ text-shadow:
 
     font-size:42px;
 
-    letter-spacing:2px;
-
 }
 
 
@@ -1515,8 +1460,6 @@ text-shadow:
 .hero-tagline {
 
     font-size:28px;
-
-    letter-spacing:1px;
 
 }
 
@@ -1536,39 +1479,16 @@ text-shadow:
 
     font-size:16px;
 
-    line-height:1.6;
-
 }
 
 
 
+.hero-crown {
 
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-
-.btn {
-
-    padding:12px 24px;
-
-    font-size:13px;
-
-    letter-spacing:1px;
+    width:110px;
 
 }
 
-
-
-
-
-
-
-/* =========================
-   GENERAL SECTIONS
-========================= */
 
 
 .section {
@@ -1577,15 +1497,6 @@ text-shadow:
 
 }
 
-
-
-
-
-
-
-/* =========================
-   ABOUT
-========================= */
 
 
 .about {
@@ -1614,125 +1525,19 @@ text-shadow:
 
 
 
-.about-text h2 {
-
-    font-size:28px;
-
-}
-
-
-
-.about-text p {
-
-    font-size:16px;
-
-}
-
-
-
-.about-image img {
-
-    max-width:100%;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   PRODUCTS INTRO
-========================= */
-
-
-.products-intro {
-
-    margin-bottom:40px;
-
-}
-
-
-
-.products-intro h2 {
-
-    font-size:30px;
-
-}
-
-
-
-.products-intro p {
-
-    font-size:16px;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   PRODUCT BLOCKS
-========================= */
-
-
 .product-block {
 
     padding:30px 20px;
 
     margin:40px auto;
 
-    border-radius:15px;
-
 }
 
-
-
-.product-block h2 {
-
-    font-size:26px;
-
-    margin-bottom:25px;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   PRODUCT GRID
-========================= */
 
 
 .product-grid {
 
     grid-template-columns:1fr;
-
-    gap:25px;
-
-}
-
-
-
-
-
-
-
-/* =========================
-   PRODUCT CARDS
-========================= */
-
-
-.product-card {
-
-    border-radius:15px;
 
 }
 
@@ -1746,48 +1551,32 @@ text-shadow:
 
 
 
-.product-card h3 {
+.sub-hero {
 
-    font-size:17px;
+    height:auto;
 
-}
+    min-height:500px;
 
-
-
-.product-card p {
-
-    font-size:14px;
+    padding:140px 20px 80px;
 
 }
 
 
 
+.sub-hero h1 {
 
-
-
-
-/* =========================
-   PRODUCT BUTTON
-========================= */
-
-
-.product-btn {
-
-    margin:0 15px 18px;
-
-    font-size:12px;
+    font-size:38px;
 
 }
 
 
 
+.sub-page-section {
 
+    padding:60px 20px;
 
+}
 
-
-/* =========================
-   CONTACT
-========================= */
 
 
 .contact {
@@ -1798,35 +1587,9 @@ text-shadow:
 
 
 
-.contact h2 {
-
-    font-size:30px;
-
-}
-
-
-
 .contact-box {
 
-    width:100%;
-
     padding:30px 20px;
-
-}
-
-
-
-.contact-box h3 {
-
-    font-size:23px;
-
-}
-
-
-
-.contact-box p {
-
-    font-size:16px;
 
 }
 
@@ -1838,19 +1601,8 @@ text-shadow:
 
     width:100%;
 
-    margin:15px 0;
-
 }
 
-
-
-
-
-
-
-/* =========================
-   FOOTER
-========================= */
 
 
 .footer {
@@ -1867,55 +1619,56 @@ text-shadow:
 
     text-align:center;
 
-    gap:35px;
+}
+
+
+
+.close {
+
+    font-size:40px;
+
+    right:20px;
 
 }
 
 
 
-.footer-logo img {
+.prev,
 
-    width:85px;
+.next {
 
-}
+    width:45px;
 
+    height:45px;
 
-
-.footer-bottom {
-
-    margin-top:30px;
-
-    font-size:13px;
+    font-size:22px;
 
 }
 
 
 
+.prev {
+
+    left:15px;
+
+}
+
+
+
+.next {
+
+    right:15px;
+
+}
+
+
 }
 
 
 
 
 
-
-
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-
-@media (max-width:480px) {
-
-
-
-.hero {
-
-    min-height:600px;
-
-}
-
+@media(max-width:480px){
 
 
 .hero h1 {
@@ -1937,16 +1690,6 @@ text-shadow:
 .hero-subtitle {
 
     font-size:17px;
-
-    letter-spacing:3px;
-
-}
-
-
-
-.hero p {
-
-    font-size:15px;
 
 }
 
@@ -1983,708 +1726,5 @@ text-shadow:
 }
 
 
-
-.contact-box {
-
-    padding:25px 15px;
-
 }
 
-
-
-}
-
-
-
-
-
-
-
-/* =========================
-   PART 5 END
-========================= */
-
-/* =========================
-   PRODUCT PAGE SECTIONS
-   SUB HERO + SUB PAGE CONTENT
-========================= */
-
-
-/* =========================
-   SUB HERO
-========================= */
-
-
-.sub-hero {
-
-    height:70vh;
-
-    min-height:550px;
-
-    background:
-
-    url("hero.jpg")
-
-    center / cover no-repeat;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    position:relative;
-
-}
-
-
-
-
-
-.sub-hero::before {
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-    linear-gradient(
-
-    rgba(0,0,0,0.75),
-
-    rgba(0,0,0,0.45),
-
-    rgba(0,0,0,0.75)
-
-    );
-
-}
-
-
-
-
-
-.sub-hero .hero-content {
-
-    position:relative;
-
-    z-index:2;
-
-    text-align:center;
-
-    color:white;
-
-}
-
-
-
-
-
-.sub-hero .hero-crown {
-
-    width:150px;
-
-    height:auto;
-
-    margin-bottom:20px;
-
-}
-
-
-
-
-
-.sub-hero h1 {
-
-    font-size:60px;
-
-    font-weight:700;
-
-    letter-spacing:5px;
-
-    line-height:1.1;
-
-    text-shadow:
-
-    0 10px 30px rgba(0,0,0,0.7);
-
-}
-
-
-
-
-
-.sub-hero p {
-
-    margin-top:20px;
-
-    font-size:20px;
-
-    letter-spacing:2px;
-
-    color:white;
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   SUB PAGE SECTION
-========================= */
-
-
-.sub-page-section {
-
-    padding:90px 40px;
-
-    text-align:center;
-
-    background:#ffffff;
-
-}
-
-
-
-
-
-.sub-page-section h2 {
-
-    font-size:38px;
-
-    letter-spacing:3px;
-
-    margin-bottom:35px;
-
-    color:#222;
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   PRODUCTS INTRO
-========================= */
-
-
-.products-intro {
-
-    max-width:950px;
-
-    margin:
-
-    0 auto 50px;
-
-}
-
-
-
-
-
-.products-intro p {
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    color:#555;
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   CURTAIN RAIL FEATURE IMAGE
-========================= */
-
-
-.curtain-rails-feature-image {
-
-    width:100%;
-
-    max-width:900px;
-
-    height:350px;
-
-    object-fit:cover;
-
-    display:block;
-
-    margin:30px auto 60px;
-
-    border-radius:12px;
-
-    box-shadow:
-
-    0 15px 35px rgba(0,0,0,0.15);
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   PRODUCT PAGE GRID
-========================= */
-
-
-.sub-page-section .product-grid {
-
-    max-width:1200px;
-
-    margin:auto;
-
-}
-
-
-
-
-
-
-
-
-/* =========================
-   PRODUCT PAGE MOBILE
-========================= */
-
-
-@media(max-width:768px){
-
-
-
-.sub-hero {
-
-    min-height:500px;
-
-    height:auto;
-
-    padding:140px 20px 80px;
-
-}
-
-
-
-.sub-hero .hero-crown {
-
-    width:110px;
-
-}
-
-
-
-.sub-hero h1 {
-
-    font-size:38px;
-
-    letter-spacing:3px;
-
-}
-
-
-
-.sub-hero p {
-
-    font-size:16px;
-
-    letter-spacing:1px;
-
-}
-
-
-
-.sub-page-section {
-
-    padding:60px 20px;
-
-}
-
-
-
-.sub-page-section h2 {
-
-    font-size:28px;
-
-}
-
-
-
-.products-intro p {
-
-    font-size:16px;
-
-}
-
-
-
-.curtain-rails-feature-image {
-
-    height:220px;
-
-}
-
-
-
-}
-
-/* =========================
-   PART 6 START
-   LIGHTBOX + FINAL FIXES
-========================= */
-
-
-/* =========================
-   LIGHTBOX CONTAINER
-========================= */
-
-.lightbox {
-
-    display:none;
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(0,0,0,0.92);
-
-    z-index:2000;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:40px;
-
-}
-
-
-
-
-
-/* =========================
-   LIGHTBOX IMAGE
-========================= */
-
-.lightbox img {
-
-    max-width:90%;
-
-    max-height:85vh;
-
-    object-fit:contain;
-
-    border-radius:12px;
-
-    box-shadow:
-    0 20px 50px rgba(0,0,0,0.6);
-
-}
-
-
-
-
-
-/* =========================
-   CLOSE BUTTON
-========================= */
-
-.close {
-
-    position:absolute;
-
-    top:25px;
-
-    right:40px;
-
-    color:white;
-
-    font-size:50px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    line-height:1;
-
-    transition:0.3s ease;
-
-}
-
-
-
-.close:hover {
-
-    color:#d4af37;
-
-}
-
-
-
-
-
-/* =========================
-   PREVIOUS / NEXT BUTTONS
-========================= */
-
-.prev,
-.next {
-
-    position:absolute;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    width:55px;
-
-    height:55px;
-
-    border-radius:50%;
-
-    border:none;
-
-    background:#d4af37;
-
-    color:#111;
-
-    font-size:30px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    transition:0.3s ease;
-
-}
-
-
-
-.prev:hover,
-.next:hover {
-
-    background:#ffffff;
-
-    transform:translateY(-50%) scale(1.1);
-
-}
-
-
-
-.prev {
-
-    left:40px;
-
-}
-
-
-
-.next {
-
-    right:40px;
-
-}
-
-
-
-
-
-/* =========================
-   IMAGE SAFETY
-========================= */
-
-img {
-
-    max-width:100%;
-
-}
-
-
-
-
-
-/* =========================
-   LINK FIXES
-========================= */
-
-a {
-
-    transition:0.3s ease;
-
-}
-
-
-
-
-
-/* =========================
-   CURTAIN RAILS FEATURE IMAGE
-========================= */
-
-.curtain-rails-feature-image {
-
-    width:100%;
-
-    max-width:900px;
-
-    height:350px;
-
-    object-fit:cover;
-
-    display:block;
-
-    margin:30px auto;
-
-    border-radius:10px;
-
-}
-
-
-
-
-
-/* =========================
-   MOBILE LIGHTBOX
-========================= */
-
-@media (max-width:768px) {
-
-
-
-.lightbox {
-
-    padding:20px;
-
-}
-
-
-
-.lightbox img {
-
-    max-width:95%;
-
-    max-height:75vh;
-
-}
-
-
-
-.close {
-
-    top:15px;
-
-    right:20px;
-
-    font-size:40px;
-
-}
-
-
-
-.prev,
-.next {
-
-    width:45px;
-
-    height:45px;
-
-    font-size:22px;
-
-}
-
-
-
-.prev {
-
-    left:15px;
-
-}
-
-
-
-.next {
-
-    right:15px;
-
-}
-
-
-
-}
-
-
-
-
-
-/* =========================
-   VERY SMALL SCREENS
-========================= */
-
-@media (max-width:380px) {
-
-
-
-.hero h1 {
-
-    font-size:30px;
-
-}
-
-
-
-.hero-tagline {
-
-    font-size:21px;
-
-}
-
-
-
-.hero-subtitle {
-
-    font-size:15px;
-
-}
-
-
-
-.nav-links a {
-
-    font-size:12px;
-
-}
-
-
-
-}
-
-
-
-/* =========================
-   PART 6 END
-========================= */

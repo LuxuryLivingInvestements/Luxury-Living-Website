@@ -368,11 +368,11 @@ a {
 
 .section {
 
-    padding:100px 40px;
+    padding:110px 40px;
 
     text-align:center;
 
-    opacity:0;
+    opacity:1;
 
     transform:translateY(40px);
 
@@ -684,11 +684,9 @@ a {
 
     display:grid;
 
-    grid-template-columns:
+    grid-template-columns:repeat(3,1fr);
 
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:32px;
+    gap:35px;
 
 }
 
@@ -715,6 +713,8 @@ a {
 
     flex-direction:column;
 
+    min-height:430px;
+
     box-shadow:
 
     0 6px 18px rgba(0,0,0,0.08);
@@ -724,7 +724,7 @@ a {
     transform 0.4s ease,
 
     box-shadow 0.4s ease;
-
+    width:100%;
 }
 
 
@@ -764,7 +764,7 @@ a {
 
 .product-card:hover img {
 
-    transform:scale(1.08);
+    transform:scale(1.04);
 
 }
 
@@ -806,6 +806,8 @@ a {
 
     letter-spacing:1px;
 
+    min-height:60px;
+
 }
 
 
@@ -824,6 +826,8 @@ a {
 
     flex-grow:1;
 
+    min-height:70px;
+
 }
 
 
@@ -839,13 +843,9 @@ a {
 
     display:block;
 
-    margin:
+    margin:0 18px 20px;
 
-    0 18px 20px;
-
-    padding:
-
-    12px 18px;
+    padding:12px 18px;
 
     background:#d4af37;
 
@@ -862,6 +862,8 @@ a {
     border-radius:6px;
 
     text-align:center;
+
+    margin-top:auto;
 
 }
 
@@ -1001,6 +1003,12 @@ a {
 
     margin:auto;
 
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
 }
 
 
@@ -1077,7 +1085,7 @@ a {
 
     margin:auto;
 
-    padding:50px;
+    padding:55px;
 
     background:#f4f4f4;
 
@@ -1090,7 +1098,6 @@ a {
     text-align:left;
 
 }
-
 
 
 .contact-box h3 {
@@ -1150,7 +1157,7 @@ a {
 
     color:white;
 
-    padding:60px 40px 20px;
+    padding:70px 40px 25px;
 
 }
 
@@ -1398,10 +1405,17 @@ a {
 /* =========================
    TABLET + MOBILE
 ========================= */
+@media(max-width:900px){
 
+    .product-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
 
 @media(max-width:768px){
-
 
 .nav {
 
@@ -1534,12 +1548,15 @@ a {
 }
 
 
-
 .product-grid {
 
     grid-template-columns:1fr;
 
+    gap:25px;
+
 }
+
+
 
 
 
@@ -1606,7 +1623,7 @@ a {
 
 .footer {
 
-    padding:45px 20px 20px;
+    padding:55px 20px 25px;
 
 }
 
@@ -1673,7 +1690,9 @@ a {
 
 .hero h1 {
 
-    font-size:34px;
+    font-size:36px;
+
+    letter-spacing:2px;
 
 }
 
@@ -1681,7 +1700,9 @@ a {
 
 .hero-tagline {
 
-    font-size:24px;
+    font-size:26px;
+
+    letter-spacing:1px;
 
 }
 
@@ -1723,8 +1744,22 @@ a {
 
     height:220px;
 
+   }
+
+   .btn {
+
+    width:100%;
+
+    max-width:280px;
+
+    padding:14px 20px;
+
+    font-size:14px;
+
+}
+
 }
 
 
-}
+
 

@@ -1,32 +1,22 @@
-<!-- =========================
-   LUXURY LIVING SWAKOPMUND
-   COMPLETE VENETIAN-BLINDS.HTML
-   PART 1/5
-========================= -->
-
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-<meta charset="utf-8"/>
+<meta charset="UTF-8">
 
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <title>
-Venetian Blinds | Luxury Living - Swakopmund
+Venetian Blinds - Luxury Living Swakopmund
 </title>
 
-<meta 
-content="Premium Venetian Blinds in Swakopmund from Luxury Living. Wooden, Bamboo and PVC Venetian Blinds offering adjustable light control, privacy and timeless interior style."
-name="description"/>
 
-<meta 
-content="Venetian Blinds Swakopmund, Wooden Venetian Blinds Namibia, Bamboo Venetian Blinds, PVC Venetian Blinds, Luxury Window Blinds"
-name="keywords"/>
+<meta name="description" content="Premium Venetian Blinds in Swakopmund. Choose from Bamboo, PVC and Wooden Venetian Blinds for elegant light control, privacy and modern interiors.">
 
-<link href="style.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -35,11 +25,49 @@ name="keywords"/>
 
 
 <!-- =========================
-   NAVIGATION
+     LIGHTBOX
+========================= -->
+
+
+<div id="lightbox" class="lightbox">
+
+
+<span class="close" onclick="closeLightbox()">
+&times;
+</span>
+
+
+<img
+id="lightbox-img"
+src=""
+alt="Venetian Blind Preview"
+>
+
+
+<button class="prev" onclick="changeImage(-1,event)">
+&#10094;
+</button>
+
+
+<button class="next" onclick="changeImage(1,event)">
+&#10095;
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- =========================
+     NAVIGATION
 ========================= -->
 
 
 <nav class="nav">
+
 
 <ul class="nav-links">
 
@@ -51,15 +79,17 @@ Home
 </li>
 
 
+
 <li>
-<a href="products.html">
+<a href="index.html#products">
 Products
 </a>
 </li>
 
 
+
 <li>
-<a href="contact.html">
+<a href="index.html#contact">
 Contact
 </a>
 </li>
@@ -67,38 +97,38 @@ Contact
 
 </ul>
 
+
 </nav>
 
 
 
+
+
+
+
 <!-- =========================
-   PRODUCT HERO
+     PRODUCT HERO
 ========================= -->
 
 
-<section 
-class="product-hero"
-style="background-image:url('images/wooden-venetian-blinds/venetian1.jpg');">
+<section class="sub-hero">
 
 
-<div class="product-hero-content">
+<div class="hero-content">
 
 
 <h1>
-
 VENETIAN BLINDS
-
 </h1>
 
 
 <p>
-
-Wooden, Bamboo &amp; PVC Venetian Blinds With Adjustable Light Control And Timeless Style
-
+Elegant Light Control • Privacy • Timeless Interior Style
 </p>
 
 
 </div>
+
 
 </section>
 
@@ -106,85 +136,46 @@ Wooden, Bamboo &amp; PVC Venetian Blinds With Adjustable Light Control And Timel
 
 
 
+
+
 <!-- =========================
-   PRODUCT INTRODUCTION
+     PRODUCT PAGE START
 ========================= -->
 
 
-<section class="product-intro">
+<main class="product-page">
+
+
+<div class="product-page-content">
+
+
+
+
+
+
+<!-- =========================
+     VENETIAN COLLECTION
+========================= -->
+
+
+<section class="product-section">
+
+
+<div class="products-intro">
 
 
 <h2>
-
-Wooden, Bamboo &amp; PVC Venetian Blinds For Stylish Modern Living
-
+VENETIAN BLIND COLLECTION
 </h2>
 
 
-
 <p>
-
-Luxury Living Swakopmund offers premium Venetian Blinds available in Wooden, Bamboo and PVC finishes. Designed with adjustable horizontal slats, Venetian Blinds provide precise control over sunlight, privacy and the atmosphere of your interior spaces.
-
+Luxury Living Venetian Blinds provide a classic and versatile window solution combining privacy, light control and elegant design.
 </p>
 
 
-
 <p>
-
-Wooden Venetian Blinds provide a warm natural appearance, Bamboo Venetian Blinds add a unique organic texture, while PVC Venetian Blinds offer a practical and durable solution for modern living spaces.
-
-</p>
-
-
-
-<p>
-
-Suitable for bedrooms, living areas, offices and commercial spaces, Venetian Blinds combine elegant design with reliable manual operation and professional custom fitting.
-
-</p>
-
-
-
-</section>
-
-
-<!-- =========================
-   END PART 1/5
-========================= -->
-
-
-<!-- =========================
-   LUXURY LIVING SWAKOPMUND
-   COMPLETE VENETIAN-BLINDS.HTML
-   PART 2/5
-   PRODUCT FEATURES
-========================= -->
-
-
-<section class="product-features">
-
-
-
-<!-- =========================
-   WOODEN VENETIAN BLINDS
-========================= -->
-
-
-<div class="feature-box">
-
-
-<h3>
-
-WOODEN VENETIAN BLINDS
-
-</h3>
-
-
-<p>
-
-Create a warm and elegant interior atmosphere with natural wooden finishes. Wooden Venetian Blinds provide excellent light adjustment while adding timeless character to your living space.
-
+Available in Bamboo, PVC and Wooden finishes, Venetian Blinds are suitable for modern homes, apartments, offices and premium interior spaces.
 </p>
 
 
@@ -194,25 +185,64 @@ Create a warm and elegant interior atmosphere with natural wooden finishes. Wood
 
 
 
-<!-- =========================
-   BAMBOO VENETIAN BLINDS
-========================= -->
+<div class="product-grid">
 
 
-<div class="feature-box">
+
+
+
+<!-- COVER -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian-cover.jpg"
+alt="Venetian Blinds Collection"
+>
 
 
 <h3>
+VENETIAN BLINDS
+</h3>
 
+
+<p>
+A timeless window covering solution offering adjustable light control and a refined interior appearance.
+</p>
+
+
+<a href="#venetian-options" class="product-btn">
+VIEW VENETIAN OPTIONS
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- BAMBOO -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian1.jpg"
+alt="Bamboo Venetian Blinds"
+>
+
+
+<h3>
 BAMBOO VENETIAN BLINDS
-
 </h3>
 
 
 <p>
-
-Bring natural texture and a relaxed organic style into your interior with Bamboo Venetian Blinds, combining beauty with practical light control.
-
+Natural textures and warm finishes create a relaxed and stylish interior atmosphere.
 </p>
 
 
@@ -222,25 +252,26 @@ Bring natural texture and a relaxed organic style into your interior with Bamboo
 
 
 
-<!-- =========================
-   PVC VENETIAN BLINDS
-========================= -->
 
 
-<div class="feature-box">
+<!-- PVC -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian2.jpg"
+alt="PVC Venetian Blinds"
+>
 
 
 <h3>
-
 PVC VENETIAN BLINDS
-
 </h3>
 
 
 <p>
-
-A durable and practical solution offering easy maintenance, moisture resistance and a modern appearance suitable for many interior applications.
-
+A practical and durable option providing easy maintenance and excellent light control.
 </p>
 
 
@@ -250,25 +281,85 @@ A durable and practical solution offering easy maintenance, moisture resistance 
 
 
 
-<!-- =========================
-   LIGHT CONTROL
-========================= -->
 
 
-<div class="feature-box">
+<!-- WOOD -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian3.jpg"
+alt="Wooden Venetian Blinds"
+>
 
 
 <h3>
+WOODEN VENETIAN BLINDS
+</h3>
 
+
+<p>
+Premium wooden finishes add warmth, elegance and natural beauty to interior spaces.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+<!-- =========================
+     VENETIAN OPTIONS
+========================= -->
+
+
+<section id="venetian-options" class="product-section">
+
+
+<div class="products-intro">
+
+
+<h2>
+WHY CHOOSE VENETIAN BLINDS?
+</h2>
+
+
+<p>
+Designed for elegant modern living, Luxury Living Venetian Blinds provide flexible privacy, adjustable light control and a timeless interior finish.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+<!-- LIGHT CONTROL -->
+
+<div class="product-card">
+
+
+<h3>
 ADJUSTABLE LIGHT CONTROL
-
 </h3>
 
 
 <p>
-
-Tilt the horizontal slats to control sunlight, glare and the amount of natural light entering your room throughout the day.
-
+Tilt the slats to control natural light levels and create the perfect interior atmosphere.
 </p>
 
 
@@ -278,25 +369,20 @@ Tilt the horizontal slats to control sunlight, glare and the amount of natural l
 
 
 
-<!-- =========================
-   PRIVACY CONTROL
-========================= -->
 
 
-<div class="feature-box">
+<!-- PRIVACY -->
+
+<div class="product-card">
 
 
 <h3>
-
-IMPROVED PRIVACY
-
+FLEXIBLE PRIVACY
 </h3>
 
 
 <p>
-
-Adjust the slats to maintain privacy while still allowing controlled daylight into your living or working environment.
-
+Adjustable slats allow you to balance outside visibility with your preferred level of privacy.
 </p>
 
 
@@ -306,30 +392,99 @@ Adjust the slats to maintain privacy while still allowing controlled daylight in
 
 
 
-<!-- =========================
-   CUSTOM MANUFACTURED
-========================= -->
 
 
-<div class="feature-box">
+<!-- DESIGN -->
+
+<div class="product-card">
 
 
 <h3>
-
-CUSTOM MANUFACTURED
-
+TIMELESS DESIGN
 </h3>
 
 
 <p>
-
-Professionally measured and manufactured to ensure a precise fit, smooth operation and a premium finished installation.
-
+Venetian Blinds complement both modern and traditional interiors with clean elegant lines.
 </p>
 
 
 </div>
 
+
+
+
+
+
+
+<!-- MAINTENANCE -->
+
+<div class="product-card">
+
+
+<h3>
+EASY MAINTENANCE
+</h3>
+
+
+<p>
+Designed for practical everyday living with simple cleaning and reliable operation.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- CUSTOM -->
+
+<div class="product-card">
+
+
+<h3>
+CUSTOM MADE FOR YOUR HOME
+</h3>
+
+
+<p>
+Every Venetian Blind is professionally measured and manufactured for a precise fit and premium finish.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PROFESSIONAL -->
+
+<div class="product-card">
+
+
+<h3>
+PROFESSIONAL INSTALLATION
+</h3>
+
+
+<p>
+Luxury Living Swakopmund provides expert measuring, advice and quality installation.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
 
 
 </section>
@@ -337,134 +492,187 @@ Professionally measured and manufactured to ensure a precise fit, smooth operati
 
 
 
-<!-- =========================
-   END PART 2/5
-========================= -->
+
+
 
 
 <!-- =========================
-   LUXURY LIVING SWAKOPMUND
-   COMPLETE VENETIAN-BLINDS.HTML
-   PART 3/5
-   PRODUCT GALLERY + BENEFITS
+     BAMBOO VENETIAN BLINDS
 ========================= -->
 
 
-<!-- =========================
-   PRODUCT GALLERY
-========================= -->
+<section class="product-section">
 
 
-<section class="product-gallery">
+<div class="products-intro">
 
 
-<img 
-alt="Wooden Venetian Blinds"
-loading="lazy"
-src="images/wooden-venetian-blinds/venetian1.jpg"/>
+<h2>
+BAMBOO VENETIAN BLINDS
+</h2>
 
 
-<img 
-alt="Wooden Venetian Blinds Detail"
-loading="lazy"
-src="images/wooden-venetian-blinds/venetian2.jpg"/>
+<p>
+Bamboo Venetian Blinds bring natural warmth and texture into your interior while providing excellent privacy and adjustable light control.
+</p>
 
 
-<img 
+</div>
+
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/bamboo-venetian-blinds/venetian1.jpg"
 alt="Bamboo Venetian Blinds"
 loading="lazy"
-src="images/bamboo-venetian-blinds/venetian1.jpg"/>
+>
 
 
-<img 
-alt="Bamboo Venetian Blinds Detail"
+<h3>
+NATURAL BAMBOO FINISH
+</h3>
+
+
+<p>
+Creates a warm, natural appearance suitable for coastal and contemporary interiors.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/bamboo-venetian-blinds/venetian2.jpg"
+alt="Bamboo Venetian Blind Interior"
 loading="lazy"
-src="images/bamboo-venetian-blinds/venetian2.jpg"/>
+>
 
 
-<img 
-alt="PVC Venetian Blinds"
-loading="lazy"
-src="images/pvc-venetian-blinds/venetian1.jpg"/>
+<h3>
+ELEGANT INTERIOR STYLE
+</h3>
 
 
-<img 
-alt="PVC Venetian Blinds Detail"
-loading="lazy"
-src="images/pvc-venetian-blinds/venetian2.jpg"/>
+<p>
+Adds texture and character while maintaining practical window control.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
 
 
 </section>
 
 
-
-
-
 <!-- =========================
-   PRODUCT BENEFITS
+     PVC VENETIAN BLINDS
 ========================= -->
 
 
-<section class="product-benefits">
+<section class="product-section">
 
 
-<div class="product-benefits-content">
+<div class="products-intro">
 
 
 <h2>
-
-Why Choose Venetian Blinds?
-
+PVC VENETIAN BLINDS
 </h2>
 
 
-
-<ul>
-
-
-<li>
-
-Available in Wooden, Bamboo and PVC Venetian Blind options.
-
-</li>
+<p>
+PVC Venetian Blinds provide a durable and practical window solution with excellent light control, privacy and easy maintenance.
+</p>
 
 
-<li>
-
-Adjustable horizontal slats provide precise control over sunlight and privacy.
-
-</li>
+</div>
 
 
-<li>
-
-Natural and modern finishes complement a wide range of interior styles.
-
-</li>
 
 
-<li>
 
-Suitable for bedrooms, living areas, offices and commercial spaces.
-
-</li>
+<div class="product-grid">
 
 
-<li>
-
-Easy manual operation with reliable long-lasting performance.
-
-</li>
 
 
-<li>
 
-Custom measured and professionally installed for a perfect fit.
-
-</li>
+<div class="product-card">
 
 
-</ul>
+<img
+src="images/venetian-blinds/pvc-venetian-blinds/venetian1.jpg"
+alt="PVC Venetian Blinds"
+loading="lazy"
+>
+
+
+<h3>
+DURABLE PVC DESIGN
+</h3>
+
+
+<p>
+A strong and practical choice for areas requiring easy care and long-lasting performance.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/pvc-venetian-blinds/venetian2.jpg"
+alt="PVC Venetian Blind Interior"
+loading="lazy"
+>
+
+
+<h3>
+PRACTICAL INTERIOR SOLUTION
+</h3>
+
+
+<p>
+Provides flexible light adjustment while maintaining a clean modern appearance.
+</p>
+
+
+</div>
+
+
 
 
 
@@ -477,59 +685,443 @@ Custom measured and professionally installed for a perfect fit.
 
 
 
-<!-- =========================
-   END PART 3/5
-========================= -->
+
 
 
 <!-- =========================
-   LUXURY LIVING SWAKOPMUND
-   COMPLETE VENETIAN-BLINDS.HTML
-   PART 4/5
-   CONTACT CTA + FOOTER
+     WOODEN VENETIAN BLINDS
 ========================= -->
 
 
-<!-- =========================
-   CONTACT CTA
-========================= -->
+<section class="product-section">
 
 
-<section class="product-cta" id="contact">
+<div class="products-intro">
 
 
 <h2>
+WOODEN VENETIAN BLINDS
+</h2>
 
-Create Your Perfect Window Solution
 
+<p>
+Wooden Venetian Blinds add natural warmth and premium character to luxury interiors while providing excellent privacy and light management.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/wooden-venetian-blinds/venetian1.jpg"
+alt="Wooden Venetian Blinds"
+loading="lazy"
+>
+
+
+<h3>
+PREMIUM WOOD FINISH
+</h3>
+
+
+<p>
+Natural wood appearance creates an elegant and sophisticated interior atmosphere.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/wooden-venetian-blinds/venetian2.jpg"
+alt="Wooden Venetian Blind Interior"
+loading="lazy"
+>
+
+
+<h3>
+LUXURY INTERIOR STYLE
+</h3>
+
+
+<p>
+Perfect for living spaces, offices and bedrooms requiring a refined natural finish.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     VENETIAN GALLERY
+========================= -->
+
+
+<section class="product-section">
+
+
+<div class="products-intro">
+
+
+<h2>
+VENETIAN BLINDS GALLERY
+</h2>
+
+
+<p>
+Explore our Venetian Blind collection designed for elegant privacy, adjustable light control and premium interior styling.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+<!-- IMAGE 1 -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian1.jpg"
+alt="Venetian Blind Collection"
+loading="lazy"
+>
+
+
+<h3>
+CLASSIC VENETIAN STYLE
+</h3>
+
+
+<p>
+A timeless window solution suitable for modern residential interiors.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- IMAGE 2 -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian2.jpg"
+alt="Modern Venetian Blinds"
+loading="lazy"
+>
+
+
+<h3>
+MODERN LIGHT CONTROL
+</h3>
+
+
+<p>
+Adjustable slats provide flexible control of daylight and privacy.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- IMAGE 3 -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian3.jpg"
+alt="Luxury Venetian Blinds"
+loading="lazy"
+>
+
+
+<h3>
+ELEGANT WINDOW SOLUTION
+</h3>
+
+
+<p>
+Designed to enhance contemporary homes with clean lines and premium finishes.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- IMAGE 4 -->
+
+<div class="product-card">
+
+
+<img
+src="images/venetian-blinds/venetian4.jpg"
+alt="Venetian Blind Installation"
+loading="lazy"
+>
+
+
+<h3>
+PROFESSIONAL INSTALLATION
+</h3>
+
+
+<p>
+Measured and installed professionally for smooth operation and a perfect finish.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+<!-- =========================
+     THE LUXURY LIVING ADVANTAGE
+========================= -->
+
+
+<section class="product-section">
+
+
+<div class="products-intro">
+
+
+<h2>
+THE LUXURY LIVING ADVANTAGE
+</h2>
+
+
+<p>
+Professional window solutions designed for modern homes, apartments and commercial interiors.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="product-grid">
+
+
+
+
+
+<div class="product-card">
+
+
+<h3>
+ELEGANT DESIGN
+</h3>
+
+
+<p>
+Venetian Blinds provide a sophisticated finish that complements luxury interior spaces.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<h3>
+PRIVACY SOLUTIONS
+</h3>
+
+
+<p>
+Control visibility and create comfortable private living environments.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<h3>
+LIGHT MANAGEMENT
+</h3>
+
+
+<p>
+Adjust natural light levels while maintaining a stylish interior appearance.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<h3>
+QUALITY INSTALLATION
+</h3>
+
+
+<p>
+Luxury Living Swakopmund provides professional measuring, advice and installation.
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     CONTACT CTA
+========================= -->
+
+
+<section class="product-section">
+
+
+<div class="products-intro">
+
+
+<h2>
+CREATE YOUR PERFECT WINDOW SOLUTION
 </h2>
 
 
 
 <p>
-
-Contact Luxury Living Swakopmund for professional advice, measuring and quotations.
-
+Contact Luxury Living Swakopmund for professional advice, measuring and quotations for your Venetian Blinds.
 </p>
 
 
 
-<a class="btn" href="contact.html">
-
+<a class="btn" href="index.html#contact">
 REQUEST A QUOTE
-
 </a>
 
 
 
+</div>
+
+
 </section>
 
 
 
 
 
+
+
+</div>
+
+
+</main>
+
+
+
+
+
+
+
 <!-- =========================
-   FOOTER
+     FOOTER
 ========================= -->
 
 
@@ -542,32 +1134,23 @@ REQUEST A QUOTE
 
 
 
-<!-- FOOTER LOGO -->
-
-
 <div class="footer-logo">
 
 
-<img 
-alt="Luxury Living Crown"
-src="crown.png"/>
-
+<img
+src="crown.png"
+alt="Luxury Living Crown Logo"
+>
 
 
 <h3>
-
 Luxury Living - Swakopmund
-
 </h3>
 
 
-
 <p>
-
 Your One Stop Interior Shop
-
 </p>
-
 
 
 </div>
@@ -578,16 +1161,11 @@ Your One Stop Interior Shop
 
 
 
-<!-- FOOTER LINKS -->
-
-
 <div class="footer-links">
 
 
 <h4>
-
 Quick Links
-
 </h4>
 
 
@@ -596,39 +1174,26 @@ Quick Links
 
 
 <li>
-
 <a href="index.html">
-
 Home
-
 </a>
-
 </li>
 
 
 
 <li>
-
-<a href="products.html">
-
+<a href="index.html#products">
 Products
-
 </a>
-
 </li>
 
 
 
 <li>
-
-<a href="contact.html">
-
+<a href="index.html#contact">
 Contact
-
 </a>
-
 </li>
-
 
 
 </ul>
@@ -642,58 +1207,45 @@ Contact
 
 
 
-<!-- FOOTER CONTACT -->
-
-
 <div class="footer-contact">
 
 
 <h4>
-
 Contact
-
 </h4>
 
 
 
 <p>
-
 <a href="tel:+264816225122">
-
 📞 +264 81 622 5122
-
 </a>
-
 </p>
 
 
 
 <p>
-
 <a href="mailto:luxsales3@iway.na">
-
 ✉️ luxsales3@iway.na
-
 </a>
-
 </p>
 
 
 
 <p>
-
 Swakopmund, Namibia
-
 </p>
 
 
-
 </div>
 
 
 
 
+
 </div>
+
+
 
 
 
@@ -703,11 +1255,8 @@ Swakopmund, Namibia
 
 
 <p>
-
 © 2026 Luxury Living - Swakopmund. All Rights Reserved.
-
 </p>
-
 
 
 </div>
@@ -717,98 +1266,47 @@ Swakopmund, Namibia
 </footer>
 
 
-
-
-
 <!-- =========================
-   END PART 4/5
-========================= -->
-
-
-<!-- =========================
-   LUXURY LIVING SWAKOPMUND
-   COMPLETE VENETIAN-BLINDS.HTML
-   PART 5/5
-   JAVASCRIPT + LIGHTBOX SYSTEM
+     JAVASCRIPT
+     MATCHES ROLLER BLINDS MASTER
 ========================= -->
 
 
 <script>
 
 
-/* =========================
-   PAGE LOAD RESET
-========================= */
+let images = [];
 
-
-window.addEventListener(
-"load",
-function(){
-
-window.scrollTo(0,0);
-
-}
-
-);
+let currentIndex = 0;
 
 
 
 
 
-/* =========================
-   PRODUCT IMAGE LIGHTBOX
-========================= */
-
-
-let productImages = [];
-
-let productIndex = 0;
-
-
-
-
-
-document.addEventListener(
-
-"click",
-
-function(e){
+document.addEventListener("click", function(e){
 
 
 
 if(
-
 e.target.tagName === "IMG" &&
-
-e.target.closest(".product-gallery")
-
+e.target.closest(".product-card")
 ){
 
 
 
-productImages = Array.from(
+images = Array.from(
 
-document.querySelectorAll(
-
-".product-gallery img"
-
-)
+document.querySelectorAll(".product-card img")
 
 );
 
 
 
-productIndex =
-
-productImages.indexOf(e.target);
+currentIndex = images.indexOf(e.target);
 
 
 
-openLightbox(
-
-e.target.src
-
-);
+openLightbox(e.target.src);
 
 
 
@@ -817,8 +1315,6 @@ e.target.src
 
 
 });
-
-
 
 
 
@@ -829,211 +1325,19 @@ e.target.src
 function openLightbox(src){
 
 
-
-let lightbox =
-
-document.getElementById(
-
-"product-lightbox"
-
-);
-
-
-
-
-
-if(!lightbox){
-
-
-
-lightbox =
-
-document.createElement(
-
-"div"
-
-);
-
-
-
-lightbox.id =
-
-"product-lightbox";
-
-
-
-
-
-lightbox.innerHTML = `
-
-
-<span class="lightbox-close">
-
-&times;
-
-</span>
-
-
-
-<button class="lightbox-prev">
-
-&#10094;
-
-</button>
-
-
-
-<img
-
-class="lightbox-image"
-
-alt="Venetian Blinds Product Preview"
-
->
-
-
-
-<button class="lightbox-next">
-
-&#10095;
-
-</button>
-
-
-`;
-
-
-
-document.body.appendChild(
-
-lightbox
-
-);
-
-
-
-
+document
+.getElementById("lightbox")
+.classList
+.add("active");
 
 
 
 document
-
-.querySelector(
-
-".lightbox-close"
-
-)
-
-.onclick=function(){
-
-
-closeLightbox();
-
-
-};
-
-
-
-
-
-
-
-document
-
-.querySelector(
-
-".lightbox-prev"
-
-)
-
-.onclick=function(){
-
-
-changeProductImage(-1);
-
-
-};
-
-
-
-
-
-
-
-document
-
-.querySelector(
-
-".lightbox-next"
-
-)
-
-.onclick=function(){
-
-
-changeProductImage(1);
-
-
-};
-
-
-
-
-
-
-
-lightbox.onclick=function(e){
-
-
-
-if(
-
-e.target === lightbox
-
-){
-
-
-closeLightbox();
-
-
-}
-
-
-
-};
-
-
-
-}
-
-
-
-
-
-
-lightbox.style.display =
-
-"flex";
-
-
-
-
-
-document
-
-.querySelector(
-
-".lightbox-image"
-
-)
-
+.getElementById("lightbox-img")
 .src = src;
 
 
-
 }
-
-
 
 
 
@@ -1044,31 +1348,10 @@ document
 function closeLightbox(){
 
 
-
-const lightbox =
-
-document.getElementById(
-
-"product-lightbox"
-
-);
-
-
-
-
-
-if(lightbox){
-
-
-
-lightbox.style.display =
-
-"none";
-
-
-
-}
-
+document
+.getElementById("lightbox")
+.classList
+.remove("active");
 
 
 }
@@ -1079,66 +1362,41 @@ lightbox.style.display =
 
 
 
+function changeImage(step,event){
 
 
-function changeProductImage(step){
+if(event){
 
-
-
-if(
-
-productImages.length === 0
-
-){
-
-
-return;
-
+event.stopPropagation();
 
 }
 
 
 
+currentIndex += step;
 
 
 
-productIndex += step;
+if(currentIndex < 0){
 
-
-
-
-
-if(
-
-productIndex < 0
-
-){
-
-
-
-productIndex =
-
-productImages.length - 1;
-
-
+currentIndex = images.length - 1;
 
 }
 
 
 
+if(currentIndex >= images.length){
+
+currentIndex = 0;
+
+}
 
 
 
-if(
-
-productIndex >= productImages.length
-
-){
-
-
-
-productIndex = 0;
-
+document
+.getElementById("lightbox-img")
+.src =
+images[currentIndex].src;
 
 
 }
@@ -1149,75 +1407,7 @@ productIndex = 0;
 
 
 
-const image =
-
-document.querySelector(
-
-".lightbox-image"
-
-);
-
-
-
-
-
-if(image){
-
-
-
-image.src =
-
-productImages[productIndex].src;
-
-
-
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* =========================
-   KEYBOARD CONTROL
-========================= */
-
-
-document.addEventListener(
-
-"keydown",
-
-function(e){
-
-
-
-const lightbox =
-
-document.getElementById(
-
-"product-lightbox"
-
-);
-
-
-
-
-
-if(
-
-lightbox &&
-
-lightbox.style.display === "flex"
-
-){
-
+document.addEventListener("keydown", function(e){
 
 
 if(e.key === "Escape"){
@@ -1227,181 +1417,6 @@ closeLightbox();
 
 
 }
-
-
-
-if(e.key === "ArrowRight"){
-
-
-changeProductImage(1);
-
-
-}
-
-
-
-if(e.key === "ArrowLeft"){
-
-
-changeProductImage(-1);
-
-
-}
-
-
-
-}
-
-
-
-});
-
-
-
-
-
-
-
-
-
-/* =========================
-   NAVIGATION SCROLL EFFECT
-========================= */
-
-
-const nav =
-
-document.querySelector(
-
-".nav"
-
-);
-
-
-
-
-
-if(nav){
-
-
-
-window.addEventListener(
-
-"scroll",
-
-function(){
-
-
-
-if(
-
-window.scrollY > 50
-
-){
-
-
-
-nav.classList.add(
-
-"scrolled"
-
-);
-
-
-
-}
-
-else{
-
-
-
-nav.classList.remove(
-
-"scrolled"
-
-);
-
-
-
-}
-
-
-
-});
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* =========================
-   SMOOTH INTERNAL LINKS
-========================= */
-
-
-document
-
-.querySelectorAll(
-
-'a[href^="#"]'
-
-)
-
-.forEach(
-
-function(link){
-
-
-
-link.addEventListener(
-
-"click",
-
-function(e){
-
-
-
-const target =
-
-document.querySelector(
-
-this.getAttribute("href")
-
-);
-
-
-
-if(target){
-
-
-
-e.preventDefault();
-
-
-
-target.scrollIntoView({
-
-behavior:"smooth",
-
-block:"start"
-
-});
-
-
-
-}
-
-
-
-});
-
 
 
 });
@@ -1414,11 +1429,10 @@ block:"start"
 
 
 
+
+
 </body>
+
 
 </html>
 
-
-<!-- =========================
-   COMPLETE VENETIAN-BLINDS.HTML END
-========================= -->

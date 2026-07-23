@@ -11817,3 +11817,697 @@ margin-bottom:15px;
 margin-top:15px;
 
 }
+
+
+/* =====================================
+PRODUCTS PAGE ONLY - TEMP OVERRIDE
+DO NOT AFFECT OTHER PAGES
+===================================== */
+
+body:has(.product-page) .sub-hero {
+
+min-height:auto;
+
+padding:25px 20px 10px;
+
+}
+
+
+body:has(.product-page) .products-intro {
+
+margin-bottom:10px;
+
+}
+
+
+body:has(.product-page) .collection-grid {
+
+margin-top:20px;
+
+}
+
+
+/* PRODUCTS PAGE COMPACT CROWN */
+
+.product-crown {
+
+width:70px;
+
+height:70px;
+
+object-fit:contain;
+
+margin-bottom:10px;
+
+}
+
+
+/* =====================================
+PRODUCTS PAGE ABOVE THE FOLD FIX
+===================================== */
+
+body:has(.product-page) .sub-hero {
+
+height:auto;
+
+min-height:0;
+
+padding:10px 20px 5px;
+
+}
+
+
+body:has(.product-page) .sub-hero .hero-content {
+
+padding:0;
+
+}
+
+
+body:has(.product-page) .sub-hero .hero-content h1 {
+
+margin:5px 0;
+
+}
+
+
+body:has(.product-page) .product-page {
+
+padding-top:0;
+
+}
+
+
+body:has(.product-page) .products-intro {
+
+margin-top:0;
+
+padding-top:0;
+
+}
+
+
+body:has(.product-page) .collection-grid {
+
+margin-top:10px;
+
+}
+
+
+/* =====================================
+PRODUCTS PAGE - FIT FULL SCREEN
+FINAL COMPACT MODE
+===================================== */
+
+
+/* Compact header */
+
+.sub-hero {
+
+padding:10px 20px 5px !important;
+
+}
+
+
+.sub-hero h1 {
+
+font-size:42px !important;
+
+margin:5px 0 !important;
+
+}
+
+
+
+/* Compact intro */
+
+.products-intro {
+
+padding:0 !important;
+
+margin:0 auto 10px !important;
+
+}
+
+
+.products-intro h2 {
+
+font-size:28px !important;
+
+margin:5px 0 !important;
+
+}
+
+
+.products-intro p {
+
+font-size:14px !important;
+
+line-height:1.4 !important;
+
+margin:5px auto !important;
+
+}
+
+
+
+/* Compact cards */
+
+.collection-grid {
+
+gap:15px !important;
+
+margin:10px auto !important;
+
+padding:0 20px !important;
+
+}
+
+
+
+.collection-card {
+
+min-height:360px !important;
+
+border-radius:15px !important;
+
+}
+
+
+
+.collection-card img {
+
+height:150px !important;
+
+}
+
+
+
+.collection-card h2 {
+
+font-size:22px !important;
+
+margin:12px 5px !important;
+
+}
+
+
+
+.collection-card p {
+
+font-size:13px !important;
+
+line-height:1.4 !important;
+
+padding:0 12px !important;
+
+}
+
+
+
+.collection-card .product-btn {
+
+padding:8px 15px !important;
+
+font-size:13px !important;
+
+}
+
+/* =====================================
+PRODUCTS PAGE - FINAL MICRO COMPRESSION
+===================================== */
+
+
+.sub-hero {
+
+padding-top:5px !important;
+
+padding-bottom:0 !important;
+
+}
+
+
+.sub-hero h1 {
+
+font-size:36px !important;
+
+}
+
+
+.products-intro h2 {
+
+font-size:24px !important;
+
+}
+
+
+.products-intro p {
+
+font-size:13px !important;
+
+max-width:800px;
+
+}
+
+
+.collection-grid {
+
+gap:12px !important;
+
+margin-top:5px !important;
+
+}
+
+
+.collection-card {
+
+min-height:330px !important;
+
+}
+
+
+.collection-card img {
+
+height:130px !important;
+
+}
+
+
+.collection-card h2 {
+
+font-size:20px !important;
+
+margin:8px 5px !important;
+
+}
+
+
+.collection-card p {
+
+font-size:12px !important;
+
+}
+
+
+.collection-card .product-btn {
+
+padding:6px 12px !important;
+
+font-size:12px !important;
+
+}
+
+
+/* =====================================
+PRODUCTS PAGE - FINAL SMALL REDUCTION
+===================================== */
+
+.sub-hero h1 {
+
+font-size:32px !important;
+
+}
+
+
+.products-intro h2 {
+
+font-size:22px !important;
+
+}
+
+
+.products-intro p {
+
+font-size:12px !important;
+
+line-height:1.3 !important;
+
+}
+
+
+.collection-grid {
+
+gap:10px !important;
+
+padding:0 15px !important;
+
+}
+
+
+.collection-card {
+
+min-height:300px !important;
+
+}
+
+
+.collection-card img {
+
+height:115px !important;
+
+}
+
+
+.collection-card h2 {
+
+font-size:18px !important;
+
+margin:6px 5px !important;
+
+}
+
+
+.collection-card p {
+
+font-size:11px !important;
+
+line-height:1.3 !important;
+
+padding:0 10px !important;
+
+}
+
+
+.collection-card .product-btn {
+
+padding:5px 10px !important;
+
+font-size:11px !important;
+
+}
+
+/* =====================================
+PRODUCTS PAGE HERO BACKGROUND
+===================================== */
+
+.sub-hero {
+
+background:
+linear-gradient(
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)
+),
+url("hero.jpg") !important;
+
+background-size:cover !important;
+
+background-position:center !important;
+
+}
+
+/* =====================================
+PRODUCTS PAGE NAV VISIBILITY FIX
+===================================== */
+
+.products-sub-hero ~ .nav,
+.nav {
+
+color:#111;
+
+}
+
+
+.nav-links a {
+
+color:#111 !important;
+
+}
+
+
+.nav-links a:hover {
+
+color:#c9a227 !important;
+
+}
+
+
+/* =====================================
+PRODUCT CARD FINAL SPACING ADJUSTMENT
+===================================== */
+
+.collection-card h2 {
+
+font-size:22px !important;
+
+margin:15px 10px 8px !important;
+
+}
+
+
+
+.collection-card p {
+
+margin-bottom:8px !important;
+
+padding:0 20px !important;
+
+line-height:1.45 !important;
+
+}
+
+
+
+.collection-card .product-btn {
+
+margin-top:5px !important;
+
+margin-bottom:15px !important;
+
+}
+
+
+/* =====================================
+PRODUCT CARD NAME SMALLER
+===================================== */
+
+.collection-card h2 {
+
+font-size:18px !important;
+
+margin:12px 10px 6px !important;
+
+letter-spacing:1px;
+
+}
+
+/* =====================================
+PRODUCT CARD TITLES - COMPACT LUXURY STYLE
+===================================== */
+
+.collection-card h2 {
+
+font-size:14px !important;
+
+margin:10px 8px 5px !important;
+
+letter-spacing:1px;
+
+font-weight:600;
+
+}
+
+/* =====================================
+VERY SMALL PRODUCT CARD TITLES
+===================================== */
+
+.collection-card h2 {
+
+font-size:11px !important;
+
+margin:8px 5px 4px !important;
+
+letter-spacing:1px;
+
+font-weight:500;
+
+}
+
+/* =====================================
+PRODUCTS PAGE HERO BACKGROUND
+===================================== */
+
+.products-sub-hero {
+
+background-image:
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
+),
+url("images/products/product-hero.jpg");
+
+background-position:center;
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+}
+
+/* =====================================
+PRODUCTS PAGE HERO OVERRIDE
+===================================== */
+
+.products-sub-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.60),
+            rgba(0,0,0,.60)
+        ),
+        url("images/products/product-hero.jpg") !important;
+
+    background-position:center !important;
+    background-size:cover !important;
+    background-repeat:no-repeat !important;
+
+}
+
+
+/* ===== TEST ===== */
+
+.products-sub-hero{
+    background:#ff0000 !important;
+}
+
+
+/* =====================================
+PRODUCTS PAGE HERO BACKGROUND
+===================================== */
+
+.products-sub-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.60),
+            rgba(0,0,0,.60)
+        ),
+        url("images/products/product-hero.jpg") !important;
+
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+}
+
+
+/* =====================================
+VERY SMALL PRODUCT CARD TITLES
+===================================== */
+
+.collection-card h2 {
+
+    font-size: 11px !important;
+    margin: 8px 5px 4px !important;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+/* =====================================
+PRODUCT CARD FINAL SPACING
+===================================== */
+
+.collection-card p {
+
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding: 0 15px !important;
+
+}
+
+.collection-card {
+
+    min-height: 350px !important;
+
+}
+
+.collection-card .product-btn {
+
+    font-size: 13px !important;
+    padding: 8px 18px !important;
+    margin-top: auto !important;
+    margin-bottom: 12px !important;
+
+}
+
+
+/* =====================================
+PRODUCTS COLLECTION GRID FIX
+===================================== */
+
+.collection-grid {
+
+display:grid !important;
+
+grid-template-columns:repeat(4,1fr) !important;
+
+gap:25px !important;
+
+align-items:stretch;
+
+}
+
+
+.collection-card {
+
+display:flex !important;
+
+flex-direction:column !important;
+
+}
+
+
+.collection-card .product-btn {
+
+margin-top:auto !important;
+
+}
+
+/* TEST ONLY */
+
+.collection-grid {
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:wrap !important;
+}
+
+.collection-card {
+    width:22% !important;
+}
+/* =====================================
+PRODUCTS HERO FINAL
+===================================== */
+
+.products-sub-hero {
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("images/products/product-hero.jpg") !important;
+
+    background-position:center !important;
+
+    background-size:cover !important;
+
+    background-repeat:no-repeat !important;
+
+}
+
+/* =====================================
+PRODUCTS HERO COMPLETE OVERRIDE
+===================================== */
+
+.products-sub-hero {
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("images/products/product-hero.jpg") center center / cover no-repeat !important;
+
+}
